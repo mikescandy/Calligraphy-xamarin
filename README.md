@@ -11,7 +11,11 @@ No support for Android 5 / appcompat21 yet (i.e. no custom font in toolbar)
 
 ### Install
 
-[Download from NuGet](http://search.maven.org/remotecontent?filepath=uk/co/chrisjenx/calligraphy/1.2.0/calligraphy-1.2.0.jar)
+[Download from NuGet](https://www.nuget.org/packages/CallygraphyXamarin/)
+
+```
+Install-Package CallygraphyXamarin
+```
 
 ### Fonts
 
