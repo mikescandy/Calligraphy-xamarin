@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>CallygraphyXamarin</id>
+        <version>1.0.0</version>
+        <title>Calligraphy</title>
+        <authors>Michele Scandura</authors>
+        <projectUrl>https://github.com/mikescandy/Calligraphy-xamarin</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>A Xamarin port of the Android Calligraphy library.</description>
+        <summary>A Xamarin port of the Android Calligraphy library.</summary>
+        <releaseNotes>No support for Android 5 - appcompat21</releaseNotes>
+        <tags>xamarin, android</tags>
+    </metadata>
+    <files>
+        <file src="CalligraphySampleApp\bin\Release\Calligraphy.dll" target="lib\MonoAndroid\Calligraphy.dll" />
+    </files>
+</package>
