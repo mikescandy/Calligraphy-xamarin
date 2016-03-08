@@ -1,3 +1,4 @@
+using System;
 using Android.Content;
 using Android.Content.Res;
 using Android.Graphics;
@@ -6,11 +7,15 @@ using Android.Util;
 using Android.Widget;
 
 using Java.Lang;
+using Exception = Java.Lang.Exception;
+using Object = Java.Lang.Object;
+using String = Java.Lang.String;
 
 namespace Calligraphy
 {
     internal class CalligraphyUtils
     {
+        public static int[] ANDROID_ATTR_TEXT_APPEARANCE = new int[] { Android.Resource.Attribute.TextAppearance };
         /// <summary>
         /// Applies a custom typeface span to the text.
         /// </summary>
@@ -116,12 +121,12 @@ namespace Calligraphy
                 return;
             }
 
-            if (!config.IsFontSet)
+            if (!config.isFontSet())
             {
                 return;
             }
 
-            ApplyFontToTextView(context, textView, config.FontPath, deferred);
+            ApplyFontToTextView(context, textView, config.getFontPath(), deferred);
         }
 
         /// <summary>
@@ -158,7 +163,7 @@ namespace Calligraphy
         /// <param name="attrs">View Attributes.</param>
         /// <param name="attributeId">f -1 returns null.</param>
         /// <returns>null if attribute is not defined or added to View</returns>
-        internal static string PullFontPathFromView(Context context, IAttributeSet attrs, int attributeId)
+        internal static string PullFontPathFromView(Context context, IAttributeSet attrs, int[] attributeId)
         {
             if (attributeId == -1 || attrs == null)
             {
@@ -190,7 +195,7 @@ namespace Calligraphy
         /// <param name="attrs">View Attributes.</param>
         /// <param name="attributeId">if -1 returns null.</param>
         /// <returns>null if attribute is not defined or found in the Style</returns>
-        internal static string PullFontPathFromStyle(Context context, IAttributeSet attrs, int attributeId)
+        internal static string PullFontPathFromStyle(Context context, IAttributeSet attrs, int[] attributeId)
         {
             if (attributeId == -1 || attrs == null)
             {
@@ -231,7 +236,7 @@ namespace Calligraphy
         /// <param name="attrs">View Attributes.</param>
         /// <param name="attributeId">if -1 returns null.</param>
         /// <returns>returns null if attribute is not defined or if no TextAppearance is found.</returns>
-        internal static string PullFontPathFromTextAppearance(Context context, IAttributeSet attrs, int attributeId)
+        internal static string PullFontPathFromTextAppearance(Context context, IAttributeSet attrs, int[] attributeId)
         {
             if (attributeId == -1 || attrs == null)
             {
@@ -239,7 +244,7 @@ namespace Calligraphy
             }
 
             var textAppearanceId = -1;
-            var typedArrayAttr = context.ObtainStyledAttributes(attrs, new int[] { Android.Resource.Attribute.TextAppearance });
+            var typedArrayAttr = context.ObtainStyledAttributes(attrs, ANDROID_ATTR_TEXT_APPEARANCE);
             if (typedArrayAttr != null)
             {
                 try
@@ -286,7 +291,7 @@ namespace Calligraphy
         /// <param name="styleAttrId">Theme style id.</param>
         /// <param name="attributeId">if -1 returns null.</param>
         /// <returns>null if no theme or attribute defined.</returns>
-        internal static string PullFontPathFromTheme(Context context, int styleAttrId, int attributeId)
+        internal static string PullFontPathFromTheme(Context context, int styleAttrId, int[] attributeId)
         {
             if (styleAttrId == -1 || attributeId == -1)
             {
@@ -323,7 +328,7 @@ namespace Calligraphy
         /// <param name="subStyleAttrId">the sub style from the theme to look up after the first style.</param>
         /// <param name="attributeId">if -1 returns null.</param>
         /// <returns>null if no theme or attribute defined.</returns>
-        internal static string PullFontPathFromTheme(Context context, int styleAttrId, int subStyleAttrId, int attributeId)
+        internal static string PullFontPathFromTheme(Context context, int styleAttrId, int subStyleAttrId, int[] attributeId)
         {
             if (styleAttrId == -1 || attributeId == -1)
                 return null;
@@ -375,24 +380,50 @@ namespace Calligraphy
             return null;
         }
 
-        //private static bool? toolbarCheck = null;
+        private static bool? ToolbarCheck = null;
+        private static bool? sAppCompatViewCheck = null;
 
         /**
          * See if the user has added appcompat-v7, this is done at runtime, so we only check once.
          *
          * @return true if the v7.Toolbar is on the classpath
          */
-        //static bool canCheckForV7Toolbar() {
-        //    if (sToolbarCheck == null) {
-        //        try {
-        //            Class.forName("android.support.v7.widget.Toolbar");
-        //            sToolbarCheck = bool.TRUE;
-        //        } catch (ClassNotFoundException e) {
-        //            sToolbarCheck = bool.FALSE;
-        //        }
-        //    }
-        //    return sToolbarCheck;
-        //}
+        public static bool CanCheckForV7Toolbar()
+        {
+            if (ToolbarCheck == null)
+            {
+                try
+                {
+                    var x = Activator.CreateInstance(null, "android.support.v7.widget.Toolbar");
+
+                    
+                    ToolbarCheck = true;
+                }
+                catch (ClassNotFoundException e)
+                {
+                    ToolbarCheck = false;
+                }
+            }
+            return ToolbarCheck.Value;
+        }
+
+        public static bool CanAddV7AppCompatViews()
+        {
+            if (sAppCompatViewCheck == null)
+            {
+                try
+                {
+                    var x = Activator.CreateInstance(null, "android.support.v7.widget.AppCompatTextView");
+                   
+                    sAppCompatViewCheck = true;
+                }
+                catch (ClassNotFoundException e)
+                {
+                    sAppCompatViewCheck = false;
+                }
+            }
+            return sAppCompatViewCheck.Value;
+        }
 
         private CalligraphyUtils()
         {

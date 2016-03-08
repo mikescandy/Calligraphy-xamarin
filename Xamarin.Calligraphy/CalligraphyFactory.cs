@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Android.Content;
+using Android.Graphics;
 using Android.Runtime;
 using Android.Text;
 using Android.Util;
@@ -14,24 +15,10 @@ namespace Calligraphy
     class CalligraphyFactory : Java.Lang.Object, LayoutInflater.IFactory
     {
         private readonly LayoutInflater.IFactory factory;
-        private readonly int attributeId;
-        private static readonly string[] ClassPrefixList = {
-            "android.widget.",
-            "android.webkit."
-    };
-        private const string ActionBarTitle = "action_bar_title";
-        private const string ActionBarSubtitle = "action_bar_subtitle";
-        private static readonly Dictionary<Type, int> Styles
-                = new Dictionary<Type, int>() {
-                    {typeof(TextView), Android.Resource.Attribute.TextViewStyle},
-                    {typeof(Button), Android.Resource.Attribute.ButtonStyle},
-                    {typeof(EditText), Android.Resource.Attribute.EditTextStyle},
-                    {typeof(AutoCompleteTextView), Android.Resource.Attribute.AutoCompleteTextViewStyle},
-                    { typeof(MultiAutoCompleteTextView), Android.Resource.Attribute.AutoCompleteTextViewStyle },
-                    { typeof(CheckBox), Android.Resource.Attribute.CheckboxStyle },
-                    { typeof(RadioButton), Android.Resource.Attribute.RadioButtonStyle },
-                    { typeof(ToggleButton), Android.Resource.Attribute.ButtonStyleToggle }
-                                              };
+        private static string ACTION_BAR_TITLE = "action_bar_title";
+        private static string ACTION_BAR_SUBTITLE = "action_bar_subtitle";
+        private int[] mAttributeId;
+
 
         /// <inheritdoc />
         public View OnCreateView(string name, Context context, IAttributeSet attrs)
@@ -55,7 +42,7 @@ namespace Calligraphy
 
             if (view != null)
             {
-                OnViewCreated(view, name, context, attrs);
+                OnViewCreated(view, context, attrs);
             }
 
             return view;
@@ -88,8 +75,8 @@ namespace Calligraphy
             if (styleIds[0] == -1)
             {
                 // Use TextAppearance as default style
-                styleIds[0] = Styles.ContainsKey(view.GetType())
-                        ? Styles[view.GetType()]
+                styleIds[0] = CalligraphyConfig.Get().getClassStyles().ContainsKey(view.GetType())
+                        ? CalligraphyConfig.Get().getClassStyles()[view.GetType()]
                         : Android.Resource.Attribute.TextAppearance;
             }
             return styleIds;
@@ -102,12 +89,12 @@ namespace Calligraphy
         /// <returns>true if it is.</returns>
         protected static bool IsActionBarTitle(TextView view)
         {
-            if (MatchesResourceIdName(view, ActionBarTitle)) return true;
-            //if (parentIsToolbarV7(view))
-            //{
-            //    Android.Support.V7.Widget.Toolbar parent = (android.support.v7.widget.Toolbar)view.Parent;
-            //    return TextUtils.Equals(parent.Title, view.Text);
-            //}
+            if (MatchesResourceIdName(view, ACTION_BAR_TITLE)) return true;
+            if (parentIsToolbarV7(view))
+            {
+                Android.Support.V7.Widget.Toolbar parent = (Android.Support.V7.Widget.Toolbar)view.Parent;
+                return TextUtils.Equals(parent.Title, view.Text);
+            }
             return false;
         }
 
@@ -118,17 +105,19 @@ namespace Calligraphy
         /// <returns>true if it is.</returns>
         protected static bool IsActionBarSubTitle(TextView view)
         {
-            if (MatchesResourceIdName(view, ActionBarSubtitle)) return true;
-            //if (parentIsToolbarV7(view)) {
-            //     android.support.v7.widget.Toolbar parent = (android.support.v7.widget.Toolbar) view.Parent;
-            //    return TextUtils.equals(parent.Subtitle, view.Text);
-            //}
+            if (MatchesResourceIdName(view, ACTION_BAR_SUBTITLE)) return true;
+            if (parentIsToolbarV7(view))
+            {
+                Android.Support.V7.Widget.Toolbar parent = (Android.Support.V7.Widget.Toolbar)view.Parent;
+                return TextUtils.Equals(parent.Subtitle, view.Text);
+            }
             return false;
         }
 
-        //protected static bool parentIsToolbarV7(View view) {
-        //    return CalligraphyUtils.canCheckForV7Toolbar() && view.Parent != null && (view.Parent is android.support.v7.widget.Toolbar);
-        //}
+        protected static bool parentIsToolbarV7(View view)
+        {
+            return CalligraphyUtils.CanCheckForV7Toolbar() && view.Parent != null && (view.Parent is Android.Support.V7.Widget.Toolbar);
+        }
 
         /// <summary>
         /// Use to match a view against a potential view id. Such as ActionBar title etc.
@@ -146,7 +135,7 @@ namespace Calligraphy
         public CalligraphyFactory(LayoutInflater.IFactory factory, int attributeId)
         {
             this.factory = factory;
-            this.attributeId = attributeId;
+            this.mAttributeId = new int[] { attributeId };
         }
 
         protected View CreateViewOrFailQuietly(string name, Context context, IAttributeSet attrs)
@@ -172,68 +161,122 @@ namespace Calligraphy
             }
         }
 
-        protected void OnViewCreated(View view, string name, Context context, IAttributeSet attrs)
-        {
-            if (!(view is TextView))
-            {
-                return;
-            }
-            // Fast path the setting of TextView's font, means if we do some delayed setting of font,
-            // which has already been set by use we skip this TextView (mainly for inflating custom,
-            // TextView's inside the Toolbar/ActionBar).
-            if (TypefaceUtils.IsLoaded(((TextView)view).Typeface))
-            {
-                return;
-            }
-            // Try to get typeface attribute value
-            // Since we're not using namespace it's a little bit tricky
+        /**
+   * Handle the created view
+   *
+   * @param view    nullable.
+   * @param context shouldn't be null.
+   * @param attrs   shouldn't be null.
+   * @return null if null is passed in.
+   */
 
+        public View OnViewCreated(View view, Context context, IAttributeSet attrs)
+        {
+            if (view != null && (bool)view.GetTag(Resource.Id.calligraphy_tag_id) != true)
+            {
+                onViewCreatedInternal(view, context, attrs);
+                view.SetTag(Resource.Id.calligraphy_tag_id, true);
+            }
+            return view;
+        }
+
+        void onViewCreatedInternal(View view, Context context, IAttributeSet attrs)
+        {
+            if (typeof(view) is TextView)
+            {
+                // Fast path the setting of TextView's font, means if we do some delayed setting of font,
+                // which has already been set by use we skip this TextView (mainly for inflating custom,
+                // TextView's inside the Toolbar/ActionBar).
+                if (TypefaceUtils.IsLoaded(((TextView)view).Typeface))
+                {
+                    return;
+                }
+                // Try to get typeface attribute value
+                // Since we're not using namespace it's a little bit tricky
+
+                // Check xml attrs, style attrs and text appearance for font path
+                String textViewFont = resolveFontPath(context, attrs);
+
+                // Try theme attributes
+                if (TextUtils.IsEmpty(textViewFont))
+                {
+                    int[] styleForTextView = GetStyleForTextView((TextView)view);
+                    if (styleForTextView[1] != -1)
+                        textViewFont = CalligraphyUtils.PullFontPathFromTheme(context, styleForTextView[0], styleForTextView[1], mAttributeId);
+                    else
+                        textViewFont = CalligraphyUtils.PullFontPathFromTheme(context, styleForTextView[0], mAttributeId);
+                }
+
+                // Still need to defer the Native action bar, appcompat-v7:21+ uses the Toolbar underneath. But won't match these anyway.
+                bool deferred = MatchesResourceIdName(view, ACTION_BAR_TITLE) || MatchesResourceIdName(view, ACTION_BAR_SUBTITLE);
+
+                CalligraphyUtils.ApplyFontToTextView(context, (TextView)view, CalligraphyConfig.Get(), textViewFont, deferred);
+            }
+
+            // AppCompat API21+ The ActionBar doesn't inflate default Title/SubTitle, we need to scan the
+            // Toolbar(Which underlies the ActionBar) for its children.
+            if (CalligraphyUtils.CanCheckForV7Toolbar() && typeof(view) is Android.Support.V7.Widget.Toolbar)
+            {
+                Toolbar toolbar = (Toolbar)view;
+                toolbar.ViewTreeObserver.AddOnGlobalLayoutListener(new ToolbarLayoutListener(this, context, toolbar));
+            }
+
+            // Try to set typeface for custom views using interface method or via reflection if available
+            if (typeof(view) is IHasTypeFace)
+            {
+                Typeface typeface = getDefaultTypeface(context, resolveFontPath(context, attrs));
+                if (typeface != null)
+                {
+                    ((IHasTypeFace)view).setTypeface(typeface);
+                }
+            }
+            else if (CalligraphyConfig.Get().isCustomViewTypefaceSupport() && CalligraphyConfig.Get().isCustomViewHasTypeface(view))
+            {
+                var setTypeface = ReflectionUtils.getMethod(typeof(view), "setTypeface");
+                string fontPath = resolveFontPath(context, attrs);
+                Typeface typeface = getDefaultTypeface(context, fontPath);
+                if (setTypeface != null && typeface != null)
+                {
+                    ReflectionUtils.invokeMethod(view, setTypeface, typeface);
+                }
+            }
+
+        }
+
+        private Typeface getDefaultTypeface(Context context, String fontPath)
+        {
+            if (TextUtils.IsEmpty(fontPath))
+            {
+                fontPath = CalligraphyConfig.Get().getFontPath();
+            }
+            if (!TextUtils.IsEmpty(fontPath))
+            {
+                return TypefaceUtils.Load(context.Assets, fontPath);
+            }
+            return null;
+        }
+
+        /**
+         * Resolving font path from xml attrs, style attrs or text appearance
+         */
+        private String resolveFontPath(Context context, IAttributeSet attrs)
+        {
             // Try view xml attributes
-            var textViewFont = CalligraphyUtils.PullFontPathFromView(context, attrs, attributeId);
+            String textViewFont = CalligraphyUtils.PullFontPathFromView(context, attrs, mAttributeId);
 
             // Try view style attributes
             if (TextUtils.IsEmpty(textViewFont))
             {
-                textViewFont = CalligraphyUtils.PullFontPathFromStyle(context, attrs, attributeId);
+                textViewFont = CalligraphyUtils.PullFontPathFromStyle(context, attrs, mAttributeId);
             }
 
             // Try View TextAppearance
             if (TextUtils.IsEmpty(textViewFont))
             {
-                textViewFont = CalligraphyUtils.PullFontPathFromTextAppearance(context, attrs, attributeId);
+                textViewFont = CalligraphyUtils.PullFontPathFromTextAppearance(context, attrs, mAttributeId);
             }
 
-            // Try theme attributes
-            if (TextUtils.IsEmpty(textViewFont))
-            {
-                var styleForTextView = GetStyleForTextView((TextView)view);
-                if (styleForTextView[1] != -1)
-                    textViewFont = CalligraphyUtils.PullFontPathFromTheme(context, styleForTextView[0], styleForTextView[1], attributeId);
-                else
-                    textViewFont = CalligraphyUtils.PullFontPathFromTheme(context, styleForTextView[0], attributeId);
-            }
-
-
-            // Still need to defer the Native action bar, appcompat-v7:21+ uses the Toolbar underneath. But won't match these anyway.
-            var deferred = MatchesResourceIdName(view, ActionBarTitle) || MatchesResourceIdName(view, ActionBarSubtitle);
-
-            CalligraphyUtils.ApplyFontToTextView(context, (TextView)view, CalligraphyConfig.Get(), textViewFont, deferred);
-
-            // AppCompat API21+ The ActionBar doesn't inflate default Title/SubTitle, we need to scan the
-            // Toolbar(Which underlies the ActionBar) for its children.
-            //if (CalligraphyUtils.canCheckForV7Toolbar() && view is Android.Support.V7.Widget.Toolbar) {
-            //     ViewGroup parent = (ViewGroup) view;
-            //    parent.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
-            //        @Override
-            //        public void onGlobalLayout() {
-            //            // No children, do nuffink!
-            //            if (parent.getChildCount() <= 0) return;
-            //            // Process children, defer draw as it has set the typeface.
-            //            for (int i = 0; i < parent.getChildCount(); i++) {
-            //                onViewCreated(parent.getChildAt(i), null, context, null);
-            //            }
-            //        }
-            //    });
+            return textViewFont;
         }
     }
 }

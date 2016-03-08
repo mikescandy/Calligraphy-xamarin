@@ -1,3 +1,4 @@
+using System;
 using Android.Graphics;
 using Android.Text;
 using Android.Text.Style;
@@ -10,6 +11,10 @@ namespace Calligraphy
 
         internal CalligraphyTypefaceSpan(Typeface typeface)
         {
+            if (typeface == null)
+            {
+                throw new ArgumentNullException(nameof(typeface));
+            }
             this.typeface = typeface;
         }
 
