@@ -1,6 +1,7 @@
 ﻿using System;
 using Android.Views;
 using Android.Content;
+using Android.Util;
 
 namespace Calligraphy
 {
@@ -23,7 +24,7 @@ namespace Calligraphy
 		/// <param name="name">Name of View we are trying to inflate.</param>
 		/// <param name="context">current context (normally the Activity's).</param>
 		/// <param name="attrs">see {@link android.view.LayoutInflater.Factory2#onCreateView(android.view.View, String, android.content.Context, android.util.AttributeSet)}  @return the result from the activities {@code onCreateView()}.</param>
-		View OnActivityCreateView(View parent, View view, string name, Context context, object[] attrs);
+		View OnActivityCreateView(View parent, View view, string name, Context context, IAttributeSet attrs);
 	}
 }
 

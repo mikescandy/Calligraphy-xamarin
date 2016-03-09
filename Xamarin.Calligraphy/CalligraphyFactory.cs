@@ -208,7 +208,6 @@ namespace Calligraphy
                     ReflectionUtils.invokeMethod(view, setTypeface, new object[] { typeface });
                 }
             }
-
         }
 
         private Typeface getDefaultTypeface(Context context, String fontPath)

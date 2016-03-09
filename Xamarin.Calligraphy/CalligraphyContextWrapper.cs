@@ -88,7 +88,7 @@ namespace Calligraphy
     * @param attr     The AttributeSet from onCreateView
     * @return The same view passed in, or null if null passed in.
     */
-        public static View onActivityCreateView(Activity activity, View parent, View view, string name, Context context, object[] attrs)
+        public static View onActivityCreateView(Activity activity, View parent, View view, string name, Context context, IAttributeSet attrs)
         {
             return get(activity).OnActivityCreateView(parent, view, name, context, attrs);
         }

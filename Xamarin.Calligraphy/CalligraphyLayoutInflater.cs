@@ -142,9 +142,10 @@ namespace Calligraphy
          */
 
         //@TargetApi(Build.VERSION_CODES.HONEYCOMB)
-        public View OnActivityCreateView(View parent, View view, string name, Context context, object[] attrs)
+        public View OnActivityCreateView(View parent, View view, string name, Context context, IAttributeSet attrs)
         {
-            return mCalligraphyFactory.OnViewCreated(CreateCustomViewInternal(parent, view, name, context, attrs), context, attrs);
+            
+            return mCalligraphyFactory.OnViewCreated(CreateCustomViewInternal(parent, view, name, context,  attrs), context, attrs);
         }
 
         /**
