@@ -44,7 +44,7 @@ namespace Calligraphy
         {
             if (LayoutInflaterService.Equals(name))
             {
-                return inflater ?? (inflater = new CalligraphyLayoutInflater(LayoutInflater.From(BaseContext), this, attributeId));
+                return inflater ?? (inflater = new CalligraphyLayoutInflater(BaseContext, attributeId));
             }
             return base.GetSystemService(name);
         }

@@ -4,15 +4,20 @@ using System.Linq;
 
 using Android.Content;
 using Android.Graphics;
+using Android.OS;
 using Android.Runtime;
 using Android.Text;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
+using Java.Lang;
+using Exception = System.Exception;
+using Object = Java.Lang.Object;
+using String = System.String;
 
 namespace Calligraphy
 {
-    class CalligraphyFactory : Java.Lang.Object, LayoutInflater.IFactory
+    class CalligraphyFactory : Java.Lang.Object
     {
         private readonly LayoutInflater.IFactory factory;
         private static string ACTION_BAR_TITLE = "action_bar_title";
@@ -20,33 +25,7 @@ namespace Calligraphy
         private int[] mAttributeId;
 
 
-        /// <inheritdoc />
-        public View OnCreateView(string name, Context context, IAttributeSet attrs)
-        {
-            View view = null;
 
-            if (context is LayoutInflater.IFactory)
-            {
-                view = ((LayoutInflater.IFactory)context).OnCreateView(name, context, attrs);
-            }
-
-            if (factory != null && view == null)
-            {
-                view = factory.OnCreateView(name, context, attrs);
-            }
-
-            if (view == null)
-            {
-                view = CreateViewOrFailQuietly(name, context, attrs);
-            }
-
-            if (view != null)
-            {
-                OnViewCreated(view, context, attrs);
-            }
-
-            return view;
-        }
 
         public CalligraphyFactory(IntPtr javaReference, JniHandleOwnership transfer)
             : base(javaReference, transfer)
@@ -132,20 +111,9 @@ namespace Calligraphy
             return resourceEntryName.Equals(matches, StringComparison.InvariantCultureIgnoreCase);
         }
 
-        public CalligraphyFactory(LayoutInflater.IFactory factory, int attributeId)
+        public CalligraphyFactory(int attributeId)
         {
-            this.factory = factory;
             this.mAttributeId = new int[] { attributeId };
-        }
-
-        protected View CreateViewOrFailQuietly(string name, Context context, IAttributeSet attrs)
-        {
-            if (name.Contains("."))
-            {
-                return CreateViewOrFailQuietly(name, null, context, attrs);
-            }
-
-            return ClassPrefixList.Select(prefix => CreateViewOrFailQuietly(name, prefix, context, attrs)).FirstOrDefault(view => view != null);
         }
 
         protected View CreateViewOrFailQuietly(string name, string prefix, Context context, IAttributeSet attrs)
@@ -182,7 +150,7 @@ namespace Calligraphy
 
         void onViewCreatedInternal(View view, Context context, IAttributeSet attrs)
         {
-            if (typeof(view) is TextView)
+            if (view.GetType() == typeof(TextView))
             {
                 // Fast path the setting of TextView's font, means if we do some delayed setting of font,
                 // which has already been set by use we skip this TextView (mainly for inflating custom,
@@ -215,14 +183,14 @@ namespace Calligraphy
 
             // AppCompat API21+ The ActionBar doesn't inflate default Title/SubTitle, we need to scan the
             // Toolbar(Which underlies the ActionBar) for its children.
-            if (CalligraphyUtils.CanCheckForV7Toolbar() && typeof(view) is Android.Support.V7.Widget.Toolbar)
+            if (CalligraphyUtils.CanCheckForV7Toolbar() && view.GetType() == typeof(Android.Support.V7.Widget.Toolbar))
             {
                 Toolbar toolbar = (Toolbar)view;
                 toolbar.ViewTreeObserver.AddOnGlobalLayoutListener(new ToolbarLayoutListener(this, context, toolbar));
             }
 
             // Try to set typeface for custom views using interface method or via reflection if available
-            if (typeof(view) is IHasTypeFace)
+            if (view.GetType() == typeof(IHasTypeFace))
             {
                 Typeface typeface = getDefaultTypeface(context, resolveFontPath(context, attrs));
                 if (typeface != null)
@@ -232,7 +200,7 @@ namespace Calligraphy
             }
             else if (CalligraphyConfig.Get().isCustomViewTypefaceSupport() && CalligraphyConfig.Get().isCustomViewHasTypeface(view))
             {
-                var setTypeface = ReflectionUtils.getMethod(typeof(view), "setTypeface");
+                var setTypeface = ReflectionUtils.getMethod(view.GetType(), "setTypeface");
                 string fontPath = resolveFontPath(context, attrs);
                 Typeface typeface = getDefaultTypeface(context, fontPath);
                 if (setTypeface != null && typeface != null)
@@ -277,6 +245,70 @@ namespace Calligraphy
             }
 
             return textViewFont;
+        }
+
+        protected class ToolbarLayoutListener : Object, ViewTreeObserver.IOnGlobalLayoutListener
+        {
+
+            static string BLANK = " ";
+
+            private WeakReference<CalligraphyFactory> mCalligraphyFactory;
+            private WeakReference<Context> mContextRef;
+            private WeakReference<Toolbar> mToolbarReference;
+            private string originalSubTitle;
+
+            public ToolbarLayoutListener(CalligraphyFactory calligraphyFactory,
+                                       Context context, Toolbar toolbar)
+            {
+                mCalligraphyFactory = new WeakReference<CalligraphyFactory>(calligraphyFactory);
+                mContextRef = new WeakReference<Context>(context);
+                mToolbarReference = new WeakReference<Toolbar>(toolbar);
+                originalSubTitle = toolbar.Subtitle;
+                toolbar.Subtitle = BLANK;
+            }
+
+            //   @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
+            public void OnGlobalLayout()
+            {
+                Toolbar toolbar;
+                mToolbarReference.TryGetTarget(out toolbar);
+                Context context;
+                mContextRef.TryGetTarget(out context);
+
+                CalligraphyFactory factory;
+                mCalligraphyFactory.TryGetTarget(out factory);
+                if (toolbar == null) return;
+                if (factory == null || context == null)
+                {
+                    removeSelf(toolbar);
+                    return;
+                }
+
+                int childCount = toolbar.ChildCount;
+                if (childCount != 0)
+                {
+                    // Process children, defer draw as it has set the typeface.
+                    for (int i = 0; i < childCount; i++)
+                    {
+                        factory.OnViewCreated(toolbar.GetChildAt(i), context, null);
+                    }
+                }
+                removeSelf(toolbar);
+                toolbar.Subtitle = originalSubTitle;
+            }
+
+            private void removeSelf(Toolbar toolbar)
+            {// Our dark deed is done
+                if (Build.VERSION.SdkInt < Build.VERSION_CODES.JellyBean)
+                {
+                    //noinspection deprecation
+                    toolbar.ViewTreeObserver.RemoveGlobalOnLayoutListener(this);
+                }
+                else {
+                    toolbar.ViewTreeObserver.RemoveOnGlobalLayoutListener(this);
+                }
+            }
+
         }
     }
 }

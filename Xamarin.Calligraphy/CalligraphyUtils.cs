@@ -165,7 +165,7 @@ namespace Calligraphy
         /// <returns>null if attribute is not defined or added to View</returns>
         internal static string PullFontPathFromView(Context context, IAttributeSet attrs, int[] attributeId)
         {
-            if (attributeId == -1 || attrs == null)
+            if (attributeId == null || attrs == null)
             {
                 return null;
             }
@@ -173,7 +173,7 @@ namespace Calligraphy
             string attributeName;
             try
             {
-                attributeName = context.Resources.GetResourceEntryName(attributeId);
+                attributeName = context.Resources.GetResourceEntryName(attributeId[0]);
             }
             catch (Resources.NotFoundException e)
             {
@@ -197,12 +197,12 @@ namespace Calligraphy
         /// <returns>null if attribute is not defined or found in the Style</returns>
         internal static string PullFontPathFromStyle(Context context, IAttributeSet attrs, int[] attributeId)
         {
-            if (attributeId == -1 || attrs == null)
+            if (attributeId == null || attrs == null)
             {
                 return null;
             }
 
-            var typedArray = context.ObtainStyledAttributes(attrs, new int[] { attributeId });
+            var typedArray = context.ObtainStyledAttributes(attrs, new int[] { attributeId[0] });
             if (typedArray == null)
             {
                 return null;
@@ -238,7 +238,7 @@ namespace Calligraphy
         /// <returns>returns null if attribute is not defined or if no TextAppearance is found.</returns>
         internal static string PullFontPathFromTextAppearance(Context context, IAttributeSet attrs, int[] attributeId)
         {
-            if (attributeId == -1 || attrs == null)
+            if (attributeId == null || attrs == null)
             {
                 return null;
             }
@@ -263,7 +263,7 @@ namespace Calligraphy
                 }
             }
 
-            var textAppearanceAttrs = context.ObtainStyledAttributes(textAppearanceId, new int[] { attributeId });
+            var textAppearanceAttrs = context.ObtainStyledAttributes(textAppearanceId, new int[] { attributeId [0]});
             if (textAppearanceAttrs != null)
             {
                 try
@@ -293,7 +293,7 @@ namespace Calligraphy
         /// <returns>null if no theme or attribute defined.</returns>
         internal static string PullFontPathFromTheme(Context context, int styleAttrId, int[] attributeId)
         {
-            if (styleAttrId == -1 || attributeId == -1)
+            if (styleAttrId == -1 || attributeId == null)
             {
                 return null;
             }
@@ -302,7 +302,7 @@ namespace Calligraphy
             var value = new TypedValue();
 
             theme.ResolveAttribute(styleAttrId, value, true);
-            var typedArray = theme.ObtainStyledAttributes(value.ResourceId, new int[] { attributeId });
+            var typedArray = theme.ObtainStyledAttributes(value.ResourceId, new int[] { attributeId[0] });
             try
             {
                 var font = typedArray.GetString(0);
@@ -330,7 +330,7 @@ namespace Calligraphy
         /// <returns>null if no theme or attribute defined.</returns>
         internal static string PullFontPathFromTheme(Context context, int styleAttrId, int subStyleAttrId, int[] attributeId)
         {
-            if (styleAttrId == -1 || attributeId == -1)
+            if (styleAttrId == -1 || attributeId == null)
                 return null;
 
             var theme = context.Theme;
@@ -359,7 +359,7 @@ namespace Calligraphy
                 return null;
             }
 
-            var subTypedArray = context.ObtainStyledAttributes(subStyleResId, new int[] { attributeId });
+            var subTypedArray = context.ObtainStyledAttributes(subStyleResId, new int[] { attributeId[0] });
             if (subTypedArray != null)
             {
                 try

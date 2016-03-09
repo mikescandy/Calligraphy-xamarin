@@ -17,11 +17,11 @@ using Java.Lang.Reflect;
 
 namespace Calligraphy
 {
-    internal static class ReflectionUtils
+    public static class ReflectionUtils
     {
         private static string TAG = typeof (ReflectionUtils).FullName;
 
-        internal static FieldInfo getFieldInfo(Type clazz, string FieldInfoName)
+        public static FieldInfo getFieldInfo(Type clazz, string FieldInfoName)
         {
             try
             {
@@ -35,7 +35,7 @@ namespace Calligraphy
             return null;
         }
 
-        internal static object getValue(FieldInfo FieldInfo, object obj)
+        public static object getValue(FieldInfo FieldInfo, object obj)
         {
             try
             {
@@ -47,7 +47,7 @@ namespace Calligraphy
             return null;
         }
 
-        internal static void setValue(FieldInfo FieldInfo, object obj, object value)
+        public static void setValue(FieldInfo FieldInfo, object obj, object value)
         {
             try
             {
@@ -58,7 +58,7 @@ namespace Calligraphy
             }
         }
 
-        internal static MethodInfo getMethod(Type clazz, string methodName)
+        public static MethodInfo getMethod(Type clazz, string methodName)
         {
             var methods = clazz.GetMethods(BindingFlags.Public|BindingFlags.NonPublic);
             foreach (var methodInfo in methods)
@@ -72,7 +72,7 @@ namespace Calligraphy
             return null;
         }
 
-        internal static void invokeMethod(object obj, MethodInfo methodInfo, object[] args)
+        public static void invokeMethod(object obj, MethodInfo methodInfo, object[] args)
         {
             try
             {

@@ -19,14 +19,14 @@ namespace Calligraphy
         private bool mSetPrivateFactory = false;
         private System.Reflection.FieldInfo mConstructorArgs = null;
 
-        protected CalligraphyLayoutInflater(Context context, int attributeId) : base(context)
+        public CalligraphyLayoutInflater(Context context, int attributeId) : base(context)
         {
             mAttributeId = attributeId;
             mCalligraphyFactory = new CalligraphyFactory(attributeId);
             setUpLayoutFactories(false);
         }
 
-        protected CalligraphyLayoutInflater(LayoutInflater original, Context newContext, int attributeId, bool cloned) : base(original, newContext)
+        public CalligraphyLayoutInflater(LayoutInflater original, Context newContext, int attributeId, bool cloned) : base(original, newContext)
         {
 
             mAttributeId = attributeId;
@@ -85,9 +85,9 @@ namespace Calligraphy
             }
         }
 
-        @Override
-        @TargetApi(Build.VERSION_CODES.HONEYCOMB)
-    public void setFactory2(Factory2 factory2)
+
+        //@TargetApi(Build.VERSION_CODES.HONEYCOMB)
+        public void setFactory2(Factory2 factory2)
         {
             // Only set our factory and wrap calls to the Factory2 trying to be set!
             if (!(factory2 instanceof WrapperFactory2)) {
@@ -118,8 +118,8 @@ namespace Calligraphy
                     setPrivateFactoryMethod,
                     new PrivateWrapperFactory2((Factory2) getContext(), this, mCalligraphyFactory));
         }
-    mSetPrivateFactory = true;
-    }
+        mSetPrivateFactory = true;
+        }
 
 // ===
 // LayoutInflater ViewCreators
