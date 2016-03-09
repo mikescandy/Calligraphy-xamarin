@@ -30,7 +30,7 @@ namespace CalligraphySampleApp
         /// <inheritdoc />
         protected override void AttachBaseContext(Context context)
         {
-            base.AttachBaseContext(new CalligraphyContextWrapper(context));
+            base.AttachBaseContext(CalligraphyContextWrapper.Wrap(context));
         }
     }
 }

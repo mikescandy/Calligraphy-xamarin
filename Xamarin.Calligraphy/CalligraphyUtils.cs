@@ -7,7 +7,6 @@ using Android.Util;
 using Android.Widget;
 
 using Java.Lang;
-using Exception = Java.Lang.Exception;
 using Object = Java.Lang.Object;
 using String = Java.Lang.String;
 
@@ -217,7 +216,7 @@ namespace Calligraphy
                     return fontFromAttribute;
                 }
             }
-            catch (Exception ignore)
+            catch (System.Exception ignore)
             {
                 // Failed for some reason.
                 Log.Error("Calligraphy", ignore.Message);
@@ -251,7 +250,7 @@ namespace Calligraphy
                 {
                     textAppearanceId = typedArrayAttr.GetResourceId(0, -1);
                 }
-                catch (Exception ignored)
+                catch (System.Exception ignored)
                 {
                     // Failed for some reason
                     Log.Error("Calligraphy", ignored.Message);
@@ -270,7 +269,7 @@ namespace Calligraphy
                 {
                     return textAppearanceAttrs.GetString(0);
                 }
-                catch (Exception ignore)
+                catch (System.Exception ignore)
                 {
                     // Failed for some reason.
                     Log.Error("Calligraphy", ignore.Message);
@@ -308,7 +307,7 @@ namespace Calligraphy
                 var font = typedArray.GetString(0);
                 return font;
             }
-            catch (Exception ignore)
+            catch (System.Exception ignore)
             {
                 // Failed for some reason.
                 Log.Error("Calligraphy", ignore.Message);
@@ -343,7 +342,7 @@ namespace Calligraphy
             {
                 subStyleResId = parentTypedArray.GetResourceId(0, -1);
             }
-            catch (Exception ignore)
+            catch (System.Exception ignore)
             {
                 // Failed for some reason.
                 Log.Error("Calligraphy", ignore.Message);
@@ -366,7 +365,7 @@ namespace Calligraphy
                 {
                     return subTypedArray.GetString(0);
                 }
-                catch (Exception ignore)
+                catch (System.Exception ignore)
                 {
                     // Failed for some reason.
                     Log.Error("Calligraphy", ignore.Message);
@@ -399,7 +398,7 @@ namespace Calligraphy
                     
                     ToolbarCheck = true;
                 }
-                catch (ClassNotFoundException e)
+                catch (System.Exception e)
                 {
                     ToolbarCheck = false;
                 }
@@ -413,11 +412,11 @@ namespace Calligraphy
             {
                 try
                 {
-                    var x = Activator.CreateInstance(null, "android.support.v7.widget.AppCompatTextView");
+                    var x = Activator.CreateInstance("Xamarin.Android.Support.v7.AppCompat", "Android.Support.V7.Widget.AppCompatTextView");
                    
                     sAppCompatViewCheck = true;
                 }
-                catch (ClassNotFoundException e)
+                catch (System.Exception e)
                 {
                     sAppCompatViewCheck = false;
                 }

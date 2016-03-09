@@ -114,7 +114,7 @@ namespace Calligraphy
             // Reflection (Or Old Device) skip.
             if (!CalligraphyConfig.Get().isReflection()) return;
             // Skip if not attached to an activity.
-            if (!(Context.GetType() == Factory2.GetType()))
+            if (!(Context.GetType() == typeof(IFactory2)))
             {
                 mSetPrivateFactory = true;
                 return;

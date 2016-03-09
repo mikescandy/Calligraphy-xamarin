@@ -1840,6 +1840,9 @@ namespace CalligraphySampleApp
 			// aapt resource value: 0x7f01008f
 			public const int textColorSearchUrl = 2130772111;
 			
+			// aapt resource value: 0x7f0100cf
+			public const int textFieldStyle = 2130772175;
+			
 			// aapt resource value: 0x7f0100cb
 			public const int theme = 2130772171;
 			
@@ -2391,6 +2394,12 @@ namespace CalligraphySampleApp
 			
 			// aapt resource value: 0x7f070004
 			public const int abc_text_size_title_material_toolbar = 2131165188;
+			
+			// aapt resource value: 0x7f07004b
+			public const int activity_horizontal_margin = 2131165259;
+			
+			// aapt resource value: 0x7f07004c
+			public const int activity_vertical_margin = 2131165260;
 			
 			// aapt resource value: 0x7f070043
 			public const int disabled_alpha_material_dark = 2131165251;
@@ -3117,12 +3126,6 @@ namespace CalligraphySampleApp
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f050015
-			public const int ApplicationName = 2131034133;
-			
-			// aapt resource value: 0x7f050014
-			public const int Hello = 2131034132;
-			
 			// aapt resource value: 0x7f050000
 			public const int abc_action_bar_home_description = 2131034112;
 			
@@ -3180,6 +3183,57 @@ namespace CalligraphySampleApp
 			// aapt resource value: 0x7f050012
 			public const int abc_toolbar_collapse_description = 2131034130;
 			
+			// aapt resource value: 0x7f050014
+			public const int app_name = 2131034132;
+			
+			// aapt resource value: 0x7f050023
+			public const int button_default = 2131034147;
+			
+			// aapt resource value: 0x7f050024
+			public const int button_defined = 2131034148;
+			
+			// aapt resource value: 0x7f050020
+			public const int checkbox_custom = 2131034144;
+			
+			// aapt resource value: 0x7f050022
+			public const int custom_view_style_text = 2131034146;
+			
+			// aapt resource value: 0x7f050016
+			public const int default_theme = 2131034134;
+			
+			// aapt resource value: 0x7f05001d
+			public const int defined_custom_view = 2131034141;
+			
+			// aapt resource value: 0x7f050017
+			public const int defined_fontpath_view = 2131034135;
+			
+			// aapt resource value: 0x7f050015
+			public const int defined_gtw = 2131034133;
+			
+			// aapt resource value: 0x7f05001b
+			public const int defined_in_appears = 2131034139;
+			
+			// aapt resource value: 0x7f05001c
+			public const int defined_in_appears_caps = 2131034140;
+			
+			// aapt resource value: 0x7f05001a
+			public const int defined_in_appears_style = 2131034138;
+			
+			// aapt resource value: 0x7f050019
+			public const int defined_in_style = 2131034137;
+			
+			// aapt resource value: 0x7f050018
+			public const int defined_incorrect = 2131034136;
+			
+			// aapt resource value: 0x7f05001e
+			public const int defined_view_stub = 2131034142;
+			
+			// aapt resource value: 0x7f05001f
+			public const int defined_view_stub_font_path = 2131034143;
+			
+			// aapt resource value: 0x7f050021
+			public const int edit_text_hint = 2131034145;
+			
 			// aapt resource value: 0x7f050013
 			public const int status_bar_notification_info_overflow = 2131034131;
 			
@@ -3207,6 +3261,30 @@ namespace CalligraphySampleApp
 			
 			// aapt resource value: 0x7f080080
 			public const int Animation_AppCompat_DropDownUp = 2131230848;
+			
+			// aapt resource value: 0x7f080133
+			public const int AppTheme = 2131231027;
+			
+			// aapt resource value: 0x7f080134
+			public const int AppTheme_ActionBar = 2131231028;
+			
+			// aapt resource value: 0x7f080135
+			public const int AppTheme_ActionBar_TextAppearance = 2131231029;
+			
+			// aapt resource value: 0x7f080136
+			public const int AppTheme_ActionBar_TextAppearance_SubTitle = 2131231030;
+			
+			// aapt resource value: 0x7f080137
+			public const int AppTheme_Widget = 2131231031;
+			
+			// aapt resource value: 0x7f080139
+			public const int AppTheme_Widget_TextView = 2131231033;
+			
+			// aapt resource value: 0x7f08013a
+			public const int AppTheme_Widget_TextView_Style = 2131231034;
+			
+			// aapt resource value: 0x7f08013b
+			public const int AppTheme_Widget_TextViewAppearanceStyle = 2131231035;
 			
 			// aapt resource value: 0x7f080081
 			public const int Base_AlertDialog_AppCompat = 2131230849;
@@ -3832,6 +3910,12 @@ namespace CalligraphySampleApp
 			// aapt resource value: 0x7f0800d8
 			public const int TextAppearance_AppCompat_Widget_TextView_SpinnerItem = 2131230936;
 			
+			// aapt resource value: 0x7f08013c
+			public const int TextAppearance_FontPath = 2131231036;
+			
+			// aapt resource value: 0x7f08013d
+			public const int TextAppearance_FontPathView = 2131231037;
+			
 			// aapt resource value: 0x7f08001c
 			public const int TextAppearance_StatusBar_EventContent = 2131230748;
 			
@@ -3855,6 +3939,12 @@ namespace CalligraphySampleApp
 			
 			// aapt resource value: 0x7f0800db
 			public const int TextAppearance_Widget_AppCompat_Toolbar_Title = 2131230939;
+			
+			// aapt resource value: 0x7f08013e
+			public const int TextField = 2131231038;
+			
+			// aapt resource value: 0x7f080138
+			public const int TextViewNoStyleParent = 2131231032;
 			
 			// aapt resource value: 0x7f0800dc
 			public const int Theme_AppCompat = 2131230940;
