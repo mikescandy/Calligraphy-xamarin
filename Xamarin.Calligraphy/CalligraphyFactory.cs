@@ -205,7 +205,7 @@ namespace Calligraphy
                 Typeface typeface = getDefaultTypeface(context, fontPath);
                 if (setTypeface != null && typeface != null)
                 {
-                    ReflectionUtils.invokeMethod(view, setTypeface, typeface);
+                    ReflectionUtils.invokeMethod(view, setTypeface, new object[] { typeface });
                 }
             }
 
