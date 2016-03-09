@@ -120,12 +120,12 @@ namespace Calligraphy
                 return;
             }
 
-            if (!config.isFontSet())
+            if (!config.IsFontSet)
             {
                 return;
             }
 
-            ApplyFontToTextView(context, textView, config.getFontPath(), deferred);
+            ApplyFontToTextView(context, textView, config.GetFontPath(), deferred);
         }
 
         /// <summary>

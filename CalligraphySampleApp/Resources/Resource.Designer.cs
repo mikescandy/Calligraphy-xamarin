@@ -2649,7 +2649,10 @@ namespace CalligraphySampleApp
 			public const int Icon = 2130837573;
 			
 			// aapt resource value: 0x7f020046
-			public const int notification_template_icon_bg = 2130837574;
+			public const int monoandroidsplash = 2130837574;
+			
+			// aapt resource value: 0x7f020047
+			public const int notification_template_icon_bg = 2130837575;
 			
 			static Drawable()
 			{
@@ -3705,6 +3708,9 @@ namespace CalligraphySampleApp
 			
 			// aapt resource value: 0x7f080073
 			public const int Base_Widget_AppCompat_Toolbar_Button_Navigation = 2131230835;
+			
+			// aapt resource value: 0x7f08013f
+			public const int Mono_Android_Theme_Splash = 2131231039;
 			
 			// aapt resource value: 0x7f080010
 			public const int Platform_AppCompat = 2131230736;

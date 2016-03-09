@@ -54,8 +54,8 @@ namespace Calligraphy
             if (styleIds[0] == -1)
             {
                 // Use TextAppearance as default style
-                styleIds[0] = CalligraphyConfig.Get().getClassStyles().ContainsKey(view.GetType())
-                        ? CalligraphyConfig.Get().getClassStyles()[view.GetType()]
+                styleIds[0] = CalligraphyConfig.Get().GetClassStyles().ContainsKey(view.GetType())
+                        ? CalligraphyConfig.Get().GetClassStyles()[view.GetType()]
                         : Android.Resource.Attribute.TextAppearance;
             }
             return styleIds;
@@ -198,7 +198,7 @@ namespace Calligraphy
                     ((IHasTypeFace)view).setTypeface(typeface);
                 }
             }
-            else if (CalligraphyConfig.Get().isCustomViewTypefaceSupport() && CalligraphyConfig.Get().isCustomViewHasTypeface(view))
+            else if (CalligraphyConfig.Get().IsCustomViewTypefaceSupport() && CalligraphyConfig.Get().IsCustomViewHasTypeface(view))
             {
                 var setTypeface = ReflectionUtils.getMethod(view.GetType(), "setTypeface");
                 string fontPath = resolveFontPath(context, attrs);
@@ -214,7 +214,7 @@ namespace Calligraphy
         {
             if (TextUtils.IsEmpty(fontPath))
             {
-                fontPath = CalligraphyConfig.Get().getFontPath();
+                fontPath = CalligraphyConfig.Get().GetFontPath();
             }
             if (!TextUtils.IsEmpty(fontPath))
             {

@@ -2,37 +2,39 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using Android.OS;
 using Android.Text;
 using Android.Views;
 using Android.Widget;
-using String = System.String;
 
 namespace Calligraphy
 {
     public class CalligraphyConfig
     {
-        private static readonly Dictionary<Type, int> DEFAULT_STYLES = new Dictionary<Type, int>();
+        private static CalligraphyConfig _instance;
+        private static readonly Dictionary<Type, int> DefaultStyles = new Dictionary<Type, int>();
 
-        static CalligraphyConfig() 
+        public bool IsFontSet { get; set; }
+        public bool IsReflection { get; set; }
+        public bool IsCustomViewCreation { get; set; }
+        public bool IsCustomViewTypefaceSupport { get; set; }
+        public string FontPath { get; set; }
+
+
+        static CalligraphyConfig()
         {
-            DEFAULT_STYLES.Add(typeof(TextView), Android.Resource.Attribute.TextViewStyle);
-            DEFAULT_STYLES.Add(typeof(Button), Android.Resource.Attribute.ButtonStyle);
-            DEFAULT_STYLES.Add(typeof(EditText), Android.Resource.Attribute.EditTextStyle);
-            DEFAULT_STYLES.Add(typeof(AutoCompleteTextView), Android.Resource.Attribute.AutoCompleteTextViewStyle);
-            DEFAULT_STYLES.Add(typeof(MultiAutoCompleteTextView), Android.Resource.Attribute.AutoCompleteTextViewStyle);
-            DEFAULT_STYLES.Add(typeof(CheckBox), Android.Resource.Attribute.CheckboxStyle);
-            DEFAULT_STYLES.Add(typeof(RadioButton), Android.Resource.Attribute.RadioButtonStyle);
-            DEFAULT_STYLES.Add(typeof(ToggleButton), Android.Resource.Attribute.ButtonStyleToggle);
+            DefaultStyles.Add(typeof(TextView), Android.Resource.Attribute.TextViewStyle);
+            DefaultStyles.Add(typeof(Button), Android.Resource.Attribute.ButtonStyle);
+            DefaultStyles.Add(typeof(EditText), Android.Resource.Attribute.EditTextStyle);
+            DefaultStyles.Add(typeof(AutoCompleteTextView), Android.Resource.Attribute.AutoCompleteTextViewStyle);
+            DefaultStyles.Add(typeof(MultiAutoCompleteTextView), Android.Resource.Attribute.AutoCompleteTextViewStyle);
+            DefaultStyles.Add(typeof(CheckBox), Android.Resource.Attribute.CheckboxStyle);
+            DefaultStyles.Add(typeof(RadioButton), Android.Resource.Attribute.RadioButtonStyle);
+            DefaultStyles.Add(typeof(ToggleButton), Android.Resource.Attribute.ButtonStyleToggle);
             if (CalligraphyUtils.CanAddV7AppCompatViews())
             {
                 AddAppCompatViews();
             }
         }
-
-
-
-
 
         /**
          * AppCompat will inflate special versions of views for Material tinting etc,
@@ -40,17 +42,16 @@ namespace Calligraphy
          */
         private static void AddAppCompatViews()
         {
-            DEFAULT_STYLES.Add(typeof(Android.Support.V7.Widget.AppCompatTextView), Android.Resource.Attribute.TextViewStyle);
-            DEFAULT_STYLES.Add(typeof(Android.Support.V7.Widget.AppCompatButton), Android.Resource.Attribute.ButtonStyle);
-            DEFAULT_STYLES.Add(typeof(Android.Support.V7.Widget.AppCompatEditText), Android.Resource.Attribute.EditTextStyle);
-            DEFAULT_STYLES.Add(typeof(Android.Support.V7.Widget.AppCompatAutoCompleteTextView), Android.Resource.Attribute.AutoCompleteTextViewStyle);
-            DEFAULT_STYLES.Add(typeof(Android.Support.V7.Widget.AppCompatMultiAutoCompleteTextView), Android.Resource.Attribute.AutoCompleteTextViewStyle);
-            DEFAULT_STYLES.Add(typeof(Android.Support.V7.Widget.AppCompatCheckBox), Android.Resource.Attribute.CheckboxStyle);
-            DEFAULT_STYLES.Add(typeof(Android.Support.V7.Widget.AppCompatRadioButton), Android.Resource.Attribute.RadioButtonStyle);
-            DEFAULT_STYLES.Add(typeof(Android.Support.V7.Widget.AppCompatCheckedTextView), Android.Resource.Attribute.CheckedTextViewStyle);
+            DefaultStyles.Add(typeof(Android.Support.V7.Widget.AppCompatTextView), Android.Resource.Attribute.TextViewStyle);
+            DefaultStyles.Add(typeof(Android.Support.V7.Widget.AppCompatButton), Android.Resource.Attribute.ButtonStyle);
+            DefaultStyles.Add(typeof(Android.Support.V7.Widget.AppCompatEditText), Android.Resource.Attribute.EditTextStyle);
+            DefaultStyles.Add(typeof(Android.Support.V7.Widget.AppCompatAutoCompleteTextView), Android.Resource.Attribute.AutoCompleteTextViewStyle);
+            DefaultStyles.Add(typeof(Android.Support.V7.Widget.AppCompatMultiAutoCompleteTextView), Android.Resource.Attribute.AutoCompleteTextViewStyle);
+            DefaultStyles.Add(typeof(Android.Support.V7.Widget.AppCompatCheckBox), Android.Resource.Attribute.CheckboxStyle);
+            DefaultStyles.Add(typeof(Android.Support.V7.Widget.AppCompatRadioButton), Android.Resource.Attribute.RadioButtonStyle);
+            DefaultStyles.Add(typeof(Android.Support.V7.Widget.AppCompatCheckedTextView), Android.Resource.Attribute.CheckedTextViewStyle);
         }
 
-        private static CalligraphyConfig sInstance;
 
         /**
          * Set the default Calligraphy Config
@@ -60,7 +61,7 @@ namespace Calligraphy
          */
         public static void InitDefault(CalligraphyConfig calligraphyConfig)
         {
-            sInstance = calligraphyConfig;
+            _instance = calligraphyConfig;
         }
 
         /**
@@ -69,151 +70,91 @@ namespace Calligraphy
          */
         public static CalligraphyConfig Get()
         {
-            if (sInstance == null)
-                sInstance = new CalligraphyConfig(new Builder());
-            return sInstance;
+            return _instance ?? (_instance = new CalligraphyConfig(new Builder()));
         }
 
-        /**
-         * Is a default font set?
-         */
-        private bool mIsFontSet;
-        /**
-         * The default Font Path if nothing else is setup.
-         */
-        private string mFontPath;
-        /**
-         * Default Font Path Attr Id to lookup
-         */
-        private int mAttrId;
-        /**
-         * Use Reflection to inject the private factory.
-         */
-        private bool mReflection;
-        /**
-         * Use Reflection to intercept CustomView inflation with the correct Context.
-         */
-        private bool mCustomViewCreation;
-        /**
-         * Use Reflection to try to set typeface for custom views if they has setTypeface method
-         */
-        private bool mCustomViewTypefaceSupport;
-        /**
-         * Class Styles. Build from DEFAULT_STYLES and the builder.
-         */
-        private ReadOnlyDictionary<Type, int> mClassStyleAttributeMap;
         /**
          * Collection of custom non-{@code TextView}'s registered for applying typeface during inflation
          * @see uk.co.chrisjenx.calligraphy.CalligraphyConfig.Builder#addCustomViewWithSetTypeface(Class)
          */
-        private HashSet<Type> hasTypefaceViews;
+        private readonly HashSet<Type> _typefaceViews;
 
         public CalligraphyConfig(Builder builder)
         {
-            mIsFontSet = builder.isFontSet;
-            mFontPath = builder.fontAssetPath;
-            mAttrId = builder.attrId;
-            mReflection = builder.reflection;
-            mCustomViewCreation = builder.customViewCreation;
-            mCustomViewTypefaceSupport = builder.customViewTypefaceSupport;
-           var tempMap = new Dictionary<Type, int>(DEFAULT_STYLES);
-            foreach (var i in builder.mStyleClassMap)
+            IsFontSet = builder.IsFontSet;
+            FontPath = builder.FontAssetPath;
+            AttrId = builder.AttrId;
+            IsReflection = builder.Reflection;
+            IsCustomViewCreation = builder.CustomViewCreation;
+            IsCustomViewTypefaceSupport = builder.CustomViewTypefaceSupport;
+            var tempMap = new Dictionary<Type, int>(DefaultStyles);
+            foreach (var i in builder.MStyleClassMap)
             {
-                tempMap.Add(i.Key,i.Value);
+                tempMap.Add(i.Key, i.Value);
             }
-            mClassStyleAttributeMap = new ReadOnlyDictionary<Type, int>(tempMap);
-            hasTypefaceViews = new HashSet<Type>(builder.mHasTypefaceClasses.ToList());
+            ClassStyleAttributeMap = new ReadOnlyDictionary<Type, int>(tempMap);
+            _typefaceViews = new HashSet<Type>(builder.MHasTypefaceClasses.ToList());
         }
 
         /**
          * @return mFontPath for text views might be null
          */
-        public string getFontPath()
-        {
-            return mFontPath;
-        }
 
         /**
          * @return true if set, false if null|empty
          */
-        public bool isFontSet()
-        {
-            return mIsFontSet;
-        }
 
-        public bool isReflection()
-        {
-            return mReflection;
-        }
 
-        public bool isCustomViewCreation()
+        public bool IsCustomViewHasTypeface(View view)
         {
-            return mCustomViewCreation;
-        }
-
-        public bool isCustomViewTypefaceSupport()
-        {
-            return mCustomViewTypefaceSupport;
-        }
-
-        public bool isCustomViewHasTypeface(View view)
-        {
-            return hasTypefaceViews.Contains(typeof(View));
+            return _typefaceViews.Contains(typeof(View));
         }
 
         /* default */
-        public ReadOnlyDictionary<Type, int> getClassStyles()
-        {
-            return mClassStyleAttributeMap;
-        }
+        public ReadOnlyDictionary<Type, int> ClassStyleAttributeMap { get; set; }
 
         /**
          * @return the custom attrId to look for, -1 if not set.
          */
-        public int AttrId
-        {
-            get
-            {
-                return mAttrId;
-            }
-        }
+        public int AttrId { get; set; }
+
 
         public class Builder
         {
             /**
              * Default AttrID if not set.
              */
-            public static int INVALID_ATTR_ID = -1;
+            public static int InvalidAttrId = -1;
             /**
              * Use Reflection to inject the private factory. Doesn't exist pre HC. so defaults to false.
              */
-            internal bool reflection = Build.VERSION.SdkInt >= Build.VERSION_CODES.Honeycomb;
+            internal bool Reflection = Android.OS.Build.VERSION.SdkInt >= Android.OS.BuildVersionCodes.Honeycomb;
             /**
              * Use Reflection to intercept CustomView inflation with the correct Context.
              */
-            internal bool customViewCreation = true;
+            internal bool CustomViewCreation = true;
             /**
              * Use Reflection during view creation to try change typeface via setTypeface method if it exists
              */
-            internal bool customViewTypefaceSupport = false;
+            internal bool CustomViewTypefaceSupport = false;
             /**
              * The fontAttrId to look up the font path from.
              */
-            internal int attrId = Resource.Attribute.fontPath;
+            internal int AttrId = Resource.Attribute.fontPath;
             /**
              * Has the user set the default font path.
              */
-            internal bool isFontSet = false;
+            internal bool IsFontSet = false;
             /**
              * The default fontPath
              */
-            internal string fontAssetPath = null;
+            internal string FontAssetPath = null;
             /**
              * Additional Class Styles. Can be empty.
              */
-            internal Dictionary <Type, int> mStyleClassMap = new Dictionary<Type, int>();
+            internal Dictionary<Type, int> MStyleClassMap = new Dictionary<Type, int>();
 
-            internal HashSet<Type> mHasTypefaceClasses = new HashSet<Type>();
+            internal HashSet<Type> MHasTypefaceClasses = new HashSet<Type>();
 
             /**
              * This defaults to R.attr.fontPath. So only override if you want to use your own attrId.
@@ -221,9 +162,9 @@ namespace Calligraphy
              * @param fontAssetAttrId the custom attribute to look for fonts in assets.
              * @return this builder.
              */
-            public Builder setFontAttrId(int fontAssetAttrId)
+            public Builder SetFontAttrId(int fontAssetAttrId)
             {
-                this.attrId = fontAssetAttrId != INVALID_ATTR_ID ? fontAssetAttrId : INVALID_ATTR_ID;
+                AttrId = fontAssetAttrId != InvalidAttrId ? fontAssetAttrId : InvalidAttrId;
                 return this;
             }
 
@@ -234,10 +175,10 @@ namespace Calligraphy
              *                             passing null will default to the device font-family.
              * @return this builder.
              */
-            public Builder setDefaultFontPath(String defaultFontAssetPath)
+            public Builder SetDefaultFontPath(string defaultFontAssetPath)
             {
-                this.isFontSet = !TextUtils.IsEmpty(defaultFontAssetPath);
-                this.fontAssetPath = defaultFontAssetPath;
+                IsFontSet = !string.IsNullOrEmpty(defaultFontAssetPath);
+                FontAssetPath = defaultFontAssetPath;
                 return this;
             }
 
@@ -258,9 +199,9 @@ namespace Calligraphy
              * }
              * </code></pre>
              */
-            public Builder disablePrivateFactoryInjection()
+            public Builder DisablePrivateFactoryInjection()
             {
-                this.reflection = false;
+                Reflection = false;
                 return this;
             }
 
@@ -287,9 +228,9 @@ namespace Calligraphy
              * But if you want Calligraphy to inject the correct typeface then you will need to make sure your CustomView's
              * are created before reaching the LayoutInflater onViewCreated.
              */
-            public Builder disableCustomViewInflation()
+            public Builder DisableCustomViewInflation()
             {
-                this.customViewCreation = false;
+                CustomViewCreation = false;
                 return this;
             }
 
@@ -309,26 +250,26 @@ namespace Calligraphy
              * @param styleResourceAttribute e.g. {@code R.attr.textFieldStyle}, 0 is ignored.
              * @return this builder.
              */
-            public Builder addCustomStyle(Type styleClass, int styleResourceAttribute)
+            public Builder AddCustomStyle(Type styleClass, int styleResourceAttribute)
             {
                 if (styleClass == null || styleResourceAttribute == 0) return this;
-                mStyleClassMap.Add(styleClass, styleResourceAttribute);
+                MStyleClassMap.Add(styleClass, styleResourceAttribute);
                 return this;
             }
 
             /**
              * Register custom non-{@code TextView}'s which implement {@code setTypeface} so they can have the Typeface applied during inflation.
              */
-            public Builder addCustomViewWithSetTypeface(Type clazz)
+            public Builder AddCustomViewWithSetTypeface(Type clazz)
             {
-                customViewTypefaceSupport = true;
-                mHasTypefaceClasses.Add(clazz);
+                CustomViewTypefaceSupport = true;
+                MHasTypefaceClasses.Add(clazz);
                 return this;
             }
 
-            public CalligraphyConfig build()
+            public CalligraphyConfig Build()
             {
-                this.isFontSet = !TextUtils.IsEmpty(fontAssetPath);
+                IsFontSet = !TextUtils.IsEmpty(FontAssetPath);
                 return new CalligraphyConfig(this);
             }
         }
