@@ -7,13 +7,14 @@ using Android.Util;
 using Android.Widget;
 
 using Java.Lang;
-
+using Object = Java.Lang.Object;
+using String = Java.Lang.String;
 
 namespace Calligraphy
 {
     internal class CalligraphyUtils
     {
-        public static int[] AndroidAttrTextAppearance = { Android.Resource.Attribute.TextAppearance };
+        public static int[] ANDROID_ATTR_TEXT_APPEARANCE = new int[] { Android.Resource.Attribute.TextAppearance };
         /// <summary>
         /// Applies a custom typeface span to the text.
         /// </summary>
@@ -76,7 +77,7 @@ namespace Calligraphy
                 return true;
             }
 
-            textView.SetText(ApplyTypefaceSpan(textView.TextFormatted, typeface), TextView.BufferType.Spannable);
+            textView.SetText(ApplyTypefaceSpan(new String(textView.Text), typeface), TextView.BufferType.Spannable);
 
             textView.AddTextChangedListener(new TextWatcher(typeface));
             return true;
@@ -124,7 +125,7 @@ namespace Calligraphy
                 return;
             }
 
-            ApplyFontToTextView(context, textView, config.FontPath, deferred);
+            ApplyFontToTextView(context, textView, config.GetFontPath(), deferred);
         }
 
         /// <summary>
@@ -175,7 +176,6 @@ namespace Calligraphy
             }
             catch (Resources.NotFoundException e)
             {
-                Log.Debug("CalligraphyUtils - invalid attribute ID", e.Message);
                 // invalid attribute ID
                 return null;
             }
@@ -201,7 +201,7 @@ namespace Calligraphy
                 return null;
             }
 
-            var typedArray = context.ObtainStyledAttributes(attrs, new[] { attributeId[0] });
+            var typedArray = context.ObtainStyledAttributes(attrs, new int[] { attributeId[0] });
             if (typedArray == null)
             {
                 return null;
@@ -243,7 +243,7 @@ namespace Calligraphy
             }
 
             var textAppearanceId = -1;
-            var typedArrayAttr = context.ObtainStyledAttributes(attrs, AndroidAttrTextAppearance);
+            var typedArrayAttr = context.ObtainStyledAttributes(attrs, ANDROID_ATTR_TEXT_APPEARANCE);
             if (typedArrayAttr != null)
             {
                 try
@@ -262,7 +262,7 @@ namespace Calligraphy
                 }
             }
 
-            var textAppearanceAttrs = context.ObtainStyledAttributes(textAppearanceId, new[] { attributeId[0] });
+            var textAppearanceAttrs = context.ObtainStyledAttributes(textAppearanceId, new int[] { attributeId [0]});
             if (textAppearanceAttrs != null)
             {
                 try
@@ -301,7 +301,7 @@ namespace Calligraphy
             var value = new TypedValue();
 
             theme.ResolveAttribute(styleAttrId, value, true);
-            var typedArray = theme.ObtainStyledAttributes(value.ResourceId, new[] { attributeId[0] });
+            var typedArray = theme.ObtainStyledAttributes(value.ResourceId, new int[] { attributeId[0] });
             try
             {
                 var font = typedArray.GetString(0);
@@ -336,8 +336,8 @@ namespace Calligraphy
             var value = new TypedValue();
 
             theme.ResolveAttribute(styleAttrId, value, true);
-            int subStyleResId;
-            var parentTypedArray = theme.ObtainStyledAttributes(value.ResourceId, new[] { subStyleAttrId });
+            var subStyleResId = -1;
+            var parentTypedArray = theme.ObtainStyledAttributes(value.ResourceId, new int[] { subStyleAttrId });
             try
             {
                 subStyleResId = parentTypedArray.GetResourceId(0, -1);
@@ -358,7 +358,7 @@ namespace Calligraphy
                 return null;
             }
 
-            var subTypedArray = context.ObtainStyledAttributes(subStyleResId, new[] { attributeId[0] });
+            var subTypedArray = context.ObtainStyledAttributes(subStyleResId, new int[] { attributeId[0] });
             if (subTypedArray != null)
             {
                 try
@@ -379,8 +379,8 @@ namespace Calligraphy
             return null;
         }
 
-        private static bool? _toolbarCheck;
-        private static bool? _appCompatViewCheck;
+        private static bool? ToolbarCheck = null;
+        private static bool? sAppCompatViewCheck = null;
 
         /**
          * See if the user has added appcompat-v7, this is done at runtime, so we only check once.
@@ -389,40 +389,68 @@ namespace Calligraphy
          */
         public static bool CanCheckForV7Toolbar()
         {
-            if (_toolbarCheck != null) return _toolbarCheck.Value;
-            try
+            if (ToolbarCheck == null)
             {
-                // ReSharper disable once UnusedVariable
-                var x = Activator.CreateInstance(null, "android.support.v7.widget.Toolbar");
-                _toolbarCheck = true;
+                try
+                {
+                    var x = Activator.CreateInstance(null, "android.support.v7.widget.Toolbar");
+
+                    
+                    ToolbarCheck = true;
+                }
+                catch (System.Exception e)
+                {
+                    ToolbarCheck = false;
+                }
             }
-            catch (System.Exception e)
-            {
-                Log.Debug("CalligraphyUtils", e.Message);
-                _toolbarCheck = false;
-            }
-            return _toolbarCheck.Value;
+            return ToolbarCheck.Value;
         }
 
         public static bool CanAddV7AppCompatViews()
         {
-            if (_appCompatViewCheck != null) return _appCompatViewCheck.Value;
-            try
+            if (sAppCompatViewCheck == null)
             {
-                // ReSharper disable once UnusedVariable
-                var x = Activator.CreateInstance("Xamarin.Android.Support.v7.AppCompat", "Android.Support.V7.Widget.AppCompatTextView");
-                _appCompatViewCheck = true;
+                try
+                {
+                    var x = Activator.CreateInstance("Xamarin.Android.Support.v7.AppCompat", "Android.Support.V7.Widget.AppCompatTextView");
+                   
+                    sAppCompatViewCheck = true;
+                }
+                catch (System.Exception e)
+                {
+                    sAppCompatViewCheck = false;
+                }
             }
-            catch (System.Exception e)
-            {
-                Log.Debug("CalligraphyUtils", e.Message);
-                _appCompatViewCheck = false;
-            }
-            return _appCompatViewCheck.Value;
+            return sAppCompatViewCheck.Value;
         }
 
         private CalligraphyUtils()
         {
+        }
+
+        private class TextWatcher : Object, ITextWatcher
+        {
+            private readonly Typeface typeface;
+
+            internal TextWatcher(Typeface typeface)
+            {
+                this.typeface = typeface;
+            }
+
+            public void AfterTextChanged(IEditable s)
+            {
+                ApplyTypefaceSpan(s, typeface);
+            }
+
+            public void BeforeTextChanged(ICharSequence s, int start, int count, int after)
+            {
+
+            }
+
+            public void OnTextChanged(ICharSequence s, int start, int before, int count)
+            {
+
+            }
         }
     }
 }

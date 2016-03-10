@@ -1,7 +1,16 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using System.Text;
+
+using Android.App;
+using Android.Content;
+using Android.OS;
+using Android.Runtime;
 using Android.Util;
+using Android.Views;
+using Android.Widget;
 using Java.Lang;
 using Java.Lang.Reflect;
  
@@ -10,55 +19,60 @@ namespace Calligraphy
 {
     public static class ReflectionUtils
     {
-        private static readonly string Tag = typeof (ReflectionUtils).FullName;
+        private static string TAG = typeof (ReflectionUtils).FullName;
 
-        public static FieldInfo GetFieldInfo(Type clazz, string fieldInfoName)
+        public static FieldInfo getFieldInfo(Type clazz, string FieldInfoName)
         {
             try
             {
-                 var f = clazz.GetField(fieldInfoName, BindingFlags.NonPublic|BindingFlags.Public);
+                 var f = clazz.GetField(FieldInfoName, BindingFlags.NonPublic|BindingFlags.Public);
                 
                 return f;
             }
             catch (FieldAccessException ignored)
             {
-                Log.Debug("ReflectionUtils - Ignoring field not found", ignored.Message);
             }
             return null;
         }
 
-        public static object GetValue(FieldInfo fieldInfo, object obj)
+        public static object getValue(FieldInfo FieldInfo, object obj)
         {
             try
             {
-                return fieldInfo.GetValue(obj);
+                return FieldInfo.GetValue(obj);
             }
             catch (IllegalAccessException ignored)
             {
-                Log.Debug("ReflectionUtils - Ignoring field not found", ignored.Message);
             }
             return null;
         }
 
-        public static void SetValue(FieldInfo fieldInfo, object obj, object value)
+        public static void setValue(FieldInfo FieldInfo, object obj, object value)
         {
             try
             {
-                fieldInfo.SetValue(obj, value);
+                FieldInfo.SetValue(obj, value);
             }
             catch (IllegalAccessException ignored)
             {
-                Log.Debug("ReflectionUtils - Ignoring field not found", ignored.Message);
             }
         }
 
-        public static MethodInfo GetMethod(Type clazz, string methodName)
+        public static MethodInfo getMethod(Type clazz, string methodName)
         {
             var methods = clazz.GetMethods(BindingFlags.Public|BindingFlags.NonPublic);
-            return methods.FirstOrDefault(methodInfo => methodInfo.Name.Equals(methodName));
+            foreach (var methodInfo in methods)
+            {
+                if (methodInfo.Name.Equals(methodName))
+                {
+                    return methodInfo;
+                }
+            }
+            
+            return null;
         }
 
-        public static void InvokeMethod(object obj, MethodInfo methodInfo, object[] args)
+        public static void invokeMethod(object obj, MethodInfo methodInfo, object[] args)
         {
             try
             {
@@ -68,11 +82,11 @@ namespace Calligraphy
             }
             catch (IllegalAccessException  e)
             {
-                Log.Debug(Tag, "Can't invoke method using reflection", e);
+                Log.Debug(TAG, "Can't invoke method using reflection", e);
 
             }
             catch (InvocationTargetException e) {
-                Log.Debug(Tag, "Can't invoke method using reflection", e);
+                Log.Debug(TAG, "Can't invoke method using reflection", e);
             }
             }
         }
