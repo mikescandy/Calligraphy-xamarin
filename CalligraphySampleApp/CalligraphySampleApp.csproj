@@ -96,6 +96,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <AndroidAsset Include="Assets\fonts\Roboto-Bold.ttf" />
+    <AndroidAsset Include="Assets\fonts\RobotoCondensed-Regular.ttf" />
+    <AndroidAsset Include="Assets\fonts\Roboto-ThinItalic.ttf" />
+    <AndroidAsset Include="Assets\fonts\Oswald-Stencbab.ttf" />
     <None Include="packages.config" />
     <AndroidResource Include="Resources\layout\Main.axml" />
   </ItemGroup>

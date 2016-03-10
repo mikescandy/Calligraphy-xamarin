@@ -76,7 +76,7 @@ namespace CalligraphySampleApp
      * Used by Calligraphy to change view's typeface
      */
     //@SuppressWarnings("unused")
-    public void setTypeface(Typeface tf)
+    public void SetTypeface(Typeface tf)
     {
         paint.SetTypeface(tf);
         Invalidate();
