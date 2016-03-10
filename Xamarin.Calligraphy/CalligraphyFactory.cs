@@ -1,31 +1,23 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
 
 using Android.Content;
 using Android.Graphics;
-using Android.OS;
 using Android.Runtime;
 using Android.Text;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
-using Java.Lang;
+
 using Exception = System.Exception;
-using Object = Java.Lang.Object;
-using String = System.String;
 
 namespace Calligraphy
 {
-    class CalligraphyFactory : Java.Lang.Object
+    public class CalligraphyFactory : Java.Lang.Object
     {
-        private readonly LayoutInflater.IFactory factory;
-        private static string ACTION_BAR_TITLE = "action_bar_title";
-        private static string ACTION_BAR_SUBTITLE = "action_bar_subtitle";
-        private int[] mAttributeId;
-
-
-
+        private readonly LayoutInflater.IFactory _factory;
+        private static readonly string ActionBarTitle = "action_bar_title";
+        private static readonly string ActionBarSubtitle = "action_bar_subtitle";
+        private readonly int[] _attributeId;
 
         public CalligraphyFactory(IntPtr javaReference, JniHandleOwnership transfer)
             : base(javaReference, transfer)
@@ -54,8 +46,8 @@ namespace Calligraphy
             if (styleIds[0] == -1)
             {
                 // Use TextAppearance as default style
-                styleIds[0] = CalligraphyConfig.Get().GetClassStyles().ContainsKey(view.GetType())
-                        ? CalligraphyConfig.Get().GetClassStyles()[view.GetType()]
+                styleIds[0] = CalligraphyConfig.Get().ClassStyleAttributeMap.ContainsKey(view.GetType())
+                        ? CalligraphyConfig.Get().ClassStyleAttributeMap[view.GetType()]
                         : Android.Resource.Attribute.TextAppearance;
             }
             return styleIds;
@@ -68,13 +60,10 @@ namespace Calligraphy
         /// <returns>true if it is.</returns>
         protected static bool IsActionBarTitle(TextView view)
         {
-            if (MatchesResourceIdName(view, ACTION_BAR_TITLE)) return true;
-            if (parentIsToolbarV7(view))
-            {
-                Android.Support.V7.Widget.Toolbar parent = (Android.Support.V7.Widget.Toolbar)view.Parent;
-                return TextUtils.Equals(parent.Title, view.Text);
-            }
-            return false;
+            if (MatchesResourceIdName(view, ActionBarTitle)) return true;
+            if (!ParentIsToolbarV7(view)) return false;
+            var parent = (Android.Support.V7.Widget.Toolbar)view.Parent;
+            return TextUtils.Equals(parent.Title, view.Text);
         }
 
         /// <summary>
@@ -84,16 +73,13 @@ namespace Calligraphy
         /// <returns>true if it is.</returns>
         protected static bool IsActionBarSubTitle(TextView view)
         {
-            if (MatchesResourceIdName(view, ACTION_BAR_SUBTITLE)) return true;
-            if (parentIsToolbarV7(view))
-            {
-                Android.Support.V7.Widget.Toolbar parent = (Android.Support.V7.Widget.Toolbar)view.Parent;
-                return TextUtils.Equals(parent.Subtitle, view.Text);
-            }
-            return false;
+            if (MatchesResourceIdName(view, ActionBarSubtitle)) return true;
+            if (!ParentIsToolbarV7(view)) return false;
+            var parent = (Android.Support.V7.Widget.Toolbar)view.Parent;
+            return TextUtils.Equals(parent.Subtitle, view.Text);
         }
 
-        protected static bool parentIsToolbarV7(View view)
+        protected static bool ParentIsToolbarV7(View view)
         {
             return CalligraphyUtils.CanCheckForV7Toolbar() && view.Parent != null && (view.Parent is Android.Support.V7.Widget.Toolbar);
         }
@@ -113,7 +99,7 @@ namespace Calligraphy
 
         public CalligraphyFactory(int attributeId)
         {
-            this.mAttributeId = new int[] { attributeId };
+            _attributeId = new[] { attributeId };
         }
 
         protected View CreateViewOrFailQuietly(string name, string prefix, Context context, IAttributeSet attrs)
@@ -140,15 +126,13 @@ namespace Calligraphy
 
         public View OnViewCreated(View view, Context context, IAttributeSet attrs)
         {
-            if (view != null && (bool)view.GetTag(Resource.Id.calligraphy_tag_id) != true)
-            {
-                onViewCreatedInternal(view, context, attrs);
-                view.SetTag(Resource.Id.calligraphy_tag_id, true);
-            }
+            if (view == null || (bool)view.GetTag(Resource.Id.calligraphy_tag_id)) return view;
+            OnViewCreatedInternal(view, context, attrs);
+            view.SetTag(Resource.Id.calligraphy_tag_id, true);
             return view;
         }
 
-        void onViewCreatedInternal(View view, Context context, IAttributeSet attrs)
+        private void OnViewCreatedInternal(View view, Context context, IAttributeSet attrs)
         {
             if (view.GetType() == typeof(TextView))
             {
@@ -163,20 +147,20 @@ namespace Calligraphy
                 // Since we're not using namespace it's a little bit tricky
 
                 // Check xml attrs, style attrs and text appearance for font path
-                String textViewFont = resolveFontPath(context, attrs);
+                var textViewFont = ResolveFontPath(context, attrs);
 
                 // Try theme attributes
                 if (TextUtils.IsEmpty(textViewFont))
                 {
-                    int[] styleForTextView = GetStyleForTextView((TextView)view);
+                    var styleForTextView = GetStyleForTextView((TextView)view);
                     if (styleForTextView[1] != -1)
-                        textViewFont = CalligraphyUtils.PullFontPathFromTheme(context, styleForTextView[0], styleForTextView[1], mAttributeId);
+                        textViewFont = CalligraphyUtils.PullFontPathFromTheme(context, styleForTextView[0], styleForTextView[1], _attributeId);
                     else
-                        textViewFont = CalligraphyUtils.PullFontPathFromTheme(context, styleForTextView[0], mAttributeId);
+                        textViewFont = CalligraphyUtils.PullFontPathFromTheme(context, styleForTextView[0], _attributeId);
                 }
 
                 // Still need to defer the Native action bar, appcompat-v7:21+ uses the Toolbar underneath. But won't match these anyway.
-                bool deferred = MatchesResourceIdName(view, ACTION_BAR_TITLE) || MatchesResourceIdName(view, ACTION_BAR_SUBTITLE);
+                var deferred = MatchesResourceIdName(view, ActionBarTitle) || MatchesResourceIdName(view, ActionBarSubtitle);
 
                 CalligraphyUtils.ApplyFontToTextView(context, (TextView)view, CalligraphyConfig.Get(), textViewFont, deferred);
             }
@@ -185,38 +169,38 @@ namespace Calligraphy
             // Toolbar(Which underlies the ActionBar) for its children.
             if (CalligraphyUtils.CanCheckForV7Toolbar() && view.GetType() == typeof(Android.Support.V7.Widget.Toolbar))
             {
-                Toolbar toolbar = (Toolbar)view;
+                var toolbar = (Toolbar)view;
                 toolbar.ViewTreeObserver.AddOnGlobalLayoutListener(new ToolbarLayoutListener(this, context, toolbar));
             }
 
             // Try to set typeface for custom views using interface method or via reflection if available
             if (view.GetType() == typeof(IHasTypeFace))
             {
-                Typeface typeface = getDefaultTypeface(context, resolveFontPath(context, attrs));
+                var typeface = getDefaultTypeface(context, ResolveFontPath(context, attrs));
                 if (typeface != null)
                 {
-                    ((IHasTypeFace)view).setTypeface(typeface);
+                    ((IHasTypeFace)view).SetTypeface(typeface);
                 }
             }
-            else if (CalligraphyConfig.Get().IsCustomViewTypefaceSupport() && CalligraphyConfig.Get().IsCustomViewHasTypeface(view))
+            else if (CalligraphyConfig.Get().IsCustomViewTypefaceSupport && CalligraphyConfig.Get().IsCustomViewHasTypeface(view))
             {
-                var setTypeface = ReflectionUtils.getMethod(view.GetType(), "setTypeface");
-                string fontPath = resolveFontPath(context, attrs);
-                Typeface typeface = getDefaultTypeface(context, fontPath);
+                var setTypeface = ReflectionUtils.GetMethod(view.GetType(), "setTypeface");
+                var fontPath = ResolveFontPath(context, attrs);
+                var typeface = getDefaultTypeface(context, fontPath);
                 if (setTypeface != null && typeface != null)
                 {
-                    ReflectionUtils.invokeMethod(view, setTypeface, new object[] { typeface });
+                    ReflectionUtils.InvokeMethod(view, setTypeface, new object[] { typeface });
                 }
             }
         }
 
-        private Typeface getDefaultTypeface(Context context, String fontPath)
+        private Typeface getDefaultTypeface(Context context, string fontPath)
         {
-            if (TextUtils.IsEmpty(fontPath))
+            if (string.IsNullOrEmpty(fontPath))
             {
-                fontPath = CalligraphyConfig.Get().GetFontPath();
+                fontPath = CalligraphyConfig.Get().FontPath;
             }
-            if (!TextUtils.IsEmpty(fontPath))
+            if (!string.IsNullOrEmpty(fontPath))
             {
                 return TypefaceUtils.Load(context.Assets, fontPath);
             }
@@ -226,88 +210,24 @@ namespace Calligraphy
         /**
          * Resolving font path from xml attrs, style attrs or text appearance
          */
-        private String resolveFontPath(Context context, IAttributeSet attrs)
+        private string ResolveFontPath(Context context, IAttributeSet attrs)
         {
             // Try view xml attributes
-            String textViewFont = CalligraphyUtils.PullFontPathFromView(context, attrs, mAttributeId);
+            var textViewFont = CalligraphyUtils.PullFontPathFromView(context, attrs, _attributeId);
 
             // Try view style attributes
-            if (TextUtils.IsEmpty(textViewFont))
+            if (string.IsNullOrEmpty(textViewFont))
             {
-                textViewFont = CalligraphyUtils.PullFontPathFromStyle(context, attrs, mAttributeId);
+                textViewFont = CalligraphyUtils.PullFontPathFromStyle(context, attrs, _attributeId);
             }
 
             // Try View TextAppearance
-            if (TextUtils.IsEmpty(textViewFont))
+            if (string.IsNullOrEmpty(textViewFont))
             {
-                textViewFont = CalligraphyUtils.PullFontPathFromTextAppearance(context, attrs, mAttributeId);
+                textViewFont = CalligraphyUtils.PullFontPathFromTextAppearance(context, attrs, _attributeId);
             }
 
             return textViewFont;
-        }
-
-        protected class ToolbarLayoutListener : Object, ViewTreeObserver.IOnGlobalLayoutListener
-        {
-
-            static string BLANK = " ";
-
-            private WeakReference<CalligraphyFactory> mCalligraphyFactory;
-            private WeakReference<Context> mContextRef;
-            private WeakReference<Toolbar> mToolbarReference;
-            private string originalSubTitle;
-
-            public ToolbarLayoutListener(CalligraphyFactory calligraphyFactory,
-                                       Context context, Toolbar toolbar)
-            {
-                mCalligraphyFactory = new WeakReference<CalligraphyFactory>(calligraphyFactory);
-                mContextRef = new WeakReference<Context>(context);
-                mToolbarReference = new WeakReference<Toolbar>(toolbar);
-                originalSubTitle = toolbar.Subtitle;
-                toolbar.Subtitle = BLANK;
-            }
-
-            //   @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
-            public void OnGlobalLayout()
-            {
-                Toolbar toolbar;
-                mToolbarReference.TryGetTarget(out toolbar);
-                Context context;
-                mContextRef.TryGetTarget(out context);
-
-                CalligraphyFactory factory;
-                mCalligraphyFactory.TryGetTarget(out factory);
-                if (toolbar == null) return;
-                if (factory == null || context == null)
-                {
-                    removeSelf(toolbar);
-                    return;
-                }
-
-                int childCount = toolbar.ChildCount;
-                if (childCount != 0)
-                {
-                    // Process children, defer draw as it has set the typeface.
-                    for (int i = 0; i < childCount; i++)
-                    {
-                        factory.OnViewCreated(toolbar.GetChildAt(i), context, null);
-                    }
-                }
-                removeSelf(toolbar);
-                toolbar.Subtitle = originalSubTitle;
-            }
-
-            private void removeSelf(Toolbar toolbar)
-            {// Our dark deed is done
-                if (Build.VERSION.SdkInt < Build.VERSION_CODES.JellyBean)
-                {
-                    //noinspection deprecation
-                    toolbar.ViewTreeObserver.RemoveGlobalOnLayoutListener(this);
-                }
-                else {
-                    toolbar.ViewTreeObserver.RemoveOnGlobalLayoutListener(this);
-                }
-            }
-
         }
     }
 }

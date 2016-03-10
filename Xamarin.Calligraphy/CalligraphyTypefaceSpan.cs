@@ -5,9 +5,19 @@ using Android.Text.Style;
 
 namespace Calligraphy
 {
-    class CalligraphyTypefaceSpan : MetricAffectingSpan
+    internal class CalligraphyTypefaceSpan : MetricAffectingSpan
     {
-        private readonly Typeface typeface;
+        private readonly Typeface _typeface;
+
+        public override void UpdateDrawState(TextPaint drawState)
+        {
+            Apply(drawState);
+        }
+
+        public override void UpdateMeasureState(TextPaint measureState)
+        {
+            Apply(measureState);
+        }
 
         internal CalligraphyTypefaceSpan(Typeface typeface)
         {
@@ -15,14 +25,14 @@ namespace Calligraphy
             {
                 throw new ArgumentNullException(nameof(typeface));
             }
-            this.typeface = typeface;
+            _typeface = typeface;
         }
 
         private void Apply(Paint paint)
         {
             var oldTypeface = paint.Typeface;
-            var oldStyle = oldTypeface != null ? oldTypeface.Style : 0;
-            var fakeStyle = oldStyle & typeface.Style;
+            var oldStyle = oldTypeface?.Style ?? 0;
+            var fakeStyle = oldStyle & _typeface.Style;
 
             if ((fakeStyle & TypefaceStyle.Bold) != 0)
             {
@@ -34,17 +44,7 @@ namespace Calligraphy
                 paint.TextSkewX = -0.25f;
             }
 
-            paint.SetTypeface(typeface);
-        }
-
-        public override void UpdateDrawState(TextPaint drawState)
-        {
-            Apply(drawState);
-        }
-
-        public override void UpdateMeasureState(TextPaint measureState)
-        {
-            Apply(measureState);
+            paint.SetTypeface(_typeface);
         }
     }
 }

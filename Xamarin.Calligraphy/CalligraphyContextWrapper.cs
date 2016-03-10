@@ -9,8 +9,8 @@ namespace Calligraphy
 {
     public class CalligraphyContextWrapper : ContextWrapper
     {
-        private CalligraphyLayoutInflater inflater;
-        private readonly int attributeId;
+        private CalligraphyLayoutInflater _inflater;
+        private readonly int _attributeId;
 
         /// <summary>
         /// Uses the default configuration from <see cref="CalligraphyConfig"/>.
@@ -19,10 +19,9 @@ namespace Calligraphy
         /// the activity is created.
         /// </summary>
         /// <param name="context">base ContextBase to Wrap.</param>
-        public CalligraphyContextWrapper(Context context)
-            : base(context)
+        public CalligraphyContextWrapper(Context context) : base(context)
         {
-            attributeId = CalligraphyConfig.Get().AttrId;
+            _attributeId = CalligraphyConfig.Get().AttrId;
         }
 
         /// <summary>
@@ -34,17 +33,16 @@ namespace Calligraphy
         /// </summary>
         /// <param name="context">ContextBase to Wrap.</param>
         /// <param name="attributeId">Attribute to lookup.</param>
-        public CalligraphyContextWrapper(Context context, int attributeId)
-            : base(context)
+        public CalligraphyContextWrapper(Context context, int attributeId) : base(context)
         {
-            this.attributeId = attributeId;
+            _attributeId = attributeId;
         }
 
         public override Object GetSystemService(string name)
         {
             if (LayoutInflaterService.Equals(name))
             {
-                return inflater ?? (inflater = new CalligraphyLayoutInflater(BaseContext, attributeId));
+                return _inflater ?? (_inflater = new CalligraphyLayoutInflater(BaseContext, _attributeId));
             }
             return base.GetSystemService(name);
         }
@@ -88,9 +86,9 @@ namespace Calligraphy
     * @param attr     The AttributeSet from onCreateView
     * @return The same view passed in, or null if null passed in.
     */
-        public static View onActivityCreateView(Activity activity, View parent, View view, string name, Context context, IAttributeSet attrs)
+        public static View OnActivityCreateView(Activity activity, View parent, View view, string name, Context context, IAttributeSet attrs)
         {
-            return get(activity).OnActivityCreateView(parent, view, name, context, attrs);
+            return Get(activity).OnActivityCreateView(parent, view, name, context, attrs);
         }
 
         /**
@@ -99,9 +97,10 @@ namespace Calligraphy
    * @param activity The activity the original that the ContextWrapper was attached too.
    * @return Interface allowing you to call onActivityViewCreated
    */
-        static ICalligraphyActivityFactory get(Activity activity)
+        static ICalligraphyActivityFactory Get(Activity activity)
         {
-            if (!(activity.LayoutInflater is CalligraphyLayoutInflater)) {
+            if (!(activity.LayoutInflater is CalligraphyLayoutInflater))
+            {
                 throw new RuntimeException("This activity does not wrap the Base Context! See CalligraphyContextWrapper.wrap(Context)");
             }
             return (ICalligraphyActivityFactory)activity.LayoutInflater;

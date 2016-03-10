@@ -20,7 +20,7 @@ namespace CalligraphySampleApp
         public override void OnCreate()
         {
             base.OnCreate();
-            CalligraphyConfig.InitDefault(new CalligraphyConfig.Builder()
+            CalligraphyConfig.InitDefault(new Builder()
                .SetDefaultFontPath("fonts/gtw.ttf")
                .SetFontAttrId(Resource.Attribute.fontPath)
                .AddCustomViewWithSetTypeface(typeof(CustomViewWithTypefaceSupport))

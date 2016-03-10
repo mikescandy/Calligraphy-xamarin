@@ -70,6 +70,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Builder.cs" />
     <Compile Include="CalligraphyConfig.cs" />
     <Compile Include="CalligraphyContextWrapper.cs" />
     <Compile Include="CalligraphyFactory.cs" />
@@ -80,8 +81,11 @@
     <Compile Include="ReflectionUtils.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TextWatcher.cs" />
+    <Compile Include="ToolbarLayoutListener.cs" />
     <Compile Include="TypefaceUtils.cs" />
     <Compile Include="ICalligraphyActivityFactory.cs" />
+    <Compile Include="WrapperFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Values\attrs.xml" />
