@@ -2,82 +2,35 @@
 using Android.Content;
 using Android.Widget;
 using Android.OS;
-using Android.Support.V7.App;
+
 using Calligraphy;
-using Java.Lang;
 
 namespace CalligraphySampleApp
 {
     [Activity(Label = "CalligraphySampleApp", MainLauncher = true, Icon = "@drawable/icon")]
-    public class MainActivity : AppCompatActivity
+    public class MainActivity : Activity
     {
+        int count = 1;
 
-      
-    protected  override  void OnCreate(Bundle savedInstanceState)
-    {
-        base.OnCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        final Toolbar toolbar = findById(this, R.id.toolbar);
-        setSupportActionBar(toolbar);
-
-        // Inject pragmatically
-        getSupportFragmentManager()
-                .beginTransaction()
-                .replace(R.id.container, PlaceholderFragment.getInstance())
-                .commit();
-
-
-        final Handler handler = new Handler(Looper.getMainLooper());
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run()
-    {
-        //                toolbar.setTitle("Calligraphy Added");
-        toolbar.setSubtitle("Added subtitle");
-    }
-}, 1000);
-
-        handler.postDelayed(new Runnable()
-{
-    @Override public void run()
-{
-    toolbar.setTitle(null);
-    toolbar.setSubtitle("Added subtitle");
-}
-        }, 2000);
-
-        handler.postDelayed(new Runnable()
-{
-    @Override public void run()
-{
-    toolbar.setTitle("Calligraphy added back");
-    toolbar.setSubtitle("Added subtitle");
-}
-        }, 3000);
-    }
-
-    /*
-        Uncomment if you disable PrivateFactory injection. See CalligraphyConfig#disablePrivateFactoryInjection()
-     */
-//    @Override
-//    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
-//    public View onCreateView(View parent, String name, @NonNull Context context, @NonNull AttributeSet attrs) {
-//        return CalligraphyContextWrapper.onActivityCreateView(this, parent, super.onCreateView(parent, name, context, attrs), name, context, attrs);
-//    }
-
- 
-    protected override  void AttachBaseContext(Context newBase)
-{
-    base.AttachBaseContext(CalligraphyContextWrapper.Wrap(newBase));
-}
-
-}
-
-    public class MyRunnable :Object, IRunnable
-    {
-        public void Run()
+        /// <inheritdoc />
+        protected override void OnCreate(Bundle bundle)
         {
-            throw new System.NotImplementedException();
+            base.OnCreate(bundle);
+
+            // Set our view from the "main" layout resource
+            SetContentView(Resource.Layout.Main);
+
+            // Get our button from the layout resource,
+            // and attach an event to it
+            Button button = FindViewById<Button>(Resource.Id.MyButton);
+
+            button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
+        }
+
+        /// <inheritdoc />
+        protected override void AttachBaseContext(Context context)
+        {
+            base.AttachBaseContext(CalligraphyContextWrapper.Wrap(context));
         }
     }
 }
