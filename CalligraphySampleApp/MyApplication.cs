@@ -21,11 +21,11 @@ namespace CalligraphySampleApp
         {
             base.OnCreate();
             CalligraphyConfig.InitDefault(new CalligraphyConfig.Builder()
-               .SetDefaultFontPath("fonts/gtw.ttf")
-               .SetFontAttrId(Resource.Attribute.fontPath)
-               .AddCustomViewWithSetTypeface(typeof(CustomViewWithTypefaceSupport))
-                .AddCustomStyle(typeof(TextField), Resource.Attribute.textFieldStyle)
-                .Build()
+               .setDefaultFontPath("fonts/gtw.ttf")
+               .setFontAttrId(Resource.Attribute.fontPath)
+               .addCustomViewWithSetTypeface(typeof(CustomViewWithTypefaceSupport))
+                .addCustomStyle(typeof(TextField), Resource.Attribute.textFieldStyle)
+                .build()
         );
         }
     }

@@ -112,7 +112,7 @@ namespace Calligraphy
             // Already tried to set the factory.
             if (mSetPrivateFactory) return;
             // Reflection (Or Old Device) skip.
-            if (!CalligraphyConfig.Get().IsReflection()) return;
+            if (!CalligraphyConfig.Get().isReflection()) return;
             // Skip if not attached to an activity.
             if (!(Context.GetType() == typeof(IFactory2)))
             {
@@ -215,7 +215,7 @@ namespace Calligraphy
             // significant difference to performance on Android 4.0+.
 
             // If CustomViewCreation is off skip this.
-            if (!CalligraphyConfig.Get().IsCustomViewCreation()) return view;
+            if (!CalligraphyConfig.Get().isCustomViewCreation()) return view;
             if (view == null && name.IndexOf('.') > -1)
             {
                 if (mConstructorArgs == null)
