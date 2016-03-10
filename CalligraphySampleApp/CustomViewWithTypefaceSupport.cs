@@ -16,7 +16,6 @@ using String = System.String;
 
 namespace CalligraphySampleApp
 {
-    [Register("calligraphysampleapp.CustomViewWithTypefaceSupport")]
     public class CustomViewWithTypefaceSupport : View
     {
 
@@ -28,36 +27,37 @@ namespace CalligraphySampleApp
     public CustomViewWithTypefaceSupport(Context context):base(context)
     {
         
-        Init();
+        init();
     }
 
     public CustomViewWithTypefaceSupport(Context context, IAttributeSet attrs):base(context,attrs)
     {
-        Init();
+        init();
     }
 
     public CustomViewWithTypefaceSupport(Context context, IAttributeSet attrs, int defStyleAttr):base(context,attrs,defStyleAttr)
     {
-        Init();
+        init();
     }
 
 //    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public CustomViewWithTypefaceSupport(Context context, IAttributeSet attrs, int defStyleAttr, int defStyleRes):base(context, attrs, defStyleAttr, defStyleRes)
         {
-        Init();
+        init();
     }
 
-    private void Init()
+    private void init()
     {
-        paint = new Paint {TextSize = 50};
+        paint = new Paint();
+        paint.TextSize=50;
         textBounds = new Rect();
     }
 
    // @Override
     protected override void OnDraw(Canvas canvas)
     {
-        var text = "This is a custom view with setTypeface support";
-        var fm = paint.GetFontMetrics();
+        String text = "This is a custom view with setTypeface support";
+        Paint.FontMetrics fm = paint.GetFontMetrics();
         paint.GetTextBounds(text, 0, text.Length, textBounds);
 
         width = textBounds.Left + textBounds.Right + PaddingLeft + PaddingRight;

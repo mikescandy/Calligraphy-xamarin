@@ -1,5 +1,4 @@
 using System;
-using Android.App;
 using Android.Content;
 using Android.Content.Res;
 using Android.Graphics;
@@ -394,8 +393,7 @@ namespace Calligraphy
             try
             {
                 // ReSharper disable once UnusedVariable
-                var xz = Activator.CreateInstance(typeof(Android.Support.V7.Widget.Toolbar),Application.Context);
-                //var x = Activator.CreateInstance(null, "android.support.v7.widget.Toolbar");
+                var x = Activator.CreateInstance(null, "android.support.v7.widget.Toolbar");
                 _toolbarCheck = true;
             }
             catch (System.Exception e)
@@ -412,8 +410,7 @@ namespace Calligraphy
             try
             {
                 // ReSharper disable once UnusedVariable
-                var xz = Activator.CreateInstance(typeof(Android.Support.V7.Widget.AppCompatTextView), Application.Context);
-                //var x = Activator.CreateInstance("Xamarin.Android.Support.v7.AppCompat", "Android.Support.V7.Widget.AppCompatTextView");
+                var x = Activator.CreateInstance("Xamarin.Android.Support.v7.AppCompat", "Android.Support.V7.Widget.AppCompatTextView");
                 _appCompatViewCheck = true;
             }
             catch (System.Exception e)

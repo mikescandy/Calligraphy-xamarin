@@ -13,7 +13,6 @@ using Android.Widget;
 
 namespace CalligraphySampleApp
 {
-    [Register("calligraphysampleapp.TextField")]
     public class TextField : TextView
     {
 
