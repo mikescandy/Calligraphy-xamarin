@@ -1,14 +1,17 @@
+using System;
 using Android.App;
 using Android.OS;
+using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Com.Lilarcor.Cheeseknife;
 
 namespace CalligraphySampleApp
 {
-    public class PlaceholderFragment : Fragment
+    [Register("calligraphysampleapp.PlaceholderFragment")]
+    public class PlaceholderFragment : Android.Support.V4.App.Fragment
     {
-        public static Fragment GetInstance()
+        public static Android.Support.V4.App.Fragment GetInstance()
         {
             return new PlaceholderFragment();
         }
@@ -22,7 +25,6 @@ namespace CalligraphySampleApp
         {
             base.OnViewCreated(view, savedInstanceState);
             Cheeseknife.Inject(this, view);
-
             var stub = view.FindViewById<ViewStub>(Resource.Id.stub);
             Cheeseknife.Inject(view, stub);
 
@@ -32,18 +34,18 @@ namespace CalligraphySampleApp
         }
 
         [InjectOnClick(Resource.Id.button_bold)]
-        public void OnClickBoldButton()
+        public void OnClickBoldButton(object sender, EventArgs eventArgs)
         {
             Toast.MakeText(Activity, "Custom Typeface toast text", ToastLength.Short).Show();
         }
 
         [InjectOnClick(Resource.Id.button_default)]
-        public void OnClickDefaultButton()
+        public void OnClickDefaultButton(object sender, EventArgs eventArgs)
         {
             var builder = new AlertDialog.Builder(Activity);
             builder.SetMessage("Custom Typeface Dialog");
             builder.SetTitle("Sample Dialog");
-            builder.SetPositiveButton("OK", (sender, args) => ((Dialog) sender).Dismiss());
+            builder.SetPositiveButton("OK", (s, args) => ((Dialog)s).Dismiss());
             builder.Create().Show();
         }
     }

@@ -3,6 +3,7 @@ using Android.Content;
 using Android.OS;
 using Android.Util;
 using Android.Views;
+using Android.Widget;
 
 namespace Calligraphy
 {
@@ -177,7 +178,8 @@ namespace Calligraphy
                     view = CreateView(name, prefix, attrs);
                 }
                 catch (System.Exception ignored)
-                {
+                { 
+
                 }
             }
             // In this case we want to let the base class take a crack
