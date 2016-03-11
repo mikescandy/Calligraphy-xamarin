@@ -23,6 +23,13 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView2"
         android:layout_marginTop="95.7dp" />
+
+
+  <TextView
+    style="@style/AppTheme.Widget.TextViewAppearanceStyle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/defined_in_appears_style"/>
     <CheckBox
         android:text="CheckBox"
         android:layout_width="match_parent"

@@ -58,6 +58,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CheeseKnife.cs" />
     <Compile Include="CustomTextView.cs" />
     <Compile Include="CustomViewWithTypefaceSupport.cs" />
     <Compile Include="MainActivity.cs" />
@@ -82,6 +83,10 @@
     <AndroidResource Include="Resources\values\attrs.xml" />
     <AndroidResource Include="Resources\values\dimens.xml" />
     <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\layout\fragment_main.xml" />
+    <AndroidResource Include="Resources\layout\stub.xml" />
+    <AndroidResource Include="Resources\layout\stub_with_font_path.xml" />
+    <AndroidResource Include="Resources\layout\activity_main.xml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Xamarin.Calligraphy\Xamarin.Calligraphy.csproj">
@@ -90,6 +95,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <AndroidAsset Include="Assets\fonts\Oswald-Stencbab.ttf" />
+    <AndroidAsset Include="Assets\fonts\Roboto-Bold.ttf" />
+    <AndroidAsset Include="Assets\fonts\RobotoCondensed-Regular.ttf" />
+    <AndroidAsset Include="Assets\fonts\Roboto-ThinItalic.ttf" />
     <None Include="packages.config" />
     <AndroidResource Include="Resources\layout\Main.axml" />
   </ItemGroup>

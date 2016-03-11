@@ -21,7 +21,7 @@ namespace CalligraphySampleApp
         {
             base.OnCreate();
             CalligraphyConfig.InitDefault(new CalligraphyConfig.Builder()
-               .setDefaultFontPath("fonts/gtw.ttf")
+               .setDefaultFontPath("fonts/GetVoIPGrotesque.ttf")
                .setFontAttrId(Resource.Attribute.fontPath)
                .addCustomViewWithSetTypeface(typeof(CustomViewWithTypefaceSupport))
                 .addCustomStyle(typeof(TextField), Resource.Attribute.textFieldStyle)
