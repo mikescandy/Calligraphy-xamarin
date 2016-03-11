@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CheeseKnife.cs" />
+    <Compile Include="Class1.cs" />
     <Compile Include="CustomTextView.cs" />
     <Compile Include="CustomViewWithTypefaceSupport.cs" />
     <Compile Include="MainActivity.cs" />

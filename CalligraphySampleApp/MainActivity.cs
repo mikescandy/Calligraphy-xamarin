@@ -11,7 +11,7 @@ using Com.Lilarcor.Cheeseknife;
 namespace CalligraphySampleApp
 {
     [Activity(Label = "CalligraphySampleApp", MainLauncher = true, Icon = "@drawable/icon", Theme="@style/AppTheme")]
-    public class MainActivity : Activity
+    public class MainActivity : Android.Support.V7.App.AppCompatActivity
     {
         int count = 1;
 
@@ -21,16 +21,16 @@ namespace CalligraphySampleApp
             base.OnCreate(bundle);
 
             // Set our view from the "main" layout resource
-            SetContentView(Resource.Layout.activity_main);
+            SetContentView(Resource.Layout.Main);
 
-            var toolbar = FindViewById<Toolbar>(this, Resource.Id.toolbar);
-            setSupportActionBar(toolbar);
+            //var toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
+            //SetSupportActionBar(toolbar);
             
             // Inject pragmatically
-            getSupportFragmentManager()
-                    .beginTransaction()
-                    .replace(R.id.container, PlaceholderFragment.getInstance())
-                    .commit();
+           //SupportFragmentManager
+           //         .BeginTransaction()
+           //         .Replace(Resource.Id.container, PlaceholderFragment.GetInstance())
+           //         .Commit();
             //Cheeseknife.Inject(this);
             // Get our button from the layout resource,
             // and attach an event to it
