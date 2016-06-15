@@ -53,6 +53,9 @@
     <AndroidLinkMode>SdkOnly</AndroidLinkMode>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CalligraphyBinding">
+      <HintPath>..\CalligraphyBinding\bin\Debug\CalligraphyBinding.dll</HintPath>
+    </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />
     <Reference Include="System" />
@@ -115,12 +118,6 @@
     <AndroidResource Include="Resources\layout\stub_with_font_path.xml" />
     <AndroidResource Include="Resources\layout\activity_main.xml" />
     <AndroidResource Include="Resources\layout\fragment_main.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Xamarin.Calligraphy\Xamarin.Calligraphy.csproj">
-      <Project>{437a83b4-e4b3-4e45-b22e-9992e84699d3}</Project>
-      <Name>Xamarin.Calligraphy</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\fonts\Roboto-Bold.ttf" />

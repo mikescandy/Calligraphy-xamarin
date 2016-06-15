@@ -11,7 +11,10 @@ namespace Calligraphy
     {
         private static readonly string[] ClassPrefixList = {
             "android.widget.",
-            "android.webkit."
+            "android.webkit.",
+                "Android.Widget.",
+            "Android.Webkit.",
+            "*"
     };
 
         private readonly int _attributeId;

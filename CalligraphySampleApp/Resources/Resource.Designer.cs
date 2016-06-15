@@ -26,1255 +26,6 @@ namespace CalligraphySampleApp
 		
 		public static void UpdateIdValues()
 		{
-			global::Calligraphy.Resource.Animation.abc_fade_in = global::CalligraphySampleApp.Resource.Animation.abc_fade_in;
-			global::Calligraphy.Resource.Animation.abc_fade_out = global::CalligraphySampleApp.Resource.Animation.abc_fade_out;
-			global::Calligraphy.Resource.Animation.abc_grow_fade_in_from_bottom = global::CalligraphySampleApp.Resource.Animation.abc_grow_fade_in_from_bottom;
-			global::Calligraphy.Resource.Animation.abc_popup_enter = global::CalligraphySampleApp.Resource.Animation.abc_popup_enter;
-			global::Calligraphy.Resource.Animation.abc_popup_exit = global::CalligraphySampleApp.Resource.Animation.abc_popup_exit;
-			global::Calligraphy.Resource.Animation.abc_shrink_fade_out_from_bottom = global::CalligraphySampleApp.Resource.Animation.abc_shrink_fade_out_from_bottom;
-			global::Calligraphy.Resource.Animation.abc_slide_in_bottom = global::CalligraphySampleApp.Resource.Animation.abc_slide_in_bottom;
-			global::Calligraphy.Resource.Animation.abc_slide_in_top = global::CalligraphySampleApp.Resource.Animation.abc_slide_in_top;
-			global::Calligraphy.Resource.Animation.abc_slide_out_bottom = global::CalligraphySampleApp.Resource.Animation.abc_slide_out_bottom;
-			global::Calligraphy.Resource.Animation.abc_slide_out_top = global::CalligraphySampleApp.Resource.Animation.abc_slide_out_top;
-			global::Calligraphy.Resource.Attribute.actionBarDivider = global::CalligraphySampleApp.Resource.Attribute.actionBarDivider;
-			global::Calligraphy.Resource.Attribute.actionBarItemBackground = global::CalligraphySampleApp.Resource.Attribute.actionBarItemBackground;
-			global::Calligraphy.Resource.Attribute.actionBarPopupTheme = global::CalligraphySampleApp.Resource.Attribute.actionBarPopupTheme;
-			global::Calligraphy.Resource.Attribute.actionBarSize = global::CalligraphySampleApp.Resource.Attribute.actionBarSize;
-			global::Calligraphy.Resource.Attribute.actionBarSplitStyle = global::CalligraphySampleApp.Resource.Attribute.actionBarSplitStyle;
-			global::Calligraphy.Resource.Attribute.actionBarStyle = global::CalligraphySampleApp.Resource.Attribute.actionBarStyle;
-			global::Calligraphy.Resource.Attribute.actionBarTabBarStyle = global::CalligraphySampleApp.Resource.Attribute.actionBarTabBarStyle;
-			global::Calligraphy.Resource.Attribute.actionBarTabStyle = global::CalligraphySampleApp.Resource.Attribute.actionBarTabStyle;
-			global::Calligraphy.Resource.Attribute.actionBarTabTextStyle = global::CalligraphySampleApp.Resource.Attribute.actionBarTabTextStyle;
-			global::Calligraphy.Resource.Attribute.actionBarTheme = global::CalligraphySampleApp.Resource.Attribute.actionBarTheme;
-			global::Calligraphy.Resource.Attribute.actionBarWidgetTheme = global::CalligraphySampleApp.Resource.Attribute.actionBarWidgetTheme;
-			global::Calligraphy.Resource.Attribute.actionButtonStyle = global::CalligraphySampleApp.Resource.Attribute.actionButtonStyle;
-			global::Calligraphy.Resource.Attribute.actionDropDownStyle = global::CalligraphySampleApp.Resource.Attribute.actionDropDownStyle;
-			global::Calligraphy.Resource.Attribute.actionLayout = global::CalligraphySampleApp.Resource.Attribute.actionLayout;
-			global::Calligraphy.Resource.Attribute.actionMenuTextAppearance = global::CalligraphySampleApp.Resource.Attribute.actionMenuTextAppearance;
-			global::Calligraphy.Resource.Attribute.actionMenuTextColor = global::CalligraphySampleApp.Resource.Attribute.actionMenuTextColor;
-			global::Calligraphy.Resource.Attribute.actionModeBackground = global::CalligraphySampleApp.Resource.Attribute.actionModeBackground;
-			global::Calligraphy.Resource.Attribute.actionModeCloseButtonStyle = global::CalligraphySampleApp.Resource.Attribute.actionModeCloseButtonStyle;
-			global::Calligraphy.Resource.Attribute.actionModeCloseDrawable = global::CalligraphySampleApp.Resource.Attribute.actionModeCloseDrawable;
-			global::Calligraphy.Resource.Attribute.actionModeCopyDrawable = global::CalligraphySampleApp.Resource.Attribute.actionModeCopyDrawable;
-			global::Calligraphy.Resource.Attribute.actionModeCutDrawable = global::CalligraphySampleApp.Resource.Attribute.actionModeCutDrawable;
-			global::Calligraphy.Resource.Attribute.actionModeFindDrawable = global::CalligraphySampleApp.Resource.Attribute.actionModeFindDrawable;
-			global::Calligraphy.Resource.Attribute.actionModePasteDrawable = global::CalligraphySampleApp.Resource.Attribute.actionModePasteDrawable;
-			global::Calligraphy.Resource.Attribute.actionModePopupWindowStyle = global::CalligraphySampleApp.Resource.Attribute.actionModePopupWindowStyle;
-			global::Calligraphy.Resource.Attribute.actionModeSelectAllDrawable = global::CalligraphySampleApp.Resource.Attribute.actionModeSelectAllDrawable;
-			global::Calligraphy.Resource.Attribute.actionModeShareDrawable = global::CalligraphySampleApp.Resource.Attribute.actionModeShareDrawable;
-			global::Calligraphy.Resource.Attribute.actionModeSplitBackground = global::CalligraphySampleApp.Resource.Attribute.actionModeSplitBackground;
-			global::Calligraphy.Resource.Attribute.actionModeStyle = global::CalligraphySampleApp.Resource.Attribute.actionModeStyle;
-			global::Calligraphy.Resource.Attribute.actionModeWebSearchDrawable = global::CalligraphySampleApp.Resource.Attribute.actionModeWebSearchDrawable;
-			global::Calligraphy.Resource.Attribute.actionOverflowButtonStyle = global::CalligraphySampleApp.Resource.Attribute.actionOverflowButtonStyle;
-			global::Calligraphy.Resource.Attribute.actionOverflowMenuStyle = global::CalligraphySampleApp.Resource.Attribute.actionOverflowMenuStyle;
-			global::Calligraphy.Resource.Attribute.actionProviderClass = global::CalligraphySampleApp.Resource.Attribute.actionProviderClass;
-			global::Calligraphy.Resource.Attribute.actionViewClass = global::CalligraphySampleApp.Resource.Attribute.actionViewClass;
-			global::Calligraphy.Resource.Attribute.activityChooserViewStyle = global::CalligraphySampleApp.Resource.Attribute.activityChooserViewStyle;
-			global::Calligraphy.Resource.Attribute.alertDialogButtonGroupStyle = global::CalligraphySampleApp.Resource.Attribute.alertDialogButtonGroupStyle;
-			global::Calligraphy.Resource.Attribute.alertDialogCenterButtons = global::CalligraphySampleApp.Resource.Attribute.alertDialogCenterButtons;
-			global::Calligraphy.Resource.Attribute.alertDialogStyle = global::CalligraphySampleApp.Resource.Attribute.alertDialogStyle;
-			global::Calligraphy.Resource.Attribute.alertDialogTheme = global::CalligraphySampleApp.Resource.Attribute.alertDialogTheme;
-			global::Calligraphy.Resource.Attribute.allowStacking = global::CalligraphySampleApp.Resource.Attribute.allowStacking;
-			global::Calligraphy.Resource.Attribute.arrowHeadLength = global::CalligraphySampleApp.Resource.Attribute.arrowHeadLength;
-			global::Calligraphy.Resource.Attribute.arrowShaftLength = global::CalligraphySampleApp.Resource.Attribute.arrowShaftLength;
-			global::Calligraphy.Resource.Attribute.autoCompleteTextViewStyle = global::CalligraphySampleApp.Resource.Attribute.autoCompleteTextViewStyle;
-			global::Calligraphy.Resource.Attribute.background = global::CalligraphySampleApp.Resource.Attribute.background;
-			global::Calligraphy.Resource.Attribute.backgroundSplit = global::CalligraphySampleApp.Resource.Attribute.backgroundSplit;
-			global::Calligraphy.Resource.Attribute.backgroundStacked = global::CalligraphySampleApp.Resource.Attribute.backgroundStacked;
-			global::Calligraphy.Resource.Attribute.backgroundTint = global::CalligraphySampleApp.Resource.Attribute.backgroundTint;
-			global::Calligraphy.Resource.Attribute.backgroundTintMode = global::CalligraphySampleApp.Resource.Attribute.backgroundTintMode;
-			global::Calligraphy.Resource.Attribute.barLength = global::CalligraphySampleApp.Resource.Attribute.barLength;
-			global::Calligraphy.Resource.Attribute.borderlessButtonStyle = global::CalligraphySampleApp.Resource.Attribute.borderlessButtonStyle;
-			global::Calligraphy.Resource.Attribute.buttonBarButtonStyle = global::CalligraphySampleApp.Resource.Attribute.buttonBarButtonStyle;
-			global::Calligraphy.Resource.Attribute.buttonBarNegativeButtonStyle = global::CalligraphySampleApp.Resource.Attribute.buttonBarNegativeButtonStyle;
-			global::Calligraphy.Resource.Attribute.buttonBarNeutralButtonStyle = global::CalligraphySampleApp.Resource.Attribute.buttonBarNeutralButtonStyle;
-			global::Calligraphy.Resource.Attribute.buttonBarPositiveButtonStyle = global::CalligraphySampleApp.Resource.Attribute.buttonBarPositiveButtonStyle;
-			global::Calligraphy.Resource.Attribute.buttonBarStyle = global::CalligraphySampleApp.Resource.Attribute.buttonBarStyle;
-			global::Calligraphy.Resource.Attribute.buttonPanelSideLayout = global::CalligraphySampleApp.Resource.Attribute.buttonPanelSideLayout;
-			global::Calligraphy.Resource.Attribute.buttonStyle = global::CalligraphySampleApp.Resource.Attribute.buttonStyle;
-			global::Calligraphy.Resource.Attribute.buttonStyleSmall = global::CalligraphySampleApp.Resource.Attribute.buttonStyleSmall;
-			global::Calligraphy.Resource.Attribute.buttonTint = global::CalligraphySampleApp.Resource.Attribute.buttonTint;
-			global::Calligraphy.Resource.Attribute.buttonTintMode = global::CalligraphySampleApp.Resource.Attribute.buttonTintMode;
-			global::Calligraphy.Resource.Attribute.checkboxStyle = global::CalligraphySampleApp.Resource.Attribute.checkboxStyle;
-			global::Calligraphy.Resource.Attribute.checkedTextViewStyle = global::CalligraphySampleApp.Resource.Attribute.checkedTextViewStyle;
-			global::Calligraphy.Resource.Attribute.closeIcon = global::CalligraphySampleApp.Resource.Attribute.closeIcon;
-			global::Calligraphy.Resource.Attribute.closeItemLayout = global::CalligraphySampleApp.Resource.Attribute.closeItemLayout;
-			global::Calligraphy.Resource.Attribute.collapseContentDescription = global::CalligraphySampleApp.Resource.Attribute.collapseContentDescription;
-			global::Calligraphy.Resource.Attribute.collapseIcon = global::CalligraphySampleApp.Resource.Attribute.collapseIcon;
-			global::Calligraphy.Resource.Attribute.color = global::CalligraphySampleApp.Resource.Attribute.color;
-			global::Calligraphy.Resource.Attribute.colorAccent = global::CalligraphySampleApp.Resource.Attribute.colorAccent;
-			global::Calligraphy.Resource.Attribute.colorButtonNormal = global::CalligraphySampleApp.Resource.Attribute.colorButtonNormal;
-			global::Calligraphy.Resource.Attribute.colorControlActivated = global::CalligraphySampleApp.Resource.Attribute.colorControlActivated;
-			global::Calligraphy.Resource.Attribute.colorControlHighlight = global::CalligraphySampleApp.Resource.Attribute.colorControlHighlight;
-			global::Calligraphy.Resource.Attribute.colorControlNormal = global::CalligraphySampleApp.Resource.Attribute.colorControlNormal;
-			global::Calligraphy.Resource.Attribute.colorPrimary = global::CalligraphySampleApp.Resource.Attribute.colorPrimary;
-			global::Calligraphy.Resource.Attribute.colorPrimaryDark = global::CalligraphySampleApp.Resource.Attribute.colorPrimaryDark;
-			global::Calligraphy.Resource.Attribute.colorSwitchThumbNormal = global::CalligraphySampleApp.Resource.Attribute.colorSwitchThumbNormal;
-			global::Calligraphy.Resource.Attribute.commitIcon = global::CalligraphySampleApp.Resource.Attribute.commitIcon;
-			global::Calligraphy.Resource.Attribute.contentInsetEnd = global::CalligraphySampleApp.Resource.Attribute.contentInsetEnd;
-			global::Calligraphy.Resource.Attribute.contentInsetLeft = global::CalligraphySampleApp.Resource.Attribute.contentInsetLeft;
-			global::Calligraphy.Resource.Attribute.contentInsetRight = global::CalligraphySampleApp.Resource.Attribute.contentInsetRight;
-			global::Calligraphy.Resource.Attribute.contentInsetStart = global::CalligraphySampleApp.Resource.Attribute.contentInsetStart;
-			global::Calligraphy.Resource.Attribute.controlBackground = global::CalligraphySampleApp.Resource.Attribute.controlBackground;
-			global::Calligraphy.Resource.Attribute.customNavigationLayout = global::CalligraphySampleApp.Resource.Attribute.customNavigationLayout;
-			global::Calligraphy.Resource.Attribute.defaultQueryHint = global::CalligraphySampleApp.Resource.Attribute.defaultQueryHint;
-			global::Calligraphy.Resource.Attribute.dialogPreferredPadding = global::CalligraphySampleApp.Resource.Attribute.dialogPreferredPadding;
-			global::Calligraphy.Resource.Attribute.dialogTheme = global::CalligraphySampleApp.Resource.Attribute.dialogTheme;
-			global::Calligraphy.Resource.Attribute.displayOptions = global::CalligraphySampleApp.Resource.Attribute.displayOptions;
-			global::Calligraphy.Resource.Attribute.divider = global::CalligraphySampleApp.Resource.Attribute.divider;
-			global::Calligraphy.Resource.Attribute.dividerHorizontal = global::CalligraphySampleApp.Resource.Attribute.dividerHorizontal;
-			global::Calligraphy.Resource.Attribute.dividerPadding = global::CalligraphySampleApp.Resource.Attribute.dividerPadding;
-			global::Calligraphy.Resource.Attribute.dividerVertical = global::CalligraphySampleApp.Resource.Attribute.dividerVertical;
-			global::Calligraphy.Resource.Attribute.drawableSize = global::CalligraphySampleApp.Resource.Attribute.drawableSize;
-			global::Calligraphy.Resource.Attribute.drawerArrowStyle = global::CalligraphySampleApp.Resource.Attribute.drawerArrowStyle;
-			global::Calligraphy.Resource.Attribute.dropDownListViewStyle = global::CalligraphySampleApp.Resource.Attribute.dropDownListViewStyle;
-			global::Calligraphy.Resource.Attribute.dropdownListPreferredItemHeight = global::CalligraphySampleApp.Resource.Attribute.dropdownListPreferredItemHeight;
-			global::Calligraphy.Resource.Attribute.editTextBackground = global::CalligraphySampleApp.Resource.Attribute.editTextBackground;
-			global::Calligraphy.Resource.Attribute.editTextColor = global::CalligraphySampleApp.Resource.Attribute.editTextColor;
-			global::Calligraphy.Resource.Attribute.editTextStyle = global::CalligraphySampleApp.Resource.Attribute.editTextStyle;
-			global::Calligraphy.Resource.Attribute.elevation = global::CalligraphySampleApp.Resource.Attribute.elevation;
-			global::Calligraphy.Resource.Attribute.expandActivityOverflowButtonDrawable = global::CalligraphySampleApp.Resource.Attribute.expandActivityOverflowButtonDrawable;
-			global::Calligraphy.Resource.Attribute.fontPath = global::CalligraphySampleApp.Resource.Attribute.fontPath;
-			global::Calligraphy.Resource.Attribute.gapBetweenBars = global::CalligraphySampleApp.Resource.Attribute.gapBetweenBars;
-			global::Calligraphy.Resource.Attribute.goIcon = global::CalligraphySampleApp.Resource.Attribute.goIcon;
-			global::Calligraphy.Resource.Attribute.height = global::CalligraphySampleApp.Resource.Attribute.height;
-			global::Calligraphy.Resource.Attribute.hideOnContentScroll = global::CalligraphySampleApp.Resource.Attribute.hideOnContentScroll;
-			global::Calligraphy.Resource.Attribute.homeAsUpIndicator = global::CalligraphySampleApp.Resource.Attribute.homeAsUpIndicator;
-			global::Calligraphy.Resource.Attribute.homeLayout = global::CalligraphySampleApp.Resource.Attribute.homeLayout;
-			global::Calligraphy.Resource.Attribute.icon = global::CalligraphySampleApp.Resource.Attribute.icon;
-			global::Calligraphy.Resource.Attribute.iconifiedByDefault = global::CalligraphySampleApp.Resource.Attribute.iconifiedByDefault;
-			global::Calligraphy.Resource.Attribute.imageButtonStyle = global::CalligraphySampleApp.Resource.Attribute.imageButtonStyle;
-			global::Calligraphy.Resource.Attribute.indeterminateProgressStyle = global::CalligraphySampleApp.Resource.Attribute.indeterminateProgressStyle;
-			global::Calligraphy.Resource.Attribute.initialActivityCount = global::CalligraphySampleApp.Resource.Attribute.initialActivityCount;
-			global::Calligraphy.Resource.Attribute.isLightTheme = global::CalligraphySampleApp.Resource.Attribute.isLightTheme;
-			global::Calligraphy.Resource.Attribute.itemPadding = global::CalligraphySampleApp.Resource.Attribute.itemPadding;
-			global::Calligraphy.Resource.Attribute.layout = global::CalligraphySampleApp.Resource.Attribute.layout;
-			global::Calligraphy.Resource.Attribute.listChoiceBackgroundIndicator = global::CalligraphySampleApp.Resource.Attribute.listChoiceBackgroundIndicator;
-			global::Calligraphy.Resource.Attribute.listDividerAlertDialog = global::CalligraphySampleApp.Resource.Attribute.listDividerAlertDialog;
-			global::Calligraphy.Resource.Attribute.listItemLayout = global::CalligraphySampleApp.Resource.Attribute.listItemLayout;
-			global::Calligraphy.Resource.Attribute.listLayout = global::CalligraphySampleApp.Resource.Attribute.listLayout;
-			global::Calligraphy.Resource.Attribute.listPopupWindowStyle = global::CalligraphySampleApp.Resource.Attribute.listPopupWindowStyle;
-			global::Calligraphy.Resource.Attribute.listPreferredItemHeight = global::CalligraphySampleApp.Resource.Attribute.listPreferredItemHeight;
-			global::Calligraphy.Resource.Attribute.listPreferredItemHeightLarge = global::CalligraphySampleApp.Resource.Attribute.listPreferredItemHeightLarge;
-			global::Calligraphy.Resource.Attribute.listPreferredItemHeightSmall = global::CalligraphySampleApp.Resource.Attribute.listPreferredItemHeightSmall;
-			global::Calligraphy.Resource.Attribute.listPreferredItemPaddingLeft = global::CalligraphySampleApp.Resource.Attribute.listPreferredItemPaddingLeft;
-			global::Calligraphy.Resource.Attribute.listPreferredItemPaddingRight = global::CalligraphySampleApp.Resource.Attribute.listPreferredItemPaddingRight;
-			global::Calligraphy.Resource.Attribute.logo = global::CalligraphySampleApp.Resource.Attribute.logo;
-			global::Calligraphy.Resource.Attribute.logoDescription = global::CalligraphySampleApp.Resource.Attribute.logoDescription;
-			global::Calligraphy.Resource.Attribute.maxButtonHeight = global::CalligraphySampleApp.Resource.Attribute.maxButtonHeight;
-			global::Calligraphy.Resource.Attribute.measureWithLargestChild = global::CalligraphySampleApp.Resource.Attribute.measureWithLargestChild;
-			global::Calligraphy.Resource.Attribute.multiChoiceItemLayout = global::CalligraphySampleApp.Resource.Attribute.multiChoiceItemLayout;
-			global::Calligraphy.Resource.Attribute.navigationContentDescription = global::CalligraphySampleApp.Resource.Attribute.navigationContentDescription;
-			global::Calligraphy.Resource.Attribute.navigationIcon = global::CalligraphySampleApp.Resource.Attribute.navigationIcon;
-			global::Calligraphy.Resource.Attribute.navigationMode = global::CalligraphySampleApp.Resource.Attribute.navigationMode;
-			global::Calligraphy.Resource.Attribute.overlapAnchor = global::CalligraphySampleApp.Resource.Attribute.overlapAnchor;
-			global::Calligraphy.Resource.Attribute.paddingEnd = global::CalligraphySampleApp.Resource.Attribute.paddingEnd;
-			global::Calligraphy.Resource.Attribute.paddingStart = global::CalligraphySampleApp.Resource.Attribute.paddingStart;
-			global::Calligraphy.Resource.Attribute.panelBackground = global::CalligraphySampleApp.Resource.Attribute.panelBackground;
-			global::Calligraphy.Resource.Attribute.panelMenuListTheme = global::CalligraphySampleApp.Resource.Attribute.panelMenuListTheme;
-			global::Calligraphy.Resource.Attribute.panelMenuListWidth = global::CalligraphySampleApp.Resource.Attribute.panelMenuListWidth;
-			global::Calligraphy.Resource.Attribute.popupMenuStyle = global::CalligraphySampleApp.Resource.Attribute.popupMenuStyle;
-			global::Calligraphy.Resource.Attribute.popupTheme = global::CalligraphySampleApp.Resource.Attribute.popupTheme;
-			global::Calligraphy.Resource.Attribute.popupWindowStyle = global::CalligraphySampleApp.Resource.Attribute.popupWindowStyle;
-			global::Calligraphy.Resource.Attribute.preserveIconSpacing = global::CalligraphySampleApp.Resource.Attribute.preserveIconSpacing;
-			global::Calligraphy.Resource.Attribute.progressBarPadding = global::CalligraphySampleApp.Resource.Attribute.progressBarPadding;
-			global::Calligraphy.Resource.Attribute.progressBarStyle = global::CalligraphySampleApp.Resource.Attribute.progressBarStyle;
-			global::Calligraphy.Resource.Attribute.queryBackground = global::CalligraphySampleApp.Resource.Attribute.queryBackground;
-			global::Calligraphy.Resource.Attribute.queryHint = global::CalligraphySampleApp.Resource.Attribute.queryHint;
-			global::Calligraphy.Resource.Attribute.radioButtonStyle = global::CalligraphySampleApp.Resource.Attribute.radioButtonStyle;
-			global::Calligraphy.Resource.Attribute.ratingBarStyle = global::CalligraphySampleApp.Resource.Attribute.ratingBarStyle;
-			global::Calligraphy.Resource.Attribute.ratingBarStyleIndicator = global::CalligraphySampleApp.Resource.Attribute.ratingBarStyleIndicator;
-			global::Calligraphy.Resource.Attribute.ratingBarStyleSmall = global::CalligraphySampleApp.Resource.Attribute.ratingBarStyleSmall;
-			global::Calligraphy.Resource.Attribute.searchHintIcon = global::CalligraphySampleApp.Resource.Attribute.searchHintIcon;
-			global::Calligraphy.Resource.Attribute.searchIcon = global::CalligraphySampleApp.Resource.Attribute.searchIcon;
-			global::Calligraphy.Resource.Attribute.searchViewStyle = global::CalligraphySampleApp.Resource.Attribute.searchViewStyle;
-			global::Calligraphy.Resource.Attribute.seekBarStyle = global::CalligraphySampleApp.Resource.Attribute.seekBarStyle;
-			global::Calligraphy.Resource.Attribute.selectableItemBackground = global::CalligraphySampleApp.Resource.Attribute.selectableItemBackground;
-			global::Calligraphy.Resource.Attribute.selectableItemBackgroundBorderless = global::CalligraphySampleApp.Resource.Attribute.selectableItemBackgroundBorderless;
-			global::Calligraphy.Resource.Attribute.showAsAction = global::CalligraphySampleApp.Resource.Attribute.showAsAction;
-			global::Calligraphy.Resource.Attribute.showDividers = global::CalligraphySampleApp.Resource.Attribute.showDividers;
-			global::Calligraphy.Resource.Attribute.showText = global::CalligraphySampleApp.Resource.Attribute.showText;
-			global::Calligraphy.Resource.Attribute.singleChoiceItemLayout = global::CalligraphySampleApp.Resource.Attribute.singleChoiceItemLayout;
-			global::Calligraphy.Resource.Attribute.spinBars = global::CalligraphySampleApp.Resource.Attribute.spinBars;
-			global::Calligraphy.Resource.Attribute.spinnerDropDownItemStyle = global::CalligraphySampleApp.Resource.Attribute.spinnerDropDownItemStyle;
-			global::Calligraphy.Resource.Attribute.spinnerStyle = global::CalligraphySampleApp.Resource.Attribute.spinnerStyle;
-			global::Calligraphy.Resource.Attribute.splitTrack = global::CalligraphySampleApp.Resource.Attribute.splitTrack;
-			global::Calligraphy.Resource.Attribute.srcCompat = global::CalligraphySampleApp.Resource.Attribute.srcCompat;
-			global::Calligraphy.Resource.Attribute.state_above_anchor = global::CalligraphySampleApp.Resource.Attribute.state_above_anchor;
-			global::Calligraphy.Resource.Attribute.submitBackground = global::CalligraphySampleApp.Resource.Attribute.submitBackground;
-			global::Calligraphy.Resource.Attribute.subtitle = global::CalligraphySampleApp.Resource.Attribute.subtitle;
-			global::Calligraphy.Resource.Attribute.subtitleTextAppearance = global::CalligraphySampleApp.Resource.Attribute.subtitleTextAppearance;
-			global::Calligraphy.Resource.Attribute.subtitleTextColor = global::CalligraphySampleApp.Resource.Attribute.subtitleTextColor;
-			global::Calligraphy.Resource.Attribute.subtitleTextStyle = global::CalligraphySampleApp.Resource.Attribute.subtitleTextStyle;
-			global::Calligraphy.Resource.Attribute.suggestionRowLayout = global::CalligraphySampleApp.Resource.Attribute.suggestionRowLayout;
-			global::Calligraphy.Resource.Attribute.switchMinWidth = global::CalligraphySampleApp.Resource.Attribute.switchMinWidth;
-			global::Calligraphy.Resource.Attribute.switchPadding = global::CalligraphySampleApp.Resource.Attribute.switchPadding;
-			global::Calligraphy.Resource.Attribute.switchStyle = global::CalligraphySampleApp.Resource.Attribute.switchStyle;
-			global::Calligraphy.Resource.Attribute.switchTextAppearance = global::CalligraphySampleApp.Resource.Attribute.switchTextAppearance;
-			global::Calligraphy.Resource.Attribute.textAllCaps = global::CalligraphySampleApp.Resource.Attribute.textAllCaps;
-			global::Calligraphy.Resource.Attribute.textAppearanceLargePopupMenu = global::CalligraphySampleApp.Resource.Attribute.textAppearanceLargePopupMenu;
-			global::Calligraphy.Resource.Attribute.textAppearanceListItem = global::CalligraphySampleApp.Resource.Attribute.textAppearanceListItem;
-			global::Calligraphy.Resource.Attribute.textAppearanceListItemSmall = global::CalligraphySampleApp.Resource.Attribute.textAppearanceListItemSmall;
-			global::Calligraphy.Resource.Attribute.textAppearanceSearchResultSubtitle = global::CalligraphySampleApp.Resource.Attribute.textAppearanceSearchResultSubtitle;
-			global::Calligraphy.Resource.Attribute.textAppearanceSearchResultTitle = global::CalligraphySampleApp.Resource.Attribute.textAppearanceSearchResultTitle;
-			global::Calligraphy.Resource.Attribute.textAppearanceSmallPopupMenu = global::CalligraphySampleApp.Resource.Attribute.textAppearanceSmallPopupMenu;
-			global::Calligraphy.Resource.Attribute.textColorAlertDialogListItem = global::CalligraphySampleApp.Resource.Attribute.textColorAlertDialogListItem;
-			global::Calligraphy.Resource.Attribute.textColorSearchUrl = global::CalligraphySampleApp.Resource.Attribute.textColorSearchUrl;
-			global::Calligraphy.Resource.Attribute.theme = global::CalligraphySampleApp.Resource.Attribute.theme;
-			global::Calligraphy.Resource.Attribute.thickness = global::CalligraphySampleApp.Resource.Attribute.thickness;
-			global::Calligraphy.Resource.Attribute.thumbTextPadding = global::CalligraphySampleApp.Resource.Attribute.thumbTextPadding;
-			global::Calligraphy.Resource.Attribute.title = global::CalligraphySampleApp.Resource.Attribute.title;
-			global::Calligraphy.Resource.Attribute.titleMarginBottom = global::CalligraphySampleApp.Resource.Attribute.titleMarginBottom;
-			global::Calligraphy.Resource.Attribute.titleMarginEnd = global::CalligraphySampleApp.Resource.Attribute.titleMarginEnd;
-			global::Calligraphy.Resource.Attribute.titleMarginStart = global::CalligraphySampleApp.Resource.Attribute.titleMarginStart;
-			global::Calligraphy.Resource.Attribute.titleMarginTop = global::CalligraphySampleApp.Resource.Attribute.titleMarginTop;
-			global::Calligraphy.Resource.Attribute.titleMargins = global::CalligraphySampleApp.Resource.Attribute.titleMargins;
-			global::Calligraphy.Resource.Attribute.titleTextAppearance = global::CalligraphySampleApp.Resource.Attribute.titleTextAppearance;
-			global::Calligraphy.Resource.Attribute.titleTextColor = global::CalligraphySampleApp.Resource.Attribute.titleTextColor;
-			global::Calligraphy.Resource.Attribute.titleTextStyle = global::CalligraphySampleApp.Resource.Attribute.titleTextStyle;
-			global::Calligraphy.Resource.Attribute.toolbarNavigationButtonStyle = global::CalligraphySampleApp.Resource.Attribute.toolbarNavigationButtonStyle;
-			global::Calligraphy.Resource.Attribute.toolbarStyle = global::CalligraphySampleApp.Resource.Attribute.toolbarStyle;
-			global::Calligraphy.Resource.Attribute.track = global::CalligraphySampleApp.Resource.Attribute.track;
-			global::Calligraphy.Resource.Attribute.voiceIcon = global::CalligraphySampleApp.Resource.Attribute.voiceIcon;
-			global::Calligraphy.Resource.Attribute.windowActionBar = global::CalligraphySampleApp.Resource.Attribute.windowActionBar;
-			global::Calligraphy.Resource.Attribute.windowActionBarOverlay = global::CalligraphySampleApp.Resource.Attribute.windowActionBarOverlay;
-			global::Calligraphy.Resource.Attribute.windowActionModeOverlay = global::CalligraphySampleApp.Resource.Attribute.windowActionModeOverlay;
-			global::Calligraphy.Resource.Attribute.windowFixedHeightMajor = global::CalligraphySampleApp.Resource.Attribute.windowFixedHeightMajor;
-			global::Calligraphy.Resource.Attribute.windowFixedHeightMinor = global::CalligraphySampleApp.Resource.Attribute.windowFixedHeightMinor;
-			global::Calligraphy.Resource.Attribute.windowFixedWidthMajor = global::CalligraphySampleApp.Resource.Attribute.windowFixedWidthMajor;
-			global::Calligraphy.Resource.Attribute.windowFixedWidthMinor = global::CalligraphySampleApp.Resource.Attribute.windowFixedWidthMinor;
-			global::Calligraphy.Resource.Attribute.windowMinWidthMajor = global::CalligraphySampleApp.Resource.Attribute.windowMinWidthMajor;
-			global::Calligraphy.Resource.Attribute.windowMinWidthMinor = global::CalligraphySampleApp.Resource.Attribute.windowMinWidthMinor;
-			global::Calligraphy.Resource.Attribute.windowNoTitle = global::CalligraphySampleApp.Resource.Attribute.windowNoTitle;
-			global::Calligraphy.Resource.Boolean.abc_action_bar_embed_tabs = global::CalligraphySampleApp.Resource.Boolean.abc_action_bar_embed_tabs;
-			global::Calligraphy.Resource.Boolean.abc_action_bar_embed_tabs_pre_jb = global::CalligraphySampleApp.Resource.Boolean.abc_action_bar_embed_tabs_pre_jb;
-			global::Calligraphy.Resource.Boolean.abc_action_bar_expanded_action_views_exclusive = global::CalligraphySampleApp.Resource.Boolean.abc_action_bar_expanded_action_views_exclusive;
-			global::Calligraphy.Resource.Boolean.abc_allow_stacked_button_bar = global::CalligraphySampleApp.Resource.Boolean.abc_allow_stacked_button_bar;
-			global::Calligraphy.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::CalligraphySampleApp.Resource.Boolean.abc_config_actionMenuItemAllCaps;
-			global::Calligraphy.Resource.Boolean.abc_config_allowActionMenuItemTextWithIcon = global::CalligraphySampleApp.Resource.Boolean.abc_config_allowActionMenuItemTextWithIcon;
-			global::Calligraphy.Resource.Boolean.abc_config_closeDialogWhenTouchOutside = global::CalligraphySampleApp.Resource.Boolean.abc_config_closeDialogWhenTouchOutside;
-			global::Calligraphy.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::CalligraphySampleApp.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
-			global::Calligraphy.Resource.Color.abc_background_cache_hint_selector_material_dark = global::CalligraphySampleApp.Resource.Color.abc_background_cache_hint_selector_material_dark;
-			global::Calligraphy.Resource.Color.abc_background_cache_hint_selector_material_light = global::CalligraphySampleApp.Resource.Color.abc_background_cache_hint_selector_material_light;
-			global::Calligraphy.Resource.Color.abc_color_highlight_material = global::CalligraphySampleApp.Resource.Color.abc_color_highlight_material;
-			global::Calligraphy.Resource.Color.abc_input_method_navigation_guard = global::CalligraphySampleApp.Resource.Color.abc_input_method_navigation_guard;
-			global::Calligraphy.Resource.Color.abc_primary_text_disable_only_material_dark = global::CalligraphySampleApp.Resource.Color.abc_primary_text_disable_only_material_dark;
-			global::Calligraphy.Resource.Color.abc_primary_text_disable_only_material_light = global::CalligraphySampleApp.Resource.Color.abc_primary_text_disable_only_material_light;
-			global::Calligraphy.Resource.Color.abc_primary_text_material_dark = global::CalligraphySampleApp.Resource.Color.abc_primary_text_material_dark;
-			global::Calligraphy.Resource.Color.abc_primary_text_material_light = global::CalligraphySampleApp.Resource.Color.abc_primary_text_material_light;
-			global::Calligraphy.Resource.Color.abc_search_url_text = global::CalligraphySampleApp.Resource.Color.abc_search_url_text;
-			global::Calligraphy.Resource.Color.abc_search_url_text_normal = global::CalligraphySampleApp.Resource.Color.abc_search_url_text_normal;
-			global::Calligraphy.Resource.Color.abc_search_url_text_pressed = global::CalligraphySampleApp.Resource.Color.abc_search_url_text_pressed;
-			global::Calligraphy.Resource.Color.abc_search_url_text_selected = global::CalligraphySampleApp.Resource.Color.abc_search_url_text_selected;
-			global::Calligraphy.Resource.Color.abc_secondary_text_material_dark = global::CalligraphySampleApp.Resource.Color.abc_secondary_text_material_dark;
-			global::Calligraphy.Resource.Color.abc_secondary_text_material_light = global::CalligraphySampleApp.Resource.Color.abc_secondary_text_material_light;
-			global::Calligraphy.Resource.Color.accent_material_dark = global::CalligraphySampleApp.Resource.Color.accent_material_dark;
-			global::Calligraphy.Resource.Color.accent_material_light = global::CalligraphySampleApp.Resource.Color.accent_material_light;
-			global::Calligraphy.Resource.Color.background_floating_material_dark = global::CalligraphySampleApp.Resource.Color.background_floating_material_dark;
-			global::Calligraphy.Resource.Color.background_floating_material_light = global::CalligraphySampleApp.Resource.Color.background_floating_material_light;
-			global::Calligraphy.Resource.Color.background_material_dark = global::CalligraphySampleApp.Resource.Color.background_material_dark;
-			global::Calligraphy.Resource.Color.background_material_light = global::CalligraphySampleApp.Resource.Color.background_material_light;
-			global::Calligraphy.Resource.Color.bright_foreground_disabled_material_dark = global::CalligraphySampleApp.Resource.Color.bright_foreground_disabled_material_dark;
-			global::Calligraphy.Resource.Color.bright_foreground_disabled_material_light = global::CalligraphySampleApp.Resource.Color.bright_foreground_disabled_material_light;
-			global::Calligraphy.Resource.Color.bright_foreground_inverse_material_dark = global::CalligraphySampleApp.Resource.Color.bright_foreground_inverse_material_dark;
-			global::Calligraphy.Resource.Color.bright_foreground_inverse_material_light = global::CalligraphySampleApp.Resource.Color.bright_foreground_inverse_material_light;
-			global::Calligraphy.Resource.Color.bright_foreground_material_dark = global::CalligraphySampleApp.Resource.Color.bright_foreground_material_dark;
-			global::Calligraphy.Resource.Color.bright_foreground_material_light = global::CalligraphySampleApp.Resource.Color.bright_foreground_material_light;
-			global::Calligraphy.Resource.Color.button_material_dark = global::CalligraphySampleApp.Resource.Color.button_material_dark;
-			global::Calligraphy.Resource.Color.button_material_light = global::CalligraphySampleApp.Resource.Color.button_material_light;
-			global::Calligraphy.Resource.Color.dim_foreground_disabled_material_dark = global::CalligraphySampleApp.Resource.Color.dim_foreground_disabled_material_dark;
-			global::Calligraphy.Resource.Color.dim_foreground_disabled_material_light = global::CalligraphySampleApp.Resource.Color.dim_foreground_disabled_material_light;
-			global::Calligraphy.Resource.Color.dim_foreground_material_dark = global::CalligraphySampleApp.Resource.Color.dim_foreground_material_dark;
-			global::Calligraphy.Resource.Color.dim_foreground_material_light = global::CalligraphySampleApp.Resource.Color.dim_foreground_material_light;
-			global::Calligraphy.Resource.Color.foreground_material_dark = global::CalligraphySampleApp.Resource.Color.foreground_material_dark;
-			global::Calligraphy.Resource.Color.foreground_material_light = global::CalligraphySampleApp.Resource.Color.foreground_material_light;
-			global::Calligraphy.Resource.Color.highlighted_text_material_dark = global::CalligraphySampleApp.Resource.Color.highlighted_text_material_dark;
-			global::Calligraphy.Resource.Color.highlighted_text_material_light = global::CalligraphySampleApp.Resource.Color.highlighted_text_material_light;
-			global::Calligraphy.Resource.Color.hint_foreground_material_dark = global::CalligraphySampleApp.Resource.Color.hint_foreground_material_dark;
-			global::Calligraphy.Resource.Color.hint_foreground_material_light = global::CalligraphySampleApp.Resource.Color.hint_foreground_material_light;
-			global::Calligraphy.Resource.Color.material_blue_grey_800 = global::CalligraphySampleApp.Resource.Color.material_blue_grey_800;
-			global::Calligraphy.Resource.Color.material_blue_grey_900 = global::CalligraphySampleApp.Resource.Color.material_blue_grey_900;
-			global::Calligraphy.Resource.Color.material_blue_grey_950 = global::CalligraphySampleApp.Resource.Color.material_blue_grey_950;
-			global::Calligraphy.Resource.Color.material_deep_teal_200 = global::CalligraphySampleApp.Resource.Color.material_deep_teal_200;
-			global::Calligraphy.Resource.Color.material_deep_teal_500 = global::CalligraphySampleApp.Resource.Color.material_deep_teal_500;
-			global::Calligraphy.Resource.Color.material_grey_100 = global::CalligraphySampleApp.Resource.Color.material_grey_100;
-			global::Calligraphy.Resource.Color.material_grey_300 = global::CalligraphySampleApp.Resource.Color.material_grey_300;
-			global::Calligraphy.Resource.Color.material_grey_50 = global::CalligraphySampleApp.Resource.Color.material_grey_50;
-			global::Calligraphy.Resource.Color.material_grey_600 = global::CalligraphySampleApp.Resource.Color.material_grey_600;
-			global::Calligraphy.Resource.Color.material_grey_800 = global::CalligraphySampleApp.Resource.Color.material_grey_800;
-			global::Calligraphy.Resource.Color.material_grey_850 = global::CalligraphySampleApp.Resource.Color.material_grey_850;
-			global::Calligraphy.Resource.Color.material_grey_900 = global::CalligraphySampleApp.Resource.Color.material_grey_900;
-			global::Calligraphy.Resource.Color.primary_dark_material_dark = global::CalligraphySampleApp.Resource.Color.primary_dark_material_dark;
-			global::Calligraphy.Resource.Color.primary_dark_material_light = global::CalligraphySampleApp.Resource.Color.primary_dark_material_light;
-			global::Calligraphy.Resource.Color.primary_material_dark = global::CalligraphySampleApp.Resource.Color.primary_material_dark;
-			global::Calligraphy.Resource.Color.primary_material_light = global::CalligraphySampleApp.Resource.Color.primary_material_light;
-			global::Calligraphy.Resource.Color.primary_text_default_material_dark = global::CalligraphySampleApp.Resource.Color.primary_text_default_material_dark;
-			global::Calligraphy.Resource.Color.primary_text_default_material_light = global::CalligraphySampleApp.Resource.Color.primary_text_default_material_light;
-			global::Calligraphy.Resource.Color.primary_text_disabled_material_dark = global::CalligraphySampleApp.Resource.Color.primary_text_disabled_material_dark;
-			global::Calligraphy.Resource.Color.primary_text_disabled_material_light = global::CalligraphySampleApp.Resource.Color.primary_text_disabled_material_light;
-			global::Calligraphy.Resource.Color.ripple_material_dark = global::CalligraphySampleApp.Resource.Color.ripple_material_dark;
-			global::Calligraphy.Resource.Color.ripple_material_light = global::CalligraphySampleApp.Resource.Color.ripple_material_light;
-			global::Calligraphy.Resource.Color.secondary_text_default_material_dark = global::CalligraphySampleApp.Resource.Color.secondary_text_default_material_dark;
-			global::Calligraphy.Resource.Color.secondary_text_default_material_light = global::CalligraphySampleApp.Resource.Color.secondary_text_default_material_light;
-			global::Calligraphy.Resource.Color.secondary_text_disabled_material_dark = global::CalligraphySampleApp.Resource.Color.secondary_text_disabled_material_dark;
-			global::Calligraphy.Resource.Color.secondary_text_disabled_material_light = global::CalligraphySampleApp.Resource.Color.secondary_text_disabled_material_light;
-			global::Calligraphy.Resource.Color.switch_thumb_disabled_material_dark = global::CalligraphySampleApp.Resource.Color.switch_thumb_disabled_material_dark;
-			global::Calligraphy.Resource.Color.switch_thumb_disabled_material_light = global::CalligraphySampleApp.Resource.Color.switch_thumb_disabled_material_light;
-			global::Calligraphy.Resource.Color.switch_thumb_material_dark = global::CalligraphySampleApp.Resource.Color.switch_thumb_material_dark;
-			global::Calligraphy.Resource.Color.switch_thumb_material_light = global::CalligraphySampleApp.Resource.Color.switch_thumb_material_light;
-			global::Calligraphy.Resource.Color.switch_thumb_normal_material_dark = global::CalligraphySampleApp.Resource.Color.switch_thumb_normal_material_dark;
-			global::Calligraphy.Resource.Color.switch_thumb_normal_material_light = global::CalligraphySampleApp.Resource.Color.switch_thumb_normal_material_light;
-			global::Calligraphy.Resource.Dimension.abc_action_bar_content_inset_material = global::CalligraphySampleApp.Resource.Dimension.abc_action_bar_content_inset_material;
-			global::Calligraphy.Resource.Dimension.abc_action_bar_default_height_material = global::CalligraphySampleApp.Resource.Dimension.abc_action_bar_default_height_material;
-			global::Calligraphy.Resource.Dimension.abc_action_bar_default_padding_end_material = global::CalligraphySampleApp.Resource.Dimension.abc_action_bar_default_padding_end_material;
-			global::Calligraphy.Resource.Dimension.abc_action_bar_default_padding_start_material = global::CalligraphySampleApp.Resource.Dimension.abc_action_bar_default_padding_start_material;
-			global::Calligraphy.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::CalligraphySampleApp.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
-			global::Calligraphy.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::CalligraphySampleApp.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
-			global::Calligraphy.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::CalligraphySampleApp.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
-			global::Calligraphy.Resource.Dimension.abc_action_bar_progress_bar_size = global::CalligraphySampleApp.Resource.Dimension.abc_action_bar_progress_bar_size;
-			global::Calligraphy.Resource.Dimension.abc_action_bar_stacked_max_height = global::CalligraphySampleApp.Resource.Dimension.abc_action_bar_stacked_max_height;
-			global::Calligraphy.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::CalligraphySampleApp.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
-			global::Calligraphy.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::CalligraphySampleApp.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
-			global::Calligraphy.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::CalligraphySampleApp.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
-			global::Calligraphy.Resource.Dimension.abc_action_button_min_height_material = global::CalligraphySampleApp.Resource.Dimension.abc_action_button_min_height_material;
-			global::Calligraphy.Resource.Dimension.abc_action_button_min_width_material = global::CalligraphySampleApp.Resource.Dimension.abc_action_button_min_width_material;
-			global::Calligraphy.Resource.Dimension.abc_action_button_min_width_overflow_material = global::CalligraphySampleApp.Resource.Dimension.abc_action_button_min_width_overflow_material;
-			global::Calligraphy.Resource.Dimension.abc_alert_dialog_button_bar_height = global::CalligraphySampleApp.Resource.Dimension.abc_alert_dialog_button_bar_height;
-			global::Calligraphy.Resource.Dimension.abc_button_inset_horizontal_material = global::CalligraphySampleApp.Resource.Dimension.abc_button_inset_horizontal_material;
-			global::Calligraphy.Resource.Dimension.abc_button_inset_vertical_material = global::CalligraphySampleApp.Resource.Dimension.abc_button_inset_vertical_material;
-			global::Calligraphy.Resource.Dimension.abc_button_padding_horizontal_material = global::CalligraphySampleApp.Resource.Dimension.abc_button_padding_horizontal_material;
-			global::Calligraphy.Resource.Dimension.abc_button_padding_vertical_material = global::CalligraphySampleApp.Resource.Dimension.abc_button_padding_vertical_material;
-			global::Calligraphy.Resource.Dimension.abc_config_prefDialogWidth = global::CalligraphySampleApp.Resource.Dimension.abc_config_prefDialogWidth;
-			global::Calligraphy.Resource.Dimension.abc_control_corner_material = global::CalligraphySampleApp.Resource.Dimension.abc_control_corner_material;
-			global::Calligraphy.Resource.Dimension.abc_control_inset_material = global::CalligraphySampleApp.Resource.Dimension.abc_control_inset_material;
-			global::Calligraphy.Resource.Dimension.abc_control_padding_material = global::CalligraphySampleApp.Resource.Dimension.abc_control_padding_material;
-			global::Calligraphy.Resource.Dimension.abc_dialog_fixed_height_major = global::CalligraphySampleApp.Resource.Dimension.abc_dialog_fixed_height_major;
-			global::Calligraphy.Resource.Dimension.abc_dialog_fixed_height_minor = global::CalligraphySampleApp.Resource.Dimension.abc_dialog_fixed_height_minor;
-			global::Calligraphy.Resource.Dimension.abc_dialog_fixed_width_major = global::CalligraphySampleApp.Resource.Dimension.abc_dialog_fixed_width_major;
-			global::Calligraphy.Resource.Dimension.abc_dialog_fixed_width_minor = global::CalligraphySampleApp.Resource.Dimension.abc_dialog_fixed_width_minor;
-			global::Calligraphy.Resource.Dimension.abc_dialog_list_padding_vertical_material = global::CalligraphySampleApp.Resource.Dimension.abc_dialog_list_padding_vertical_material;
-			global::Calligraphy.Resource.Dimension.abc_dialog_min_width_major = global::CalligraphySampleApp.Resource.Dimension.abc_dialog_min_width_major;
-			global::Calligraphy.Resource.Dimension.abc_dialog_min_width_minor = global::CalligraphySampleApp.Resource.Dimension.abc_dialog_min_width_minor;
-			global::Calligraphy.Resource.Dimension.abc_dialog_padding_material = global::CalligraphySampleApp.Resource.Dimension.abc_dialog_padding_material;
-			global::Calligraphy.Resource.Dimension.abc_dialog_padding_top_material = global::CalligraphySampleApp.Resource.Dimension.abc_dialog_padding_top_material;
-			global::Calligraphy.Resource.Dimension.abc_disabled_alpha_material_dark = global::CalligraphySampleApp.Resource.Dimension.abc_disabled_alpha_material_dark;
-			global::Calligraphy.Resource.Dimension.abc_disabled_alpha_material_light = global::CalligraphySampleApp.Resource.Dimension.abc_disabled_alpha_material_light;
-			global::Calligraphy.Resource.Dimension.abc_dropdownitem_icon_width = global::CalligraphySampleApp.Resource.Dimension.abc_dropdownitem_icon_width;
-			global::Calligraphy.Resource.Dimension.abc_dropdownitem_text_padding_left = global::CalligraphySampleApp.Resource.Dimension.abc_dropdownitem_text_padding_left;
-			global::Calligraphy.Resource.Dimension.abc_dropdownitem_text_padding_right = global::CalligraphySampleApp.Resource.Dimension.abc_dropdownitem_text_padding_right;
-			global::Calligraphy.Resource.Dimension.abc_edit_text_inset_bottom_material = global::CalligraphySampleApp.Resource.Dimension.abc_edit_text_inset_bottom_material;
-			global::Calligraphy.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::CalligraphySampleApp.Resource.Dimension.abc_edit_text_inset_horizontal_material;
-			global::Calligraphy.Resource.Dimension.abc_edit_text_inset_top_material = global::CalligraphySampleApp.Resource.Dimension.abc_edit_text_inset_top_material;
-			global::Calligraphy.Resource.Dimension.abc_floating_window_z = global::CalligraphySampleApp.Resource.Dimension.abc_floating_window_z;
-			global::Calligraphy.Resource.Dimension.abc_list_item_padding_horizontal_material = global::CalligraphySampleApp.Resource.Dimension.abc_list_item_padding_horizontal_material;
-			global::Calligraphy.Resource.Dimension.abc_panel_menu_list_width = global::CalligraphySampleApp.Resource.Dimension.abc_panel_menu_list_width;
-			global::Calligraphy.Resource.Dimension.abc_search_view_preferred_width = global::CalligraphySampleApp.Resource.Dimension.abc_search_view_preferred_width;
-			global::Calligraphy.Resource.Dimension.abc_search_view_text_min_width = global::CalligraphySampleApp.Resource.Dimension.abc_search_view_text_min_width;
-			global::Calligraphy.Resource.Dimension.abc_seekbar_track_background_height_material = global::CalligraphySampleApp.Resource.Dimension.abc_seekbar_track_background_height_material;
-			global::Calligraphy.Resource.Dimension.abc_seekbar_track_progress_height_material = global::CalligraphySampleApp.Resource.Dimension.abc_seekbar_track_progress_height_material;
-			global::Calligraphy.Resource.Dimension.abc_select_dialog_padding_start_material = global::CalligraphySampleApp.Resource.Dimension.abc_select_dialog_padding_start_material;
-			global::Calligraphy.Resource.Dimension.abc_switch_padding = global::CalligraphySampleApp.Resource.Dimension.abc_switch_padding;
-			global::Calligraphy.Resource.Dimension.abc_text_size_body_1_material = global::CalligraphySampleApp.Resource.Dimension.abc_text_size_body_1_material;
-			global::Calligraphy.Resource.Dimension.abc_text_size_body_2_material = global::CalligraphySampleApp.Resource.Dimension.abc_text_size_body_2_material;
-			global::Calligraphy.Resource.Dimension.abc_text_size_button_material = global::CalligraphySampleApp.Resource.Dimension.abc_text_size_button_material;
-			global::Calligraphy.Resource.Dimension.abc_text_size_caption_material = global::CalligraphySampleApp.Resource.Dimension.abc_text_size_caption_material;
-			global::Calligraphy.Resource.Dimension.abc_text_size_display_1_material = global::CalligraphySampleApp.Resource.Dimension.abc_text_size_display_1_material;
-			global::Calligraphy.Resource.Dimension.abc_text_size_display_2_material = global::CalligraphySampleApp.Resource.Dimension.abc_text_size_display_2_material;
-			global::Calligraphy.Resource.Dimension.abc_text_size_display_3_material = global::CalligraphySampleApp.Resource.Dimension.abc_text_size_display_3_material;
-			global::Calligraphy.Resource.Dimension.abc_text_size_display_4_material = global::CalligraphySampleApp.Resource.Dimension.abc_text_size_display_4_material;
-			global::Calligraphy.Resource.Dimension.abc_text_size_headline_material = global::CalligraphySampleApp.Resource.Dimension.abc_text_size_headline_material;
-			global::Calligraphy.Resource.Dimension.abc_text_size_large_material = global::CalligraphySampleApp.Resource.Dimension.abc_text_size_large_material;
-			global::Calligraphy.Resource.Dimension.abc_text_size_medium_material = global::CalligraphySampleApp.Resource.Dimension.abc_text_size_medium_material;
-			global::Calligraphy.Resource.Dimension.abc_text_size_menu_material = global::CalligraphySampleApp.Resource.Dimension.abc_text_size_menu_material;
-			global::Calligraphy.Resource.Dimension.abc_text_size_small_material = global::CalligraphySampleApp.Resource.Dimension.abc_text_size_small_material;
-			global::Calligraphy.Resource.Dimension.abc_text_size_subhead_material = global::CalligraphySampleApp.Resource.Dimension.abc_text_size_subhead_material;
-			global::Calligraphy.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::CalligraphySampleApp.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
-			global::Calligraphy.Resource.Dimension.abc_text_size_title_material = global::CalligraphySampleApp.Resource.Dimension.abc_text_size_title_material;
-			global::Calligraphy.Resource.Dimension.abc_text_size_title_material_toolbar = global::CalligraphySampleApp.Resource.Dimension.abc_text_size_title_material_toolbar;
-			global::Calligraphy.Resource.Dimension.disabled_alpha_material_dark = global::CalligraphySampleApp.Resource.Dimension.disabled_alpha_material_dark;
-			global::Calligraphy.Resource.Dimension.disabled_alpha_material_light = global::CalligraphySampleApp.Resource.Dimension.disabled_alpha_material_light;
-			global::Calligraphy.Resource.Dimension.highlight_alpha_material_colored = global::CalligraphySampleApp.Resource.Dimension.highlight_alpha_material_colored;
-			global::Calligraphy.Resource.Dimension.highlight_alpha_material_dark = global::CalligraphySampleApp.Resource.Dimension.highlight_alpha_material_dark;
-			global::Calligraphy.Resource.Dimension.highlight_alpha_material_light = global::CalligraphySampleApp.Resource.Dimension.highlight_alpha_material_light;
-			global::Calligraphy.Resource.Dimension.notification_large_icon_height = global::CalligraphySampleApp.Resource.Dimension.notification_large_icon_height;
-			global::Calligraphy.Resource.Dimension.notification_large_icon_width = global::CalligraphySampleApp.Resource.Dimension.notification_large_icon_width;
-			global::Calligraphy.Resource.Dimension.notification_subtext_size = global::CalligraphySampleApp.Resource.Dimension.notification_subtext_size;
-			global::Calligraphy.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::CalligraphySampleApp.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
-			global::Calligraphy.Resource.Drawable.abc_action_bar_item_background_material = global::CalligraphySampleApp.Resource.Drawable.abc_action_bar_item_background_material;
-			global::Calligraphy.Resource.Drawable.abc_btn_borderless_material = global::CalligraphySampleApp.Resource.Drawable.abc_btn_borderless_material;
-			global::Calligraphy.Resource.Drawable.abc_btn_check_material = global::CalligraphySampleApp.Resource.Drawable.abc_btn_check_material;
-			global::Calligraphy.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::CalligraphySampleApp.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
-			global::Calligraphy.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::CalligraphySampleApp.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
-			global::Calligraphy.Resource.Drawable.abc_btn_colored_material = global::CalligraphySampleApp.Resource.Drawable.abc_btn_colored_material;
-			global::Calligraphy.Resource.Drawable.abc_btn_default_mtrl_shape = global::CalligraphySampleApp.Resource.Drawable.abc_btn_default_mtrl_shape;
-			global::Calligraphy.Resource.Drawable.abc_btn_radio_material = global::CalligraphySampleApp.Resource.Drawable.abc_btn_radio_material;
-			global::Calligraphy.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::CalligraphySampleApp.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
-			global::Calligraphy.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::CalligraphySampleApp.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
-			global::Calligraphy.Resource.Drawable.abc_btn_rating_star_off_mtrl_alpha = global::CalligraphySampleApp.Resource.Drawable.abc_btn_rating_star_off_mtrl_alpha;
-			global::Calligraphy.Resource.Drawable.abc_btn_rating_star_on_mtrl_alpha = global::CalligraphySampleApp.Resource.Drawable.abc_btn_rating_star_on_mtrl_alpha;
-			global::Calligraphy.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::CalligraphySampleApp.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
-			global::Calligraphy.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::CalligraphySampleApp.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
-			global::Calligraphy.Resource.Drawable.abc_cab_background_internal_bg = global::CalligraphySampleApp.Resource.Drawable.abc_cab_background_internal_bg;
-			global::Calligraphy.Resource.Drawable.abc_cab_background_top_material = global::CalligraphySampleApp.Resource.Drawable.abc_cab_background_top_material;
-			global::Calligraphy.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::CalligraphySampleApp.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
-			global::Calligraphy.Resource.Drawable.abc_control_background_material = global::CalligraphySampleApp.Resource.Drawable.abc_control_background_material;
-			global::Calligraphy.Resource.Drawable.abc_dialog_material_background_dark = global::CalligraphySampleApp.Resource.Drawable.abc_dialog_material_background_dark;
-			global::Calligraphy.Resource.Drawable.abc_dialog_material_background_light = global::CalligraphySampleApp.Resource.Drawable.abc_dialog_material_background_light;
-			global::Calligraphy.Resource.Drawable.abc_edit_text_material = global::CalligraphySampleApp.Resource.Drawable.abc_edit_text_material;
-			global::Calligraphy.Resource.Drawable.abc_ic_ab_back_mtrl_am_alpha = global::CalligraphySampleApp.Resource.Drawable.abc_ic_ab_back_mtrl_am_alpha;
-			global::Calligraphy.Resource.Drawable.abc_ic_clear_mtrl_alpha = global::CalligraphySampleApp.Resource.Drawable.abc_ic_clear_mtrl_alpha;
-			global::Calligraphy.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::CalligraphySampleApp.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
-			global::Calligraphy.Resource.Drawable.abc_ic_go_search_api_mtrl_alpha = global::CalligraphySampleApp.Resource.Drawable.abc_ic_go_search_api_mtrl_alpha;
-			global::Calligraphy.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::CalligraphySampleApp.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
-			global::Calligraphy.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::CalligraphySampleApp.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
-			global::Calligraphy.Resource.Drawable.abc_ic_menu_moreoverflow_mtrl_alpha = global::CalligraphySampleApp.Resource.Drawable.abc_ic_menu_moreoverflow_mtrl_alpha;
-			global::Calligraphy.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::CalligraphySampleApp.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
-			global::Calligraphy.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::CalligraphySampleApp.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
-			global::Calligraphy.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::CalligraphySampleApp.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
-			global::Calligraphy.Resource.Drawable.abc_ic_search_api_mtrl_alpha = global::CalligraphySampleApp.Resource.Drawable.abc_ic_search_api_mtrl_alpha;
-			global::Calligraphy.Resource.Drawable.abc_ic_star_black_16dp = global::CalligraphySampleApp.Resource.Drawable.abc_ic_star_black_16dp;
-			global::Calligraphy.Resource.Drawable.abc_ic_star_black_36dp = global::CalligraphySampleApp.Resource.Drawable.abc_ic_star_black_36dp;
-			global::Calligraphy.Resource.Drawable.abc_ic_star_half_black_16dp = global::CalligraphySampleApp.Resource.Drawable.abc_ic_star_half_black_16dp;
-			global::Calligraphy.Resource.Drawable.abc_ic_star_half_black_36dp = global::CalligraphySampleApp.Resource.Drawable.abc_ic_star_half_black_36dp;
-			global::Calligraphy.Resource.Drawable.abc_ic_voice_search_api_mtrl_alpha = global::CalligraphySampleApp.Resource.Drawable.abc_ic_voice_search_api_mtrl_alpha;
-			global::Calligraphy.Resource.Drawable.abc_item_background_holo_dark = global::CalligraphySampleApp.Resource.Drawable.abc_item_background_holo_dark;
-			global::Calligraphy.Resource.Drawable.abc_item_background_holo_light = global::CalligraphySampleApp.Resource.Drawable.abc_item_background_holo_light;
-			global::Calligraphy.Resource.Drawable.abc_list_divider_mtrl_alpha = global::CalligraphySampleApp.Resource.Drawable.abc_list_divider_mtrl_alpha;
-			global::Calligraphy.Resource.Drawable.abc_list_focused_holo = global::CalligraphySampleApp.Resource.Drawable.abc_list_focused_holo;
-			global::Calligraphy.Resource.Drawable.abc_list_longpressed_holo = global::CalligraphySampleApp.Resource.Drawable.abc_list_longpressed_holo;
-			global::Calligraphy.Resource.Drawable.abc_list_pressed_holo_dark = global::CalligraphySampleApp.Resource.Drawable.abc_list_pressed_holo_dark;
-			global::Calligraphy.Resource.Drawable.abc_list_pressed_holo_light = global::CalligraphySampleApp.Resource.Drawable.abc_list_pressed_holo_light;
-			global::Calligraphy.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::CalligraphySampleApp.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
-			global::Calligraphy.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::CalligraphySampleApp.Resource.Drawable.abc_list_selector_background_transition_holo_light;
-			global::Calligraphy.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::CalligraphySampleApp.Resource.Drawable.abc_list_selector_disabled_holo_dark;
-			global::Calligraphy.Resource.Drawable.abc_list_selector_disabled_holo_light = global::CalligraphySampleApp.Resource.Drawable.abc_list_selector_disabled_holo_light;
-			global::Calligraphy.Resource.Drawable.abc_list_selector_holo_dark = global::CalligraphySampleApp.Resource.Drawable.abc_list_selector_holo_dark;
-			global::Calligraphy.Resource.Drawable.abc_list_selector_holo_light = global::CalligraphySampleApp.Resource.Drawable.abc_list_selector_holo_light;
-			global::Calligraphy.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::CalligraphySampleApp.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
-			global::Calligraphy.Resource.Drawable.abc_popup_background_mtrl_mult = global::CalligraphySampleApp.Resource.Drawable.abc_popup_background_mtrl_mult;
-			global::Calligraphy.Resource.Drawable.abc_ratingbar_full_material = global::CalligraphySampleApp.Resource.Drawable.abc_ratingbar_full_material;
-			global::Calligraphy.Resource.Drawable.abc_ratingbar_indicator_material = global::CalligraphySampleApp.Resource.Drawable.abc_ratingbar_indicator_material;
-			global::Calligraphy.Resource.Drawable.abc_ratingbar_small_material = global::CalligraphySampleApp.Resource.Drawable.abc_ratingbar_small_material;
-			global::Calligraphy.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::CalligraphySampleApp.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
-			global::Calligraphy.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::CalligraphySampleApp.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
-			global::Calligraphy.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::CalligraphySampleApp.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
-			global::Calligraphy.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::CalligraphySampleApp.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
-			global::Calligraphy.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::CalligraphySampleApp.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
-			global::Calligraphy.Resource.Drawable.abc_seekbar_thumb_material = global::CalligraphySampleApp.Resource.Drawable.abc_seekbar_thumb_material;
-			global::Calligraphy.Resource.Drawable.abc_seekbar_track_material = global::CalligraphySampleApp.Resource.Drawable.abc_seekbar_track_material;
-			global::Calligraphy.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::CalligraphySampleApp.Resource.Drawable.abc_spinner_mtrl_am_alpha;
-			global::Calligraphy.Resource.Drawable.abc_spinner_textfield_background_material = global::CalligraphySampleApp.Resource.Drawable.abc_spinner_textfield_background_material;
-			global::Calligraphy.Resource.Drawable.abc_switch_thumb_material = global::CalligraphySampleApp.Resource.Drawable.abc_switch_thumb_material;
-			global::Calligraphy.Resource.Drawable.abc_switch_track_mtrl_alpha = global::CalligraphySampleApp.Resource.Drawable.abc_switch_track_mtrl_alpha;
-			global::Calligraphy.Resource.Drawable.abc_tab_indicator_material = global::CalligraphySampleApp.Resource.Drawable.abc_tab_indicator_material;
-			global::Calligraphy.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::CalligraphySampleApp.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
-			global::Calligraphy.Resource.Drawable.abc_text_cursor_material = global::CalligraphySampleApp.Resource.Drawable.abc_text_cursor_material;
-			global::Calligraphy.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::CalligraphySampleApp.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
-			global::Calligraphy.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::CalligraphySampleApp.Resource.Drawable.abc_textfield_default_mtrl_alpha;
-			global::Calligraphy.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::CalligraphySampleApp.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
-			global::Calligraphy.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::CalligraphySampleApp.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
-			global::Calligraphy.Resource.Drawable.abc_textfield_search_material = global::CalligraphySampleApp.Resource.Drawable.abc_textfield_search_material;
-			global::Calligraphy.Resource.Drawable.notification_template_icon_bg = global::CalligraphySampleApp.Resource.Drawable.notification_template_icon_bg;
-			global::Calligraphy.Resource.Id.action0 = global::CalligraphySampleApp.Resource.Id.action0;
-			global::Calligraphy.Resource.Id.action_bar = global::CalligraphySampleApp.Resource.Id.action_bar;
-			global::Calligraphy.Resource.Id.action_bar_activity_content = global::CalligraphySampleApp.Resource.Id.action_bar_activity_content;
-			global::Calligraphy.Resource.Id.action_bar_container = global::CalligraphySampleApp.Resource.Id.action_bar_container;
-			global::Calligraphy.Resource.Id.action_bar_root = global::CalligraphySampleApp.Resource.Id.action_bar_root;
-			global::Calligraphy.Resource.Id.action_bar_spinner = global::CalligraphySampleApp.Resource.Id.action_bar_spinner;
-			global::Calligraphy.Resource.Id.action_bar_subtitle = global::CalligraphySampleApp.Resource.Id.action_bar_subtitle;
-			global::Calligraphy.Resource.Id.action_bar_title = global::CalligraphySampleApp.Resource.Id.action_bar_title;
-			global::Calligraphy.Resource.Id.action_context_bar = global::CalligraphySampleApp.Resource.Id.action_context_bar;
-			global::Calligraphy.Resource.Id.action_divider = global::CalligraphySampleApp.Resource.Id.action_divider;
-			global::Calligraphy.Resource.Id.action_menu_divider = global::CalligraphySampleApp.Resource.Id.action_menu_divider;
-			global::Calligraphy.Resource.Id.action_menu_presenter = global::CalligraphySampleApp.Resource.Id.action_menu_presenter;
-			global::Calligraphy.Resource.Id.action_mode_bar = global::CalligraphySampleApp.Resource.Id.action_mode_bar;
-			global::Calligraphy.Resource.Id.action_mode_bar_stub = global::CalligraphySampleApp.Resource.Id.action_mode_bar_stub;
-			global::Calligraphy.Resource.Id.action_mode_close_button = global::CalligraphySampleApp.Resource.Id.action_mode_close_button;
-			global::Calligraphy.Resource.Id.activity_chooser_view_content = global::CalligraphySampleApp.Resource.Id.activity_chooser_view_content;
-			global::Calligraphy.Resource.Id.alertTitle = global::CalligraphySampleApp.Resource.Id.alertTitle;
-			global::Calligraphy.Resource.Id.always = global::CalligraphySampleApp.Resource.Id.always;
-			global::Calligraphy.Resource.Id.beginning = global::CalligraphySampleApp.Resource.Id.beginning;
-			global::Calligraphy.Resource.Id.buttonPanel = global::CalligraphySampleApp.Resource.Id.buttonPanel;
-			global::Calligraphy.Resource.Id.calligraphy_tag_id = global::CalligraphySampleApp.Resource.Id.calligraphy_tag_id;
-			global::Calligraphy.Resource.Id.cancel_action = global::CalligraphySampleApp.Resource.Id.cancel_action;
-			global::Calligraphy.Resource.Id.checkbox = global::CalligraphySampleApp.Resource.Id.checkbox;
-			global::Calligraphy.Resource.Id.chronometer = global::CalligraphySampleApp.Resource.Id.chronometer;
-			global::Calligraphy.Resource.Id.collapseActionView = global::CalligraphySampleApp.Resource.Id.collapseActionView;
-			global::Calligraphy.Resource.Id.contentPanel = global::CalligraphySampleApp.Resource.Id.contentPanel;
-			global::Calligraphy.Resource.Id.custom = global::CalligraphySampleApp.Resource.Id.custom;
-			global::Calligraphy.Resource.Id.customPanel = global::CalligraphySampleApp.Resource.Id.customPanel;
-			global::Calligraphy.Resource.Id.decor_content_parent = global::CalligraphySampleApp.Resource.Id.decor_content_parent;
-			global::Calligraphy.Resource.Id.default_activity_button = global::CalligraphySampleApp.Resource.Id.default_activity_button;
-			global::Calligraphy.Resource.Id.disableHome = global::CalligraphySampleApp.Resource.Id.disableHome;
-			global::Calligraphy.Resource.Id.edit_query = global::CalligraphySampleApp.Resource.Id.edit_query;
-			global::Calligraphy.Resource.Id.end = global::CalligraphySampleApp.Resource.Id.end;
-			global::Calligraphy.Resource.Id.end_padder = global::CalligraphySampleApp.Resource.Id.end_padder;
-			global::Calligraphy.Resource.Id.expand_activities_button = global::CalligraphySampleApp.Resource.Id.expand_activities_button;
-			global::Calligraphy.Resource.Id.expanded_menu = global::CalligraphySampleApp.Resource.Id.expanded_menu;
-			global::Calligraphy.Resource.Id.home = global::CalligraphySampleApp.Resource.Id.home;
-			global::Calligraphy.Resource.Id.homeAsUp = global::CalligraphySampleApp.Resource.Id.homeAsUp;
-			global::Calligraphy.Resource.Id.icon = global::CalligraphySampleApp.Resource.Id.icon;
-			global::Calligraphy.Resource.Id.ifRoom = global::CalligraphySampleApp.Resource.Id.ifRoom;
-			global::Calligraphy.Resource.Id.image = global::CalligraphySampleApp.Resource.Id.image;
-			global::Calligraphy.Resource.Id.info = global::CalligraphySampleApp.Resource.Id.info;
-			global::Calligraphy.Resource.Id.line1 = global::CalligraphySampleApp.Resource.Id.line1;
-			global::Calligraphy.Resource.Id.line3 = global::CalligraphySampleApp.Resource.Id.line3;
-			global::Calligraphy.Resource.Id.listMode = global::CalligraphySampleApp.Resource.Id.listMode;
-			global::Calligraphy.Resource.Id.list_item = global::CalligraphySampleApp.Resource.Id.list_item;
-			global::Calligraphy.Resource.Id.media_actions = global::CalligraphySampleApp.Resource.Id.media_actions;
-			global::Calligraphy.Resource.Id.middle = global::CalligraphySampleApp.Resource.Id.middle;
-			global::Calligraphy.Resource.Id.multiply = global::CalligraphySampleApp.Resource.Id.multiply;
-			global::Calligraphy.Resource.Id.never = global::CalligraphySampleApp.Resource.Id.never;
-			global::Calligraphy.Resource.Id.none = global::CalligraphySampleApp.Resource.Id.none;
-			global::Calligraphy.Resource.Id.normal = global::CalligraphySampleApp.Resource.Id.normal;
-			global::Calligraphy.Resource.Id.parentPanel = global::CalligraphySampleApp.Resource.Id.parentPanel;
-			global::Calligraphy.Resource.Id.progress_circular = global::CalligraphySampleApp.Resource.Id.progress_circular;
-			global::Calligraphy.Resource.Id.progress_horizontal = global::CalligraphySampleApp.Resource.Id.progress_horizontal;
-			global::Calligraphy.Resource.Id.radio = global::CalligraphySampleApp.Resource.Id.radio;
-			global::Calligraphy.Resource.Id.screen = global::CalligraphySampleApp.Resource.Id.screen;
-			global::Calligraphy.Resource.Id.scrollIndicatorDown = global::CalligraphySampleApp.Resource.Id.scrollIndicatorDown;
-			global::Calligraphy.Resource.Id.scrollIndicatorUp = global::CalligraphySampleApp.Resource.Id.scrollIndicatorUp;
-			global::Calligraphy.Resource.Id.scrollView = global::CalligraphySampleApp.Resource.Id.scrollView;
-			global::Calligraphy.Resource.Id.search_badge = global::CalligraphySampleApp.Resource.Id.search_badge;
-			global::Calligraphy.Resource.Id.search_bar = global::CalligraphySampleApp.Resource.Id.search_bar;
-			global::Calligraphy.Resource.Id.search_button = global::CalligraphySampleApp.Resource.Id.search_button;
-			global::Calligraphy.Resource.Id.search_close_btn = global::CalligraphySampleApp.Resource.Id.search_close_btn;
-			global::Calligraphy.Resource.Id.search_edit_frame = global::CalligraphySampleApp.Resource.Id.search_edit_frame;
-			global::Calligraphy.Resource.Id.search_go_btn = global::CalligraphySampleApp.Resource.Id.search_go_btn;
-			global::Calligraphy.Resource.Id.search_mag_icon = global::CalligraphySampleApp.Resource.Id.search_mag_icon;
-			global::Calligraphy.Resource.Id.search_plate = global::CalligraphySampleApp.Resource.Id.search_plate;
-			global::Calligraphy.Resource.Id.search_src_text = global::CalligraphySampleApp.Resource.Id.search_src_text;
-			global::Calligraphy.Resource.Id.search_voice_btn = global::CalligraphySampleApp.Resource.Id.search_voice_btn;
-			global::Calligraphy.Resource.Id.select_dialog_listview = global::CalligraphySampleApp.Resource.Id.select_dialog_listview;
-			global::Calligraphy.Resource.Id.shortcut = global::CalligraphySampleApp.Resource.Id.shortcut;
-			global::Calligraphy.Resource.Id.showCustom = global::CalligraphySampleApp.Resource.Id.showCustom;
-			global::Calligraphy.Resource.Id.showHome = global::CalligraphySampleApp.Resource.Id.showHome;
-			global::Calligraphy.Resource.Id.showTitle = global::CalligraphySampleApp.Resource.Id.showTitle;
-			global::Calligraphy.Resource.Id.spacer = global::CalligraphySampleApp.Resource.Id.spacer;
-			global::Calligraphy.Resource.Id.split_action_bar = global::CalligraphySampleApp.Resource.Id.split_action_bar;
-			global::Calligraphy.Resource.Id.src_atop = global::CalligraphySampleApp.Resource.Id.src_atop;
-			global::Calligraphy.Resource.Id.src_in = global::CalligraphySampleApp.Resource.Id.src_in;
-			global::Calligraphy.Resource.Id.src_over = global::CalligraphySampleApp.Resource.Id.src_over;
-			global::Calligraphy.Resource.Id.status_bar_latest_event_content = global::CalligraphySampleApp.Resource.Id.status_bar_latest_event_content;
-			global::Calligraphy.Resource.Id.submit_area = global::CalligraphySampleApp.Resource.Id.submit_area;
-			global::Calligraphy.Resource.Id.tabMode = global::CalligraphySampleApp.Resource.Id.tabMode;
-			global::Calligraphy.Resource.Id.text = global::CalligraphySampleApp.Resource.Id.text;
-			global::Calligraphy.Resource.Id.text2 = global::CalligraphySampleApp.Resource.Id.text2;
-			global::Calligraphy.Resource.Id.textSpacerNoButtons = global::CalligraphySampleApp.Resource.Id.textSpacerNoButtons;
-			global::Calligraphy.Resource.Id.time = global::CalligraphySampleApp.Resource.Id.time;
-			global::Calligraphy.Resource.Id.title = global::CalligraphySampleApp.Resource.Id.title;
-			global::Calligraphy.Resource.Id.title_template = global::CalligraphySampleApp.Resource.Id.title_template;
-			global::Calligraphy.Resource.Id.topPanel = global::CalligraphySampleApp.Resource.Id.topPanel;
-			global::Calligraphy.Resource.Id.up = global::CalligraphySampleApp.Resource.Id.up;
-			global::Calligraphy.Resource.Id.useLogo = global::CalligraphySampleApp.Resource.Id.useLogo;
-			global::Calligraphy.Resource.Id.withText = global::CalligraphySampleApp.Resource.Id.withText;
-			global::Calligraphy.Resource.Id.wrap_content = global::CalligraphySampleApp.Resource.Id.wrap_content;
-			global::Calligraphy.Resource.Integer.abc_config_activityDefaultDur = global::CalligraphySampleApp.Resource.Integer.abc_config_activityDefaultDur;
-			global::Calligraphy.Resource.Integer.abc_config_activityShortDur = global::CalligraphySampleApp.Resource.Integer.abc_config_activityShortDur;
-			global::Calligraphy.Resource.Integer.abc_max_action_buttons = global::CalligraphySampleApp.Resource.Integer.abc_max_action_buttons;
-			global::Calligraphy.Resource.Integer.cancel_button_image_alpha = global::CalligraphySampleApp.Resource.Integer.cancel_button_image_alpha;
-			global::Calligraphy.Resource.Integer.status_bar_notification_info_maxnum = global::CalligraphySampleApp.Resource.Integer.status_bar_notification_info_maxnum;
-			global::Calligraphy.Resource.Layout.abc_action_bar_title_item = global::CalligraphySampleApp.Resource.Layout.abc_action_bar_title_item;
-			global::Calligraphy.Resource.Layout.abc_action_bar_up_container = global::CalligraphySampleApp.Resource.Layout.abc_action_bar_up_container;
-			global::Calligraphy.Resource.Layout.abc_action_bar_view_list_nav_layout = global::CalligraphySampleApp.Resource.Layout.abc_action_bar_view_list_nav_layout;
-			global::Calligraphy.Resource.Layout.abc_action_menu_item_layout = global::CalligraphySampleApp.Resource.Layout.abc_action_menu_item_layout;
-			global::Calligraphy.Resource.Layout.abc_action_menu_layout = global::CalligraphySampleApp.Resource.Layout.abc_action_menu_layout;
-			global::Calligraphy.Resource.Layout.abc_action_mode_bar = global::CalligraphySampleApp.Resource.Layout.abc_action_mode_bar;
-			global::Calligraphy.Resource.Layout.abc_action_mode_close_item_material = global::CalligraphySampleApp.Resource.Layout.abc_action_mode_close_item_material;
-			global::Calligraphy.Resource.Layout.abc_activity_chooser_view = global::CalligraphySampleApp.Resource.Layout.abc_activity_chooser_view;
-			global::Calligraphy.Resource.Layout.abc_activity_chooser_view_list_item = global::CalligraphySampleApp.Resource.Layout.abc_activity_chooser_view_list_item;
-			global::Calligraphy.Resource.Layout.abc_alert_dialog_button_bar_material = global::CalligraphySampleApp.Resource.Layout.abc_alert_dialog_button_bar_material;
-			global::Calligraphy.Resource.Layout.abc_alert_dialog_material = global::CalligraphySampleApp.Resource.Layout.abc_alert_dialog_material;
-			global::Calligraphy.Resource.Layout.abc_dialog_title_material = global::CalligraphySampleApp.Resource.Layout.abc_dialog_title_material;
-			global::Calligraphy.Resource.Layout.abc_expanded_menu_layout = global::CalligraphySampleApp.Resource.Layout.abc_expanded_menu_layout;
-			global::Calligraphy.Resource.Layout.abc_list_menu_item_checkbox = global::CalligraphySampleApp.Resource.Layout.abc_list_menu_item_checkbox;
-			global::Calligraphy.Resource.Layout.abc_list_menu_item_icon = global::CalligraphySampleApp.Resource.Layout.abc_list_menu_item_icon;
-			global::Calligraphy.Resource.Layout.abc_list_menu_item_layout = global::CalligraphySampleApp.Resource.Layout.abc_list_menu_item_layout;
-			global::Calligraphy.Resource.Layout.abc_list_menu_item_radio = global::CalligraphySampleApp.Resource.Layout.abc_list_menu_item_radio;
-			global::Calligraphy.Resource.Layout.abc_popup_menu_item_layout = global::CalligraphySampleApp.Resource.Layout.abc_popup_menu_item_layout;
-			global::Calligraphy.Resource.Layout.abc_screen_content_include = global::CalligraphySampleApp.Resource.Layout.abc_screen_content_include;
-			global::Calligraphy.Resource.Layout.abc_screen_simple = global::CalligraphySampleApp.Resource.Layout.abc_screen_simple;
-			global::Calligraphy.Resource.Layout.abc_screen_simple_overlay_action_mode = global::CalligraphySampleApp.Resource.Layout.abc_screen_simple_overlay_action_mode;
-			global::Calligraphy.Resource.Layout.abc_screen_toolbar = global::CalligraphySampleApp.Resource.Layout.abc_screen_toolbar;
-			global::Calligraphy.Resource.Layout.abc_search_dropdown_item_icons_2line = global::CalligraphySampleApp.Resource.Layout.abc_search_dropdown_item_icons_2line;
-			global::Calligraphy.Resource.Layout.abc_search_view = global::CalligraphySampleApp.Resource.Layout.abc_search_view;
-			global::Calligraphy.Resource.Layout.abc_select_dialog_material = global::CalligraphySampleApp.Resource.Layout.abc_select_dialog_material;
-			global::Calligraphy.Resource.Layout.notification_media_action = global::CalligraphySampleApp.Resource.Layout.notification_media_action;
-			global::Calligraphy.Resource.Layout.notification_media_cancel_action = global::CalligraphySampleApp.Resource.Layout.notification_media_cancel_action;
-			global::Calligraphy.Resource.Layout.notification_template_big_media = global::CalligraphySampleApp.Resource.Layout.notification_template_big_media;
-			global::Calligraphy.Resource.Layout.notification_template_big_media_narrow = global::CalligraphySampleApp.Resource.Layout.notification_template_big_media_narrow;
-			global::Calligraphy.Resource.Layout.notification_template_lines = global::CalligraphySampleApp.Resource.Layout.notification_template_lines;
-			global::Calligraphy.Resource.Layout.notification_template_media = global::CalligraphySampleApp.Resource.Layout.notification_template_media;
-			global::Calligraphy.Resource.Layout.notification_template_part_chronometer = global::CalligraphySampleApp.Resource.Layout.notification_template_part_chronometer;
-			global::Calligraphy.Resource.Layout.notification_template_part_time = global::CalligraphySampleApp.Resource.Layout.notification_template_part_time;
-			global::Calligraphy.Resource.Layout.select_dialog_item_material = global::CalligraphySampleApp.Resource.Layout.select_dialog_item_material;
-			global::Calligraphy.Resource.Layout.select_dialog_multichoice_material = global::CalligraphySampleApp.Resource.Layout.select_dialog_multichoice_material;
-			global::Calligraphy.Resource.Layout.select_dialog_singlechoice_material = global::CalligraphySampleApp.Resource.Layout.select_dialog_singlechoice_material;
-			global::Calligraphy.Resource.Layout.support_simple_spinner_dropdown_item = global::CalligraphySampleApp.Resource.Layout.support_simple_spinner_dropdown_item;
-			global::Calligraphy.Resource.String.abc_action_bar_home_description = global::CalligraphySampleApp.Resource.String.abc_action_bar_home_description;
-			global::Calligraphy.Resource.String.abc_action_bar_home_description_format = global::CalligraphySampleApp.Resource.String.abc_action_bar_home_description_format;
-			global::Calligraphy.Resource.String.abc_action_bar_home_subtitle_description_format = global::CalligraphySampleApp.Resource.String.abc_action_bar_home_subtitle_description_format;
-			global::Calligraphy.Resource.String.abc_action_bar_up_description = global::CalligraphySampleApp.Resource.String.abc_action_bar_up_description;
-			global::Calligraphy.Resource.String.abc_action_menu_overflow_description = global::CalligraphySampleApp.Resource.String.abc_action_menu_overflow_description;
-			global::Calligraphy.Resource.String.abc_action_mode_done = global::CalligraphySampleApp.Resource.String.abc_action_mode_done;
-			global::Calligraphy.Resource.String.abc_activity_chooser_view_see_all = global::CalligraphySampleApp.Resource.String.abc_activity_chooser_view_see_all;
-			global::Calligraphy.Resource.String.abc_activitychooserview_choose_application = global::CalligraphySampleApp.Resource.String.abc_activitychooserview_choose_application;
-			global::Calligraphy.Resource.String.abc_capital_off = global::CalligraphySampleApp.Resource.String.abc_capital_off;
-			global::Calligraphy.Resource.String.abc_capital_on = global::CalligraphySampleApp.Resource.String.abc_capital_on;
-			global::Calligraphy.Resource.String.abc_search_hint = global::CalligraphySampleApp.Resource.String.abc_search_hint;
-			global::Calligraphy.Resource.String.abc_searchview_description_clear = global::CalligraphySampleApp.Resource.String.abc_searchview_description_clear;
-			global::Calligraphy.Resource.String.abc_searchview_description_query = global::CalligraphySampleApp.Resource.String.abc_searchview_description_query;
-			global::Calligraphy.Resource.String.abc_searchview_description_search = global::CalligraphySampleApp.Resource.String.abc_searchview_description_search;
-			global::Calligraphy.Resource.String.abc_searchview_description_submit = global::CalligraphySampleApp.Resource.String.abc_searchview_description_submit;
-			global::Calligraphy.Resource.String.abc_searchview_description_voice = global::CalligraphySampleApp.Resource.String.abc_searchview_description_voice;
-			global::Calligraphy.Resource.String.abc_shareactionprovider_share_with = global::CalligraphySampleApp.Resource.String.abc_shareactionprovider_share_with;
-			global::Calligraphy.Resource.String.abc_shareactionprovider_share_with_application = global::CalligraphySampleApp.Resource.String.abc_shareactionprovider_share_with_application;
-			global::Calligraphy.Resource.String.abc_toolbar_collapse_description = global::CalligraphySampleApp.Resource.String.abc_toolbar_collapse_description;
-			global::Calligraphy.Resource.String.status_bar_notification_info_overflow = global::CalligraphySampleApp.Resource.String.status_bar_notification_info_overflow;
-			global::Calligraphy.Resource.Style.AlertDialog_AppCompat = global::CalligraphySampleApp.Resource.Style.AlertDialog_AppCompat;
-			global::Calligraphy.Resource.Style.AlertDialog_AppCompat_Light = global::CalligraphySampleApp.Resource.Style.AlertDialog_AppCompat_Light;
-			global::Calligraphy.Resource.Style.Animation_AppCompat_Dialog = global::CalligraphySampleApp.Resource.Style.Animation_AppCompat_Dialog;
-			global::Calligraphy.Resource.Style.Animation_AppCompat_DropDownUp = global::CalligraphySampleApp.Resource.Style.Animation_AppCompat_DropDownUp;
-			global::Calligraphy.Resource.Style.Base_AlertDialog_AppCompat = global::CalligraphySampleApp.Resource.Style.Base_AlertDialog_AppCompat;
-			global::Calligraphy.Resource.Style.Base_AlertDialog_AppCompat_Light = global::CalligraphySampleApp.Resource.Style.Base_AlertDialog_AppCompat_Light;
-			global::Calligraphy.Resource.Style.Base_Animation_AppCompat_Dialog = global::CalligraphySampleApp.Resource.Style.Base_Animation_AppCompat_Dialog;
-			global::Calligraphy.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::CalligraphySampleApp.Resource.Style.Base_Animation_AppCompat_DropDownUp;
-			global::Calligraphy.Resource.Style.Base_DialogWindowTitle_AppCompat = global::CalligraphySampleApp.Resource.Style.Base_DialogWindowTitle_AppCompat;
-			global::Calligraphy.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::CalligraphySampleApp.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_AppCompat = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_AppCompat;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_AppCompat_Body1;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_AppCompat_Body2;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_AppCompat_Button = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_AppCompat_Button;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_AppCompat_Caption;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_AppCompat_Display1;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_AppCompat_Display2;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_AppCompat_Display3;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_AppCompat_Display4;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_AppCompat_Headline;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_AppCompat_Large = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_AppCompat_Large;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_AppCompat_Medium;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_AppCompat_Menu;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_AppCompat_Small = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_AppCompat_Small;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_AppCompat_Title = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_AppCompat_Title;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
-			global::Calligraphy.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::CalligraphySampleApp.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
-			global::Calligraphy.Resource.Style.Base_Theme_AppCompat = global::CalligraphySampleApp.Resource.Style.Base_Theme_AppCompat;
-			global::Calligraphy.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::CalligraphySampleApp.Resource.Style.Base_Theme_AppCompat_CompactMenu;
-			global::Calligraphy.Resource.Style.Base_Theme_AppCompat_Dialog = global::CalligraphySampleApp.Resource.Style.Base_Theme_AppCompat_Dialog;
-			global::Calligraphy.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::CalligraphySampleApp.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
-			global::Calligraphy.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::CalligraphySampleApp.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
-			global::Calligraphy.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::CalligraphySampleApp.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
-			global::Calligraphy.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::CalligraphySampleApp.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
-			global::Calligraphy.Resource.Style.Base_Theme_AppCompat_Light = global::CalligraphySampleApp.Resource.Style.Base_Theme_AppCompat_Light;
-			global::Calligraphy.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::CalligraphySampleApp.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
-			global::Calligraphy.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::CalligraphySampleApp.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
-			global::Calligraphy.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::CalligraphySampleApp.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
-			global::Calligraphy.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::CalligraphySampleApp.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
-			global::Calligraphy.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::CalligraphySampleApp.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
-			global::Calligraphy.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::CalligraphySampleApp.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
-			global::Calligraphy.Resource.Style.Base_ThemeOverlay_AppCompat = global::CalligraphySampleApp.Resource.Style.Base_ThemeOverlay_AppCompat;
-			global::Calligraphy.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::CalligraphySampleApp.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
-			global::Calligraphy.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::CalligraphySampleApp.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
-			global::Calligraphy.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::CalligraphySampleApp.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
-			global::Calligraphy.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::CalligraphySampleApp.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
-			global::Calligraphy.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::CalligraphySampleApp.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
-			global::Calligraphy.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::CalligraphySampleApp.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
-			global::Calligraphy.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::CalligraphySampleApp.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
-			global::Calligraphy.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::CalligraphySampleApp.Resource.Style.Base_V12_Widget_AppCompat_EditText;
-			global::Calligraphy.Resource.Style.Base_V21_Theme_AppCompat = global::CalligraphySampleApp.Resource.Style.Base_V21_Theme_AppCompat;
-			global::Calligraphy.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::CalligraphySampleApp.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
-			global::Calligraphy.Resource.Style.Base_V21_Theme_AppCompat_Light = global::CalligraphySampleApp.Resource.Style.Base_V21_Theme_AppCompat_Light;
-			global::Calligraphy.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::CalligraphySampleApp.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
-			global::Calligraphy.Resource.Style.Base_V22_Theme_AppCompat = global::CalligraphySampleApp.Resource.Style.Base_V22_Theme_AppCompat;
-			global::Calligraphy.Resource.Style.Base_V22_Theme_AppCompat_Light = global::CalligraphySampleApp.Resource.Style.Base_V22_Theme_AppCompat_Light;
-			global::Calligraphy.Resource.Style.Base_V23_Theme_AppCompat = global::CalligraphySampleApp.Resource.Style.Base_V23_Theme_AppCompat;
-			global::Calligraphy.Resource.Style.Base_V23_Theme_AppCompat_Light = global::CalligraphySampleApp.Resource.Style.Base_V23_Theme_AppCompat_Light;
-			global::Calligraphy.Resource.Style.Base_V7_Theme_AppCompat = global::CalligraphySampleApp.Resource.Style.Base_V7_Theme_AppCompat;
-			global::Calligraphy.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::CalligraphySampleApp.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
-			global::Calligraphy.Resource.Style.Base_V7_Theme_AppCompat_Light = global::CalligraphySampleApp.Resource.Style.Base_V7_Theme_AppCompat_Light;
-			global::Calligraphy.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::CalligraphySampleApp.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
-			global::Calligraphy.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::CalligraphySampleApp.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
-			global::Calligraphy.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::CalligraphySampleApp.Resource.Style.Base_V7_Widget_AppCompat_EditText;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_ActionBar = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_ActionBar;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_ActionButton = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_ActionButton;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_ActionMode = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_ActionMode;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_Button = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_Button;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_Button_Colored;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_Button_Small = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_Button_Small;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_ButtonBar;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_EditText = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_EditText;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_ImageButton = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_ImageButton;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_ListView = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_ListView;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_PopupMenu;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_PopupWindow;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_ProgressBar;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_RatingBar = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_RatingBar;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_SearchView = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_SearchView;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_SeekBar = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_SeekBar;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_Spinner = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_Spinner;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_Toolbar = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_Toolbar;
-			global::Calligraphy.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::CalligraphySampleApp.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
-			global::Calligraphy.Resource.Style.Platform_AppCompat = global::CalligraphySampleApp.Resource.Style.Platform_AppCompat;
-			global::Calligraphy.Resource.Style.Platform_AppCompat_Light = global::CalligraphySampleApp.Resource.Style.Platform_AppCompat_Light;
-			global::Calligraphy.Resource.Style.Platform_ThemeOverlay_AppCompat = global::CalligraphySampleApp.Resource.Style.Platform_ThemeOverlay_AppCompat;
-			global::Calligraphy.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::CalligraphySampleApp.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
-			global::Calligraphy.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::CalligraphySampleApp.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
-			global::Calligraphy.Resource.Style.Platform_V11_AppCompat = global::CalligraphySampleApp.Resource.Style.Platform_V11_AppCompat;
-			global::Calligraphy.Resource.Style.Platform_V11_AppCompat_Light = global::CalligraphySampleApp.Resource.Style.Platform_V11_AppCompat_Light;
-			global::Calligraphy.Resource.Style.Platform_V14_AppCompat = global::CalligraphySampleApp.Resource.Style.Platform_V14_AppCompat;
-			global::Calligraphy.Resource.Style.Platform_V14_AppCompat_Light = global::CalligraphySampleApp.Resource.Style.Platform_V14_AppCompat_Light;
-			global::Calligraphy.Resource.Style.Platform_Widget_AppCompat_Spinner = global::CalligraphySampleApp.Resource.Style.Platform_Widget_AppCompat_Spinner;
-			global::Calligraphy.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::CalligraphySampleApp.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
-			global::Calligraphy.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::CalligraphySampleApp.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
-			global::Calligraphy.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::CalligraphySampleApp.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
-			global::Calligraphy.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::CalligraphySampleApp.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
-			global::Calligraphy.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::CalligraphySampleApp.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
-			global::Calligraphy.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::CalligraphySampleApp.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
-			global::Calligraphy.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::CalligraphySampleApp.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
-			global::Calligraphy.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::CalligraphySampleApp.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
-			global::Calligraphy.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::CalligraphySampleApp.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
-			global::Calligraphy.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::CalligraphySampleApp.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
-			global::Calligraphy.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::CalligraphySampleApp.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
-			global::Calligraphy.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::CalligraphySampleApp.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
-			global::Calligraphy.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::CalligraphySampleApp.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
-			global::Calligraphy.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::CalligraphySampleApp.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_Body1 = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_Body1;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_Body2 = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_Body2;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_Button = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_Button;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_Caption = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_Caption;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_Display1 = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_Display1;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_Display2 = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_Display2;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_Display3 = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_Display3;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_Display4 = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_Display4;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_Headline = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_Headline;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_Inverse = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_Inverse;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_Large = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_Large;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_Medium = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_Medium;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_Menu = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_Menu;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_Small = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_Small;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_Subhead = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_Subhead;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_Title = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_Title;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_Widget_Button;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
-			global::Calligraphy.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::CalligraphySampleApp.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
-			global::Calligraphy.Resource.Style.TextAppearance_StatusBar_EventContent = global::CalligraphySampleApp.Resource.Style.TextAppearance_StatusBar_EventContent;
-			global::Calligraphy.Resource.Style.TextAppearance_StatusBar_EventContent_Info = global::CalligraphySampleApp.Resource.Style.TextAppearance_StatusBar_EventContent_Info;
-			global::Calligraphy.Resource.Style.TextAppearance_StatusBar_EventContent_Line2 = global::CalligraphySampleApp.Resource.Style.TextAppearance_StatusBar_EventContent_Line2;
-			global::Calligraphy.Resource.Style.TextAppearance_StatusBar_EventContent_Time = global::CalligraphySampleApp.Resource.Style.TextAppearance_StatusBar_EventContent_Time;
-			global::Calligraphy.Resource.Style.TextAppearance_StatusBar_EventContent_Title = global::CalligraphySampleApp.Resource.Style.TextAppearance_StatusBar_EventContent_Title;
-			global::Calligraphy.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::CalligraphySampleApp.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
-			global::Calligraphy.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::CalligraphySampleApp.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
-			global::Calligraphy.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::CalligraphySampleApp.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
-			global::Calligraphy.Resource.Style.Theme_AppCompat = global::CalligraphySampleApp.Resource.Style.Theme_AppCompat;
-			global::Calligraphy.Resource.Style.Theme_AppCompat_CompactMenu = global::CalligraphySampleApp.Resource.Style.Theme_AppCompat_CompactMenu;
-			global::Calligraphy.Resource.Style.Theme_AppCompat_DayNight = global::CalligraphySampleApp.Resource.Style.Theme_AppCompat_DayNight;
-			global::Calligraphy.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::CalligraphySampleApp.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
-			global::Calligraphy.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::CalligraphySampleApp.Resource.Style.Theme_AppCompat_DayNight_Dialog;
-			global::Calligraphy.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::CalligraphySampleApp.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
-			global::Calligraphy.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::CalligraphySampleApp.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
-			global::Calligraphy.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::CalligraphySampleApp.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
-			global::Calligraphy.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::CalligraphySampleApp.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
-			global::Calligraphy.Resource.Style.Theme_AppCompat_Dialog = global::CalligraphySampleApp.Resource.Style.Theme_AppCompat_Dialog;
-			global::Calligraphy.Resource.Style.Theme_AppCompat_Dialog_Alert = global::CalligraphySampleApp.Resource.Style.Theme_AppCompat_Dialog_Alert;
-			global::Calligraphy.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::CalligraphySampleApp.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
-			global::Calligraphy.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::CalligraphySampleApp.Resource.Style.Theme_AppCompat_DialogWhenLarge;
-			global::Calligraphy.Resource.Style.Theme_AppCompat_Light = global::CalligraphySampleApp.Resource.Style.Theme_AppCompat_Light;
-			global::Calligraphy.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::CalligraphySampleApp.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
-			global::Calligraphy.Resource.Style.Theme_AppCompat_Light_Dialog = global::CalligraphySampleApp.Resource.Style.Theme_AppCompat_Light_Dialog;
-			global::Calligraphy.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::CalligraphySampleApp.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
-			global::Calligraphy.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::CalligraphySampleApp.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
-			global::Calligraphy.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::CalligraphySampleApp.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
-			global::Calligraphy.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::CalligraphySampleApp.Resource.Style.Theme_AppCompat_Light_NoActionBar;
-			global::Calligraphy.Resource.Style.Theme_AppCompat_NoActionBar = global::CalligraphySampleApp.Resource.Style.Theme_AppCompat_NoActionBar;
-			global::Calligraphy.Resource.Style.ThemeOverlay_AppCompat = global::CalligraphySampleApp.Resource.Style.ThemeOverlay_AppCompat;
-			global::Calligraphy.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::CalligraphySampleApp.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
-			global::Calligraphy.Resource.Style.ThemeOverlay_AppCompat_Dark = global::CalligraphySampleApp.Resource.Style.ThemeOverlay_AppCompat_Dark;
-			global::Calligraphy.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::CalligraphySampleApp.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
-			global::Calligraphy.Resource.Style.ThemeOverlay_AppCompat_Light = global::CalligraphySampleApp.Resource.Style.ThemeOverlay_AppCompat_Light;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_ActionBar = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_ActionBar;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_ActionBar_Solid;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_ActionBar_TabText;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_ActionBar_TabView;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_ActionButton = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_ActionButton;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_ActionMode = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_ActionMode;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_ActivityChooserView = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_ActivityChooserView;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_Button = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_Button;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_Button_Borderless = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_Button_Borderless;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_Button_Colored = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_Button_Colored;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_Button_Small = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_Button_Small;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_ButtonBar = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_ButtonBar;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_EditText = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_EditText;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_ImageButton = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_ImageButton;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_Light_ActionBar = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_Light_ActionBar;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_Light_ActionButton = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_Light_ActionButton;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_Light_PopupMenu;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_Light_SearchView = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_Light_SearchView;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_ListPopupWindow = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_ListPopupWindow;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_ListView = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_ListView;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_ListView_DropDown = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_ListView_DropDown;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_ListView_Menu = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_ListView_Menu;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_PopupMenu = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_PopupMenu;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_PopupWindow = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_PopupWindow;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_ProgressBar = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_ProgressBar;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_RatingBar = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_RatingBar;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_RatingBar_Small = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_RatingBar_Small;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_SearchView = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_SearchView;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_SeekBar = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_SeekBar;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_Spinner = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_Spinner;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_Spinner_DropDown;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_Spinner_Underlined;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_Toolbar = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_Toolbar;
-			global::Calligraphy.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::CalligraphySampleApp.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
-			global::Calligraphy.Resource.Styleable.ActionBar = global::CalligraphySampleApp.Resource.Styleable.ActionBar;
-			global::Calligraphy.Resource.Styleable.ActionBar_background = global::CalligraphySampleApp.Resource.Styleable.ActionBar_background;
-			global::Calligraphy.Resource.Styleable.ActionBar_backgroundSplit = global::CalligraphySampleApp.Resource.Styleable.ActionBar_backgroundSplit;
-			global::Calligraphy.Resource.Styleable.ActionBar_backgroundStacked = global::CalligraphySampleApp.Resource.Styleable.ActionBar_backgroundStacked;
-			global::Calligraphy.Resource.Styleable.ActionBar_contentInsetEnd = global::CalligraphySampleApp.Resource.Styleable.ActionBar_contentInsetEnd;
-			global::Calligraphy.Resource.Styleable.ActionBar_contentInsetLeft = global::CalligraphySampleApp.Resource.Styleable.ActionBar_contentInsetLeft;
-			global::Calligraphy.Resource.Styleable.ActionBar_contentInsetRight = global::CalligraphySampleApp.Resource.Styleable.ActionBar_contentInsetRight;
-			global::Calligraphy.Resource.Styleable.ActionBar_contentInsetStart = global::CalligraphySampleApp.Resource.Styleable.ActionBar_contentInsetStart;
-			global::Calligraphy.Resource.Styleable.ActionBar_customNavigationLayout = global::CalligraphySampleApp.Resource.Styleable.ActionBar_customNavigationLayout;
-			global::Calligraphy.Resource.Styleable.ActionBar_displayOptions = global::CalligraphySampleApp.Resource.Styleable.ActionBar_displayOptions;
-			global::Calligraphy.Resource.Styleable.ActionBar_divider = global::CalligraphySampleApp.Resource.Styleable.ActionBar_divider;
-			global::Calligraphy.Resource.Styleable.ActionBar_elevation = global::CalligraphySampleApp.Resource.Styleable.ActionBar_elevation;
-			global::Calligraphy.Resource.Styleable.ActionBar_height = global::CalligraphySampleApp.Resource.Styleable.ActionBar_height;
-			global::Calligraphy.Resource.Styleable.ActionBar_hideOnContentScroll = global::CalligraphySampleApp.Resource.Styleable.ActionBar_hideOnContentScroll;
-			global::Calligraphy.Resource.Styleable.ActionBar_homeAsUpIndicator = global::CalligraphySampleApp.Resource.Styleable.ActionBar_homeAsUpIndicator;
-			global::Calligraphy.Resource.Styleable.ActionBar_homeLayout = global::CalligraphySampleApp.Resource.Styleable.ActionBar_homeLayout;
-			global::Calligraphy.Resource.Styleable.ActionBar_icon = global::CalligraphySampleApp.Resource.Styleable.ActionBar_icon;
-			global::Calligraphy.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::CalligraphySampleApp.Resource.Styleable.ActionBar_indeterminateProgressStyle;
-			global::Calligraphy.Resource.Styleable.ActionBar_itemPadding = global::CalligraphySampleApp.Resource.Styleable.ActionBar_itemPadding;
-			global::Calligraphy.Resource.Styleable.ActionBar_logo = global::CalligraphySampleApp.Resource.Styleable.ActionBar_logo;
-			global::Calligraphy.Resource.Styleable.ActionBar_navigationMode = global::CalligraphySampleApp.Resource.Styleable.ActionBar_navigationMode;
-			global::Calligraphy.Resource.Styleable.ActionBar_popupTheme = global::CalligraphySampleApp.Resource.Styleable.ActionBar_popupTheme;
-			global::Calligraphy.Resource.Styleable.ActionBar_progressBarPadding = global::CalligraphySampleApp.Resource.Styleable.ActionBar_progressBarPadding;
-			global::Calligraphy.Resource.Styleable.ActionBar_progressBarStyle = global::CalligraphySampleApp.Resource.Styleable.ActionBar_progressBarStyle;
-			global::Calligraphy.Resource.Styleable.ActionBar_subtitle = global::CalligraphySampleApp.Resource.Styleable.ActionBar_subtitle;
-			global::Calligraphy.Resource.Styleable.ActionBar_subtitleTextStyle = global::CalligraphySampleApp.Resource.Styleable.ActionBar_subtitleTextStyle;
-			global::Calligraphy.Resource.Styleable.ActionBar_title = global::CalligraphySampleApp.Resource.Styleable.ActionBar_title;
-			global::Calligraphy.Resource.Styleable.ActionBar_titleTextStyle = global::CalligraphySampleApp.Resource.Styleable.ActionBar_titleTextStyle;
-			global::Calligraphy.Resource.Styleable.ActionBarLayout = global::CalligraphySampleApp.Resource.Styleable.ActionBarLayout;
-			global::Calligraphy.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::CalligraphySampleApp.Resource.Styleable.ActionBarLayout_android_layout_gravity;
-			global::Calligraphy.Resource.Styleable.ActionMenuItemView = global::CalligraphySampleApp.Resource.Styleable.ActionMenuItemView;
-			global::Calligraphy.Resource.Styleable.ActionMenuItemView_android_minWidth = global::CalligraphySampleApp.Resource.Styleable.ActionMenuItemView_android_minWidth;
-			global::Calligraphy.Resource.Styleable.ActionMenuView = global::CalligraphySampleApp.Resource.Styleable.ActionMenuView;
-			global::Calligraphy.Resource.Styleable.ActionMode = global::CalligraphySampleApp.Resource.Styleable.ActionMode;
-			global::Calligraphy.Resource.Styleable.ActionMode_background = global::CalligraphySampleApp.Resource.Styleable.ActionMode_background;
-			global::Calligraphy.Resource.Styleable.ActionMode_backgroundSplit = global::CalligraphySampleApp.Resource.Styleable.ActionMode_backgroundSplit;
-			global::Calligraphy.Resource.Styleable.ActionMode_closeItemLayout = global::CalligraphySampleApp.Resource.Styleable.ActionMode_closeItemLayout;
-			global::Calligraphy.Resource.Styleable.ActionMode_height = global::CalligraphySampleApp.Resource.Styleable.ActionMode_height;
-			global::Calligraphy.Resource.Styleable.ActionMode_subtitleTextStyle = global::CalligraphySampleApp.Resource.Styleable.ActionMode_subtitleTextStyle;
-			global::Calligraphy.Resource.Styleable.ActionMode_titleTextStyle = global::CalligraphySampleApp.Resource.Styleable.ActionMode_titleTextStyle;
-			global::Calligraphy.Resource.Styleable.ActivityChooserView = global::CalligraphySampleApp.Resource.Styleable.ActivityChooserView;
-			global::Calligraphy.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::CalligraphySampleApp.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
-			global::Calligraphy.Resource.Styleable.ActivityChooserView_initialActivityCount = global::CalligraphySampleApp.Resource.Styleable.ActivityChooserView_initialActivityCount;
-			global::Calligraphy.Resource.Styleable.AlertDialog = global::CalligraphySampleApp.Resource.Styleable.AlertDialog;
-			global::Calligraphy.Resource.Styleable.AlertDialog_android_layout = global::CalligraphySampleApp.Resource.Styleable.AlertDialog_android_layout;
-			global::Calligraphy.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::CalligraphySampleApp.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
-			global::Calligraphy.Resource.Styleable.AlertDialog_listItemLayout = global::CalligraphySampleApp.Resource.Styleable.AlertDialog_listItemLayout;
-			global::Calligraphy.Resource.Styleable.AlertDialog_listLayout = global::CalligraphySampleApp.Resource.Styleable.AlertDialog_listLayout;
-			global::Calligraphy.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::CalligraphySampleApp.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
-			global::Calligraphy.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::CalligraphySampleApp.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
-			global::Calligraphy.Resource.Styleable.AppCompatImageView = global::CalligraphySampleApp.Resource.Styleable.AppCompatImageView;
-			global::Calligraphy.Resource.Styleable.AppCompatImageView_android_src = global::CalligraphySampleApp.Resource.Styleable.AppCompatImageView_android_src;
-			global::Calligraphy.Resource.Styleable.AppCompatImageView_srcCompat = global::CalligraphySampleApp.Resource.Styleable.AppCompatImageView_srcCompat;
-			global::Calligraphy.Resource.Styleable.AppCompatTextView = global::CalligraphySampleApp.Resource.Styleable.AppCompatTextView;
-			global::Calligraphy.Resource.Styleable.AppCompatTextView_android_textAppearance = global::CalligraphySampleApp.Resource.Styleable.AppCompatTextView_android_textAppearance;
-			global::Calligraphy.Resource.Styleable.AppCompatTextView_textAllCaps = global::CalligraphySampleApp.Resource.Styleable.AppCompatTextView_textAllCaps;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_actionBarDivider = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_actionBarDivider;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_actionBarSize = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_actionBarSize;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_actionBarStyle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_actionBarStyle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_actionBarTheme = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_actionBarTheme;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_actionButtonStyle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_actionModeBackground = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_actionModeBackground;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_actionModeStyle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_actionModeStyle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_alertDialogStyle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_alertDialogTheme;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_buttonBarStyle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_buttonStyle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_buttonStyle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_checkboxStyle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_checkboxStyle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_colorAccent = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_colorAccent;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_colorButtonNormal;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_colorControlActivated = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_colorControlActivated;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_colorControlHighlight;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_colorControlNormal = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_colorControlNormal;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_colorPrimary = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_colorPrimary;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_controlBackground = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_controlBackground;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_dialogTheme = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_dialogTheme;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_dividerHorizontal;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_dividerVertical = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_dividerVertical;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_editTextBackground = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_editTextBackground;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_editTextColor = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_editTextColor;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_editTextStyle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_editTextStyle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_imageButtonStyle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_panelBackground = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_panelBackground;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_popupMenuStyle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_popupWindowStyle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_radioButtonStyle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_ratingBarStyle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_searchViewStyle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_searchViewStyle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_seekBarStyle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_seekBarStyle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_selectableItemBackground;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_spinnerStyle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_spinnerStyle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_switchStyle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_switchStyle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_toolbarStyle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_toolbarStyle;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_windowActionBar = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_windowActionBar;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
-			global::Calligraphy.Resource.Styleable.AppCompatTheme_windowNoTitle = global::CalligraphySampleApp.Resource.Styleable.AppCompatTheme_windowNoTitle;
-			global::Calligraphy.Resource.Styleable.ButtonBarLayout = global::CalligraphySampleApp.Resource.Styleable.ButtonBarLayout;
-			global::Calligraphy.Resource.Styleable.ButtonBarLayout_allowStacking = global::CalligraphySampleApp.Resource.Styleable.ButtonBarLayout_allowStacking;
-			global::Calligraphy.Resource.Styleable.CompoundButton = global::CalligraphySampleApp.Resource.Styleable.CompoundButton;
-			global::Calligraphy.Resource.Styleable.CompoundButton_android_button = global::CalligraphySampleApp.Resource.Styleable.CompoundButton_android_button;
-			global::Calligraphy.Resource.Styleable.CompoundButton_buttonTint = global::CalligraphySampleApp.Resource.Styleable.CompoundButton_buttonTint;
-			global::Calligraphy.Resource.Styleable.CompoundButton_buttonTintMode = global::CalligraphySampleApp.Resource.Styleable.CompoundButton_buttonTintMode;
-			global::Calligraphy.Resource.Styleable.DrawerArrowToggle = global::CalligraphySampleApp.Resource.Styleable.DrawerArrowToggle;
-			global::Calligraphy.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::CalligraphySampleApp.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
-			global::Calligraphy.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::CalligraphySampleApp.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
-			global::Calligraphy.Resource.Styleable.DrawerArrowToggle_barLength = global::CalligraphySampleApp.Resource.Styleable.DrawerArrowToggle_barLength;
-			global::Calligraphy.Resource.Styleable.DrawerArrowToggle_color = global::CalligraphySampleApp.Resource.Styleable.DrawerArrowToggle_color;
-			global::Calligraphy.Resource.Styleable.DrawerArrowToggle_drawableSize = global::CalligraphySampleApp.Resource.Styleable.DrawerArrowToggle_drawableSize;
-			global::Calligraphy.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::CalligraphySampleApp.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
-			global::Calligraphy.Resource.Styleable.DrawerArrowToggle_spinBars = global::CalligraphySampleApp.Resource.Styleable.DrawerArrowToggle_spinBars;
-			global::Calligraphy.Resource.Styleable.DrawerArrowToggle_thickness = global::CalligraphySampleApp.Resource.Styleable.DrawerArrowToggle_thickness;
-			global::Calligraphy.Resource.Styleable.LinearLayoutCompat = global::CalligraphySampleApp.Resource.Styleable.LinearLayoutCompat;
-			global::Calligraphy.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::CalligraphySampleApp.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
-			global::Calligraphy.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::CalligraphySampleApp.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
-			global::Calligraphy.Resource.Styleable.LinearLayoutCompat_android_gravity = global::CalligraphySampleApp.Resource.Styleable.LinearLayoutCompat_android_gravity;
-			global::Calligraphy.Resource.Styleable.LinearLayoutCompat_android_orientation = global::CalligraphySampleApp.Resource.Styleable.LinearLayoutCompat_android_orientation;
-			global::Calligraphy.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::CalligraphySampleApp.Resource.Styleable.LinearLayoutCompat_android_weightSum;
-			global::Calligraphy.Resource.Styleable.LinearLayoutCompat_divider = global::CalligraphySampleApp.Resource.Styleable.LinearLayoutCompat_divider;
-			global::Calligraphy.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::CalligraphySampleApp.Resource.Styleable.LinearLayoutCompat_dividerPadding;
-			global::Calligraphy.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::CalligraphySampleApp.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
-			global::Calligraphy.Resource.Styleable.LinearLayoutCompat_showDividers = global::CalligraphySampleApp.Resource.Styleable.LinearLayoutCompat_showDividers;
-			global::Calligraphy.Resource.Styleable.LinearLayoutCompat_Layout = global::CalligraphySampleApp.Resource.Styleable.LinearLayoutCompat_Layout;
-			global::Calligraphy.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::CalligraphySampleApp.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
-			global::Calligraphy.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::CalligraphySampleApp.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
-			global::Calligraphy.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::CalligraphySampleApp.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
-			global::Calligraphy.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::CalligraphySampleApp.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
-			global::Calligraphy.Resource.Styleable.ListPopupWindow = global::CalligraphySampleApp.Resource.Styleable.ListPopupWindow;
-			global::Calligraphy.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::CalligraphySampleApp.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
-			global::Calligraphy.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::CalligraphySampleApp.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
-			global::Calligraphy.Resource.Styleable.MenuGroup = global::CalligraphySampleApp.Resource.Styleable.MenuGroup;
-			global::Calligraphy.Resource.Styleable.MenuGroup_android_checkableBehavior = global::CalligraphySampleApp.Resource.Styleable.MenuGroup_android_checkableBehavior;
-			global::Calligraphy.Resource.Styleable.MenuGroup_android_enabled = global::CalligraphySampleApp.Resource.Styleable.MenuGroup_android_enabled;
-			global::Calligraphy.Resource.Styleable.MenuGroup_android_id = global::CalligraphySampleApp.Resource.Styleable.MenuGroup_android_id;
-			global::Calligraphy.Resource.Styleable.MenuGroup_android_menuCategory = global::CalligraphySampleApp.Resource.Styleable.MenuGroup_android_menuCategory;
-			global::Calligraphy.Resource.Styleable.MenuGroup_android_orderInCategory = global::CalligraphySampleApp.Resource.Styleable.MenuGroup_android_orderInCategory;
-			global::Calligraphy.Resource.Styleable.MenuGroup_android_visible = global::CalligraphySampleApp.Resource.Styleable.MenuGroup_android_visible;
-			global::Calligraphy.Resource.Styleable.MenuItem = global::CalligraphySampleApp.Resource.Styleable.MenuItem;
-			global::Calligraphy.Resource.Styleable.MenuItem_actionLayout = global::CalligraphySampleApp.Resource.Styleable.MenuItem_actionLayout;
-			global::Calligraphy.Resource.Styleable.MenuItem_actionProviderClass = global::CalligraphySampleApp.Resource.Styleable.MenuItem_actionProviderClass;
-			global::Calligraphy.Resource.Styleable.MenuItem_actionViewClass = global::CalligraphySampleApp.Resource.Styleable.MenuItem_actionViewClass;
-			global::Calligraphy.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::CalligraphySampleApp.Resource.Styleable.MenuItem_android_alphabeticShortcut;
-			global::Calligraphy.Resource.Styleable.MenuItem_android_checkable = global::CalligraphySampleApp.Resource.Styleable.MenuItem_android_checkable;
-			global::Calligraphy.Resource.Styleable.MenuItem_android_checked = global::CalligraphySampleApp.Resource.Styleable.MenuItem_android_checked;
-			global::Calligraphy.Resource.Styleable.MenuItem_android_enabled = global::CalligraphySampleApp.Resource.Styleable.MenuItem_android_enabled;
-			global::Calligraphy.Resource.Styleable.MenuItem_android_icon = global::CalligraphySampleApp.Resource.Styleable.MenuItem_android_icon;
-			global::Calligraphy.Resource.Styleable.MenuItem_android_id = global::CalligraphySampleApp.Resource.Styleable.MenuItem_android_id;
-			global::Calligraphy.Resource.Styleable.MenuItem_android_menuCategory = global::CalligraphySampleApp.Resource.Styleable.MenuItem_android_menuCategory;
-			global::Calligraphy.Resource.Styleable.MenuItem_android_numericShortcut = global::CalligraphySampleApp.Resource.Styleable.MenuItem_android_numericShortcut;
-			global::Calligraphy.Resource.Styleable.MenuItem_android_onClick = global::CalligraphySampleApp.Resource.Styleable.MenuItem_android_onClick;
-			global::Calligraphy.Resource.Styleable.MenuItem_android_orderInCategory = global::CalligraphySampleApp.Resource.Styleable.MenuItem_android_orderInCategory;
-			global::Calligraphy.Resource.Styleable.MenuItem_android_title = global::CalligraphySampleApp.Resource.Styleable.MenuItem_android_title;
-			global::Calligraphy.Resource.Styleable.MenuItem_android_titleCondensed = global::CalligraphySampleApp.Resource.Styleable.MenuItem_android_titleCondensed;
-			global::Calligraphy.Resource.Styleable.MenuItem_android_visible = global::CalligraphySampleApp.Resource.Styleable.MenuItem_android_visible;
-			global::Calligraphy.Resource.Styleable.MenuItem_showAsAction = global::CalligraphySampleApp.Resource.Styleable.MenuItem_showAsAction;
-			global::Calligraphy.Resource.Styleable.MenuView = global::CalligraphySampleApp.Resource.Styleable.MenuView;
-			global::Calligraphy.Resource.Styleable.MenuView_android_headerBackground = global::CalligraphySampleApp.Resource.Styleable.MenuView_android_headerBackground;
-			global::Calligraphy.Resource.Styleable.MenuView_android_horizontalDivider = global::CalligraphySampleApp.Resource.Styleable.MenuView_android_horizontalDivider;
-			global::Calligraphy.Resource.Styleable.MenuView_android_itemBackground = global::CalligraphySampleApp.Resource.Styleable.MenuView_android_itemBackground;
-			global::Calligraphy.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::CalligraphySampleApp.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
-			global::Calligraphy.Resource.Styleable.MenuView_android_itemTextAppearance = global::CalligraphySampleApp.Resource.Styleable.MenuView_android_itemTextAppearance;
-			global::Calligraphy.Resource.Styleable.MenuView_android_verticalDivider = global::CalligraphySampleApp.Resource.Styleable.MenuView_android_verticalDivider;
-			global::Calligraphy.Resource.Styleable.MenuView_android_windowAnimationStyle = global::CalligraphySampleApp.Resource.Styleable.MenuView_android_windowAnimationStyle;
-			global::Calligraphy.Resource.Styleable.MenuView_preserveIconSpacing = global::CalligraphySampleApp.Resource.Styleable.MenuView_preserveIconSpacing;
-			global::Calligraphy.Resource.Styleable.PopupWindow = global::CalligraphySampleApp.Resource.Styleable.PopupWindow;
-			global::Calligraphy.Resource.Styleable.PopupWindow_android_popupBackground = global::CalligraphySampleApp.Resource.Styleable.PopupWindow_android_popupBackground;
-			global::Calligraphy.Resource.Styleable.PopupWindow_overlapAnchor = global::CalligraphySampleApp.Resource.Styleable.PopupWindow_overlapAnchor;
-			global::Calligraphy.Resource.Styleable.PopupWindowBackgroundState = global::CalligraphySampleApp.Resource.Styleable.PopupWindowBackgroundState;
-			global::Calligraphy.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::CalligraphySampleApp.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
-			global::Calligraphy.Resource.Styleable.SearchView = global::CalligraphySampleApp.Resource.Styleable.SearchView;
-			global::Calligraphy.Resource.Styleable.SearchView_android_focusable = global::CalligraphySampleApp.Resource.Styleable.SearchView_android_focusable;
-			global::Calligraphy.Resource.Styleable.SearchView_android_imeOptions = global::CalligraphySampleApp.Resource.Styleable.SearchView_android_imeOptions;
-			global::Calligraphy.Resource.Styleable.SearchView_android_inputType = global::CalligraphySampleApp.Resource.Styleable.SearchView_android_inputType;
-			global::Calligraphy.Resource.Styleable.SearchView_android_maxWidth = global::CalligraphySampleApp.Resource.Styleable.SearchView_android_maxWidth;
-			global::Calligraphy.Resource.Styleable.SearchView_closeIcon = global::CalligraphySampleApp.Resource.Styleable.SearchView_closeIcon;
-			global::Calligraphy.Resource.Styleable.SearchView_commitIcon = global::CalligraphySampleApp.Resource.Styleable.SearchView_commitIcon;
-			global::Calligraphy.Resource.Styleable.SearchView_defaultQueryHint = global::CalligraphySampleApp.Resource.Styleable.SearchView_defaultQueryHint;
-			global::Calligraphy.Resource.Styleable.SearchView_goIcon = global::CalligraphySampleApp.Resource.Styleable.SearchView_goIcon;
-			global::Calligraphy.Resource.Styleable.SearchView_iconifiedByDefault = global::CalligraphySampleApp.Resource.Styleable.SearchView_iconifiedByDefault;
-			global::Calligraphy.Resource.Styleable.SearchView_layout = global::CalligraphySampleApp.Resource.Styleable.SearchView_layout;
-			global::Calligraphy.Resource.Styleable.SearchView_queryBackground = global::CalligraphySampleApp.Resource.Styleable.SearchView_queryBackground;
-			global::Calligraphy.Resource.Styleable.SearchView_queryHint = global::CalligraphySampleApp.Resource.Styleable.SearchView_queryHint;
-			global::Calligraphy.Resource.Styleable.SearchView_searchHintIcon = global::CalligraphySampleApp.Resource.Styleable.SearchView_searchHintIcon;
-			global::Calligraphy.Resource.Styleable.SearchView_searchIcon = global::CalligraphySampleApp.Resource.Styleable.SearchView_searchIcon;
-			global::Calligraphy.Resource.Styleable.SearchView_submitBackground = global::CalligraphySampleApp.Resource.Styleable.SearchView_submitBackground;
-			global::Calligraphy.Resource.Styleable.SearchView_suggestionRowLayout = global::CalligraphySampleApp.Resource.Styleable.SearchView_suggestionRowLayout;
-			global::Calligraphy.Resource.Styleable.SearchView_voiceIcon = global::CalligraphySampleApp.Resource.Styleable.SearchView_voiceIcon;
-			global::Calligraphy.Resource.Styleable.Spinner = global::CalligraphySampleApp.Resource.Styleable.Spinner;
-			global::Calligraphy.Resource.Styleable.Spinner_android_dropDownWidth = global::CalligraphySampleApp.Resource.Styleable.Spinner_android_dropDownWidth;
-			global::Calligraphy.Resource.Styleable.Spinner_android_entries = global::CalligraphySampleApp.Resource.Styleable.Spinner_android_entries;
-			global::Calligraphy.Resource.Styleable.Spinner_android_popupBackground = global::CalligraphySampleApp.Resource.Styleable.Spinner_android_popupBackground;
-			global::Calligraphy.Resource.Styleable.Spinner_android_prompt = global::CalligraphySampleApp.Resource.Styleable.Spinner_android_prompt;
-			global::Calligraphy.Resource.Styleable.Spinner_popupTheme = global::CalligraphySampleApp.Resource.Styleable.Spinner_popupTheme;
-			global::Calligraphy.Resource.Styleable.SwitchCompat = global::CalligraphySampleApp.Resource.Styleable.SwitchCompat;
-			global::Calligraphy.Resource.Styleable.SwitchCompat_android_textOff = global::CalligraphySampleApp.Resource.Styleable.SwitchCompat_android_textOff;
-			global::Calligraphy.Resource.Styleable.SwitchCompat_android_textOn = global::CalligraphySampleApp.Resource.Styleable.SwitchCompat_android_textOn;
-			global::Calligraphy.Resource.Styleable.SwitchCompat_android_thumb = global::CalligraphySampleApp.Resource.Styleable.SwitchCompat_android_thumb;
-			global::Calligraphy.Resource.Styleable.SwitchCompat_showText = global::CalligraphySampleApp.Resource.Styleable.SwitchCompat_showText;
-			global::Calligraphy.Resource.Styleable.SwitchCompat_splitTrack = global::CalligraphySampleApp.Resource.Styleable.SwitchCompat_splitTrack;
-			global::Calligraphy.Resource.Styleable.SwitchCompat_switchMinWidth = global::CalligraphySampleApp.Resource.Styleable.SwitchCompat_switchMinWidth;
-			global::Calligraphy.Resource.Styleable.SwitchCompat_switchPadding = global::CalligraphySampleApp.Resource.Styleable.SwitchCompat_switchPadding;
-			global::Calligraphy.Resource.Styleable.SwitchCompat_switchTextAppearance = global::CalligraphySampleApp.Resource.Styleable.SwitchCompat_switchTextAppearance;
-			global::Calligraphy.Resource.Styleable.SwitchCompat_thumbTextPadding = global::CalligraphySampleApp.Resource.Styleable.SwitchCompat_thumbTextPadding;
-			global::Calligraphy.Resource.Styleable.SwitchCompat_track = global::CalligraphySampleApp.Resource.Styleable.SwitchCompat_track;
-			global::Calligraphy.Resource.Styleable.TextAppearance = global::CalligraphySampleApp.Resource.Styleable.TextAppearance;
-			global::Calligraphy.Resource.Styleable.TextAppearance_android_shadowColor = global::CalligraphySampleApp.Resource.Styleable.TextAppearance_android_shadowColor;
-			global::Calligraphy.Resource.Styleable.TextAppearance_android_shadowDx = global::CalligraphySampleApp.Resource.Styleable.TextAppearance_android_shadowDx;
-			global::Calligraphy.Resource.Styleable.TextAppearance_android_shadowDy = global::CalligraphySampleApp.Resource.Styleable.TextAppearance_android_shadowDy;
-			global::Calligraphy.Resource.Styleable.TextAppearance_android_shadowRadius = global::CalligraphySampleApp.Resource.Styleable.TextAppearance_android_shadowRadius;
-			global::Calligraphy.Resource.Styleable.TextAppearance_android_textColor = global::CalligraphySampleApp.Resource.Styleable.TextAppearance_android_textColor;
-			global::Calligraphy.Resource.Styleable.TextAppearance_android_textSize = global::CalligraphySampleApp.Resource.Styleable.TextAppearance_android_textSize;
-			global::Calligraphy.Resource.Styleable.TextAppearance_android_textStyle = global::CalligraphySampleApp.Resource.Styleable.TextAppearance_android_textStyle;
-			global::Calligraphy.Resource.Styleable.TextAppearance_android_typeface = global::CalligraphySampleApp.Resource.Styleable.TextAppearance_android_typeface;
-			global::Calligraphy.Resource.Styleable.TextAppearance_textAllCaps = global::CalligraphySampleApp.Resource.Styleable.TextAppearance_textAllCaps;
-			global::Calligraphy.Resource.Styleable.Toolbar = global::CalligraphySampleApp.Resource.Styleable.Toolbar;
-			global::Calligraphy.Resource.Styleable.Toolbar_android_gravity = global::CalligraphySampleApp.Resource.Styleable.Toolbar_android_gravity;
-			global::Calligraphy.Resource.Styleable.Toolbar_android_minHeight = global::CalligraphySampleApp.Resource.Styleable.Toolbar_android_minHeight;
-			global::Calligraphy.Resource.Styleable.Toolbar_collapseContentDescription = global::CalligraphySampleApp.Resource.Styleable.Toolbar_collapseContentDescription;
-			global::Calligraphy.Resource.Styleable.Toolbar_collapseIcon = global::CalligraphySampleApp.Resource.Styleable.Toolbar_collapseIcon;
-			global::Calligraphy.Resource.Styleable.Toolbar_contentInsetEnd = global::CalligraphySampleApp.Resource.Styleable.Toolbar_contentInsetEnd;
-			global::Calligraphy.Resource.Styleable.Toolbar_contentInsetLeft = global::CalligraphySampleApp.Resource.Styleable.Toolbar_contentInsetLeft;
-			global::Calligraphy.Resource.Styleable.Toolbar_contentInsetRight = global::CalligraphySampleApp.Resource.Styleable.Toolbar_contentInsetRight;
-			global::Calligraphy.Resource.Styleable.Toolbar_contentInsetStart = global::CalligraphySampleApp.Resource.Styleable.Toolbar_contentInsetStart;
-			global::Calligraphy.Resource.Styleable.Toolbar_logo = global::CalligraphySampleApp.Resource.Styleable.Toolbar_logo;
-			global::Calligraphy.Resource.Styleable.Toolbar_logoDescription = global::CalligraphySampleApp.Resource.Styleable.Toolbar_logoDescription;
-			global::Calligraphy.Resource.Styleable.Toolbar_maxButtonHeight = global::CalligraphySampleApp.Resource.Styleable.Toolbar_maxButtonHeight;
-			global::Calligraphy.Resource.Styleable.Toolbar_navigationContentDescription = global::CalligraphySampleApp.Resource.Styleable.Toolbar_navigationContentDescription;
-			global::Calligraphy.Resource.Styleable.Toolbar_navigationIcon = global::CalligraphySampleApp.Resource.Styleable.Toolbar_navigationIcon;
-			global::Calligraphy.Resource.Styleable.Toolbar_popupTheme = global::CalligraphySampleApp.Resource.Styleable.Toolbar_popupTheme;
-			global::Calligraphy.Resource.Styleable.Toolbar_subtitle = global::CalligraphySampleApp.Resource.Styleable.Toolbar_subtitle;
-			global::Calligraphy.Resource.Styleable.Toolbar_subtitleTextAppearance = global::CalligraphySampleApp.Resource.Styleable.Toolbar_subtitleTextAppearance;
-			global::Calligraphy.Resource.Styleable.Toolbar_subtitleTextColor = global::CalligraphySampleApp.Resource.Styleable.Toolbar_subtitleTextColor;
-			global::Calligraphy.Resource.Styleable.Toolbar_title = global::CalligraphySampleApp.Resource.Styleable.Toolbar_title;
-			global::Calligraphy.Resource.Styleable.Toolbar_titleMarginBottom = global::CalligraphySampleApp.Resource.Styleable.Toolbar_titleMarginBottom;
-			global::Calligraphy.Resource.Styleable.Toolbar_titleMarginEnd = global::CalligraphySampleApp.Resource.Styleable.Toolbar_titleMarginEnd;
-			global::Calligraphy.Resource.Styleable.Toolbar_titleMarginStart = global::CalligraphySampleApp.Resource.Styleable.Toolbar_titleMarginStart;
-			global::Calligraphy.Resource.Styleable.Toolbar_titleMarginTop = global::CalligraphySampleApp.Resource.Styleable.Toolbar_titleMarginTop;
-			global::Calligraphy.Resource.Styleable.Toolbar_titleMargins = global::CalligraphySampleApp.Resource.Styleable.Toolbar_titleMargins;
-			global::Calligraphy.Resource.Styleable.Toolbar_titleTextAppearance = global::CalligraphySampleApp.Resource.Styleable.Toolbar_titleTextAppearance;
-			global::Calligraphy.Resource.Styleable.Toolbar_titleTextColor = global::CalligraphySampleApp.Resource.Styleable.Toolbar_titleTextColor;
-			global::Calligraphy.Resource.Styleable.View = global::CalligraphySampleApp.Resource.Styleable.View;
-			global::Calligraphy.Resource.Styleable.View_android_focusable = global::CalligraphySampleApp.Resource.Styleable.View_android_focusable;
-			global::Calligraphy.Resource.Styleable.View_android_theme = global::CalligraphySampleApp.Resource.Styleable.View_android_theme;
-			global::Calligraphy.Resource.Styleable.View_paddingEnd = global::CalligraphySampleApp.Resource.Styleable.View_paddingEnd;
-			global::Calligraphy.Resource.Styleable.View_paddingStart = global::CalligraphySampleApp.Resource.Styleable.View_paddingStart;
-			global::Calligraphy.Resource.Styleable.View_theme = global::CalligraphySampleApp.Resource.Styleable.View_theme;
-			global::Calligraphy.Resource.Styleable.ViewBackgroundHelper = global::CalligraphySampleApp.Resource.Styleable.ViewBackgroundHelper;
-			global::Calligraphy.Resource.Styleable.ViewBackgroundHelper_android_background = global::CalligraphySampleApp.Resource.Styleable.ViewBackgroundHelper_android_background;
-			global::Calligraphy.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::CalligraphySampleApp.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
-			global::Calligraphy.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::CalligraphySampleApp.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
-			global::Calligraphy.Resource.Styleable.ViewStubCompat = global::CalligraphySampleApp.Resource.Styleable.ViewStubCompat;
-			global::Calligraphy.Resource.Styleable.ViewStubCompat_android_id = global::CalligraphySampleApp.Resource.Styleable.ViewStubCompat_android_id;
-			global::Calligraphy.Resource.Styleable.ViewStubCompat_android_inflatedId = global::CalligraphySampleApp.Resource.Styleable.ViewStubCompat_android_inflatedId;
-			global::Calligraphy.Resource.Styleable.ViewStubCompat_android_layout = global::CalligraphySampleApp.Resource.Styleable.ViewStubCompat_android_layout;
 		}
 		
 		public partial class Animation
@@ -1341,857 +92,857 @@ namespace CalligraphySampleApp
 		public partial class Attribute
 		{
 			
-			// aapt resource value: 0x7f010040
-			public const int actionBarDivider = 2130772032;
-			
-			// aapt resource value: 0x7f010041
-			public const int actionBarItemBackground = 2130772033;
-			
-			// aapt resource value: 0x7f01003a
-			public const int actionBarPopupTheme = 2130772026;
-			
 			// aapt resource value: 0x7f01003f
-			public const int actionBarSize = 2130772031;
+			public const int actionBarDivider = 2130772031;
 			
-			// aapt resource value: 0x7f01003c
-			public const int actionBarSplitStyle = 2130772028;
-			
-			// aapt resource value: 0x7f01003b
-			public const int actionBarStyle = 2130772027;
-			
-			// aapt resource value: 0x7f010036
-			public const int actionBarTabBarStyle = 2130772022;
-			
-			// aapt resource value: 0x7f010035
-			public const int actionBarTabStyle = 2130772021;
-			
-			// aapt resource value: 0x7f010037
-			public const int actionBarTabTextStyle = 2130772023;
-			
-			// aapt resource value: 0x7f01003d
-			public const int actionBarTheme = 2130772029;
-			
-			// aapt resource value: 0x7f01003e
-			public const int actionBarWidgetTheme = 2130772030;
-			
-			// aapt resource value: 0x7f01005a
-			public const int actionButtonStyle = 2130772058;
-			
-			// aapt resource value: 0x7f010056
-			public const int actionDropDownStyle = 2130772054;
-			
-			// aapt resource value: 0x7f0100a8
-			public const int actionLayout = 2130772136;
-			
-			// aapt resource value: 0x7f010042
-			public const int actionMenuTextAppearance = 2130772034;
-			
-			// aapt resource value: 0x7f010043
-			public const int actionMenuTextColor = 2130772035;
-			
-			// aapt resource value: 0x7f010046
-			public const int actionModeBackground = 2130772038;
-			
-			// aapt resource value: 0x7f010045
-			public const int actionModeCloseButtonStyle = 2130772037;
-			
-			// aapt resource value: 0x7f010048
-			public const int actionModeCloseDrawable = 2130772040;
-			
-			// aapt resource value: 0x7f01004a
-			public const int actionModeCopyDrawable = 2130772042;
-			
-			// aapt resource value: 0x7f010049
-			public const int actionModeCutDrawable = 2130772041;
-			
-			// aapt resource value: 0x7f01004e
-			public const int actionModeFindDrawable = 2130772046;
-			
-			// aapt resource value: 0x7f01004b
-			public const int actionModePasteDrawable = 2130772043;
-			
-			// aapt resource value: 0x7f010050
-			public const int actionModePopupWindowStyle = 2130772048;
-			
-			// aapt resource value: 0x7f01004c
-			public const int actionModeSelectAllDrawable = 2130772044;
-			
-			// aapt resource value: 0x7f01004d
-			public const int actionModeShareDrawable = 2130772045;
-			
-			// aapt resource value: 0x7f010047
-			public const int actionModeSplitBackground = 2130772039;
-			
-			// aapt resource value: 0x7f010044
-			public const int actionModeStyle = 2130772036;
-			
-			// aapt resource value: 0x7f01004f
-			public const int actionModeWebSearchDrawable = 2130772047;
-			
-			// aapt resource value: 0x7f010038
-			public const int actionOverflowButtonStyle = 2130772024;
+			// aapt resource value: 0x7f010040
+			public const int actionBarItemBackground = 2130772032;
 			
 			// aapt resource value: 0x7f010039
-			public const int actionOverflowMenuStyle = 2130772025;
+			public const int actionBarPopupTheme = 2130772025;
 			
-			// aapt resource value: 0x7f0100aa
-			public const int actionProviderClass = 2130772138;
+			// aapt resource value: 0x7f01003e
+			public const int actionBarSize = 2130772030;
 			
-			// aapt resource value: 0x7f0100a9
-			public const int actionViewClass = 2130772137;
+			// aapt resource value: 0x7f01003b
+			public const int actionBarSplitStyle = 2130772027;
 			
-			// aapt resource value: 0x7f010062
-			public const int activityChooserViewStyle = 2130772066;
+			// aapt resource value: 0x7f01003a
+			public const int actionBarStyle = 2130772026;
 			
-			// aapt resource value: 0x7f010085
-			public const int alertDialogButtonGroupStyle = 2130772101;
+			// aapt resource value: 0x7f010035
+			public const int actionBarTabBarStyle = 2130772021;
 			
-			// aapt resource value: 0x7f010086
-			public const int alertDialogCenterButtons = 2130772102;
+			// aapt resource value: 0x7f010034
+			public const int actionBarTabStyle = 2130772020;
 			
-			// aapt resource value: 0x7f010084
-			public const int alertDialogStyle = 2130772100;
+			// aapt resource value: 0x7f010036
+			public const int actionBarTabTextStyle = 2130772022;
 			
-			// aapt resource value: 0x7f010087
-			public const int alertDialogTheme = 2130772103;
+			// aapt resource value: 0x7f01003c
+			public const int actionBarTheme = 2130772028;
 			
-			// aapt resource value: 0x7f010099
-			public const int allowStacking = 2130772121;
-			
-			// aapt resource value: 0x7f0100a0
-			public const int arrowHeadLength = 2130772128;
-			
-			// aapt resource value: 0x7f0100a1
-			public const int arrowShaftLength = 2130772129;
-			
-			// aapt resource value: 0x7f01008c
-			public const int autoCompleteTextViewStyle = 2130772108;
-			
-			// aapt resource value: 0x7f010011
-			public const int background = 2130771985;
-			
-			// aapt resource value: 0x7f010013
-			public const int backgroundSplit = 2130771987;
-			
-			// aapt resource value: 0x7f010012
-			public const int backgroundStacked = 2130771986;
-			
-			// aapt resource value: 0x7f0100d4
-			public const int backgroundTint = 2130772180;
-			
-			// aapt resource value: 0x7f0100d5
-			public const int backgroundTintMode = 2130772181;
-			
-			// aapt resource value: 0x7f0100a2
-			public const int barLength = 2130772130;
-			
-			// aapt resource value: 0x7f0100da
-			public const int behavior_hideable = 2130772186;
-			
-			// aapt resource value: 0x7f010100
-			public const int behavior_overlapTop = 2130772224;
-			
-			// aapt resource value: 0x7f0100d9
-			public const int behavior_peekHeight = 2130772185;
-			
-			// aapt resource value: 0x7f0100f6
-			public const int borderWidth = 2130772214;
-			
-			// aapt resource value: 0x7f01005f
-			public const int borderlessButtonStyle = 2130772063;
-			
-			// aapt resource value: 0x7f0100f0
-			public const int bottomSheetDialogTheme = 2130772208;
-			
-			// aapt resource value: 0x7f0100f1
-			public const int bottomSheetStyle = 2130772209;
-			
-			// aapt resource value: 0x7f01005c
-			public const int buttonBarButtonStyle = 2130772060;
-			
-			// aapt resource value: 0x7f01008a
-			public const int buttonBarNegativeButtonStyle = 2130772106;
-			
-			// aapt resource value: 0x7f01008b
-			public const int buttonBarNeutralButtonStyle = 2130772107;
-			
-			// aapt resource value: 0x7f010089
-			public const int buttonBarPositiveButtonStyle = 2130772105;
-			
-			// aapt resource value: 0x7f01005b
-			public const int buttonBarStyle = 2130772059;
-			
-			// aapt resource value: 0x7f010024
-			public const int buttonPanelSideLayout = 2130772004;
-			
-			// aapt resource value: 0x7f01008d
-			public const int buttonStyle = 2130772109;
-			
-			// aapt resource value: 0x7f01008e
-			public const int buttonStyleSmall = 2130772110;
-			
-			// aapt resource value: 0x7f01009a
-			public const int buttonTint = 2130772122;
-			
-			// aapt resource value: 0x7f01009b
-			public const int buttonTintMode = 2130772123;
-			
-			// aapt resource value: 0x7f01008f
-			public const int checkboxStyle = 2130772111;
-			
-			// aapt resource value: 0x7f010090
-			public const int checkedTextViewStyle = 2130772112;
-			
-			// aapt resource value: 0x7f0100b2
-			public const int closeIcon = 2130772146;
-			
-			// aapt resource value: 0x7f010021
-			public const int closeItemLayout = 2130772001;
-			
-			// aapt resource value: 0x7f0100cb
-			public const int collapseContentDescription = 2130772171;
-			
-			// aapt resource value: 0x7f0100ca
-			public const int collapseIcon = 2130772170;
-			
-			// aapt resource value: 0x7f0100e7
-			public const int collapsedTitleGravity = 2130772199;
-			
-			// aapt resource value: 0x7f0100e3
-			public const int collapsedTitleTextAppearance = 2130772195;
-			
-			// aapt resource value: 0x7f01009c
-			public const int color = 2130772124;
-			
-			// aapt resource value: 0x7f01007d
-			public const int colorAccent = 2130772093;
-			
-			// aapt resource value: 0x7f010081
-			public const int colorButtonNormal = 2130772097;
-			
-			// aapt resource value: 0x7f01007f
-			public const int colorControlActivated = 2130772095;
-			
-			// aapt resource value: 0x7f010080
-			public const int colorControlHighlight = 2130772096;
-			
-			// aapt resource value: 0x7f01007e
-			public const int colorControlNormal = 2130772094;
-			
-			// aapt resource value: 0x7f01007b
-			public const int colorPrimary = 2130772091;
-			
-			// aapt resource value: 0x7f01007c
-			public const int colorPrimaryDark = 2130772092;
-			
-			// aapt resource value: 0x7f010082
-			public const int colorSwitchThumbNormal = 2130772098;
-			
-			// aapt resource value: 0x7f0100b7
-			public const int commitIcon = 2130772151;
-			
-			// aapt resource value: 0x7f01001c
-			public const int contentInsetEnd = 2130771996;
-			
-			// aapt resource value: 0x7f01001d
-			public const int contentInsetLeft = 2130771997;
-			
-			// aapt resource value: 0x7f01001e
-			public const int contentInsetRight = 2130771998;
-			
-			// aapt resource value: 0x7f01001b
-			public const int contentInsetStart = 2130771995;
-			
-			// aapt resource value: 0x7f0100e4
-			public const int contentScrim = 2130772196;
-			
-			// aapt resource value: 0x7f010083
-			public const int controlBackground = 2130772099;
-			
-			// aapt resource value: 0x7f010116
-			public const int counterEnabled = 2130772246;
-			
-			// aapt resource value: 0x7f010117
-			public const int counterMaxLength = 2130772247;
-			
-			// aapt resource value: 0x7f010119
-			public const int counterOverflowTextAppearance = 2130772249;
-			
-			// aapt resource value: 0x7f010118
-			public const int counterTextAppearance = 2130772248;
-			
-			// aapt resource value: 0x7f010014
-			public const int customNavigationLayout = 2130771988;
-			
-			// aapt resource value: 0x7f0100b1
-			public const int defaultQueryHint = 2130772145;
-			
-			// aapt resource value: 0x7f010054
-			public const int dialogPreferredPadding = 2130772052;
-			
-			// aapt resource value: 0x7f010053
-			public const int dialogTheme = 2130772051;
-			
-			// aapt resource value: 0x7f01000a
-			public const int displayOptions = 2130771978;
-			
-			// aapt resource value: 0x7f010010
-			public const int divider = 2130771984;
-			
-			// aapt resource value: 0x7f010061
-			public const int dividerHorizontal = 2130772065;
-			
-			// aapt resource value: 0x7f0100a6
-			public const int dividerPadding = 2130772134;
-			
-			// aapt resource value: 0x7f010060
-			public const int dividerVertical = 2130772064;
-			
-			// aapt resource value: 0x7f01009e
-			public const int drawableSize = 2130772126;
-			
-			// aapt resource value: 0x7f010005
-			public const int drawerArrowStyle = 2130771973;
-			
-			// aapt resource value: 0x7f010073
-			public const int dropDownListViewStyle = 2130772083;
-			
-			// aapt resource value: 0x7f010057
-			public const int dropdownListPreferredItemHeight = 2130772055;
-			
-			// aapt resource value: 0x7f010068
-			public const int editTextBackground = 2130772072;
-			
-			// aapt resource value: 0x7f010067
-			public const int editTextColor = 2130772071;
-			
-			// aapt resource value: 0x7f010091
-			public const int editTextStyle = 2130772113;
-			
-			// aapt resource value: 0x7f01001f
-			public const int elevation = 2130771999;
-			
-			// aapt resource value: 0x7f010114
-			public const int errorEnabled = 2130772244;
-			
-			// aapt resource value: 0x7f010115
-			public const int errorTextAppearance = 2130772245;
-			
-			// aapt resource value: 0x7f010023
-			public const int expandActivityOverflowButtonDrawable = 2130772003;
-			
-			// aapt resource value: 0x7f0100d6
-			public const int expanded = 2130772182;
-			
-			// aapt resource value: 0x7f0100e8
-			public const int expandedTitleGravity = 2130772200;
-			
-			// aapt resource value: 0x7f0100dd
-			public const int expandedTitleMargin = 2130772189;
-			
-			// aapt resource value: 0x7f0100e1
-			public const int expandedTitleMarginBottom = 2130772193;
-			
-			// aapt resource value: 0x7f0100e0
-			public const int expandedTitleMarginEnd = 2130772192;
-			
-			// aapt resource value: 0x7f0100de
-			public const int expandedTitleMarginStart = 2130772190;
-			
-			// aapt resource value: 0x7f0100df
-			public const int expandedTitleMarginTop = 2130772191;
-			
-			// aapt resource value: 0x7f0100e2
-			public const int expandedTitleTextAppearance = 2130772194;
-			
-			// aapt resource value: 0x7f0100f4
-			public const int fabSize = 2130772212;
-			
-			// aapt resource value: 0x7f010000
-			public const int fontPath = 2130771968;
-			
-			// aapt resource value: 0x7f0100f8
-			public const int foregroundInsidePadding = 2130772216;
-			
-			// aapt resource value: 0x7f01009f
-			public const int gapBetweenBars = 2130772127;
-			
-			// aapt resource value: 0x7f0100b3
-			public const int goIcon = 2130772147;
-			
-			// aapt resource value: 0x7f0100fe
-			public const int headerLayout = 2130772222;
-			
-			// aapt resource value: 0x7f010006
-			public const int height = 2130771974;
-			
-			// aapt resource value: 0x7f01001a
-			public const int hideOnContentScroll = 2130771994;
-			
-			// aapt resource value: 0x7f01011a
-			public const int hintAnimationEnabled = 2130772250;
-			
-			// aapt resource value: 0x7f010113
-			public const int hintEnabled = 2130772243;
-			
-			// aapt resource value: 0x7f010112
-			public const int hintTextAppearance = 2130772242;
+			// aapt resource value: 0x7f01003d
+			public const int actionBarWidgetTheme = 2130772029;
 			
 			// aapt resource value: 0x7f010059
-			public const int homeAsUpIndicator = 2130772057;
-			
-			// aapt resource value: 0x7f010015
-			public const int homeLayout = 2130771989;
-			
-			// aapt resource value: 0x7f01000e
-			public const int icon = 2130771982;
-			
-			// aapt resource value: 0x7f0100af
-			public const int iconifiedByDefault = 2130772143;
-			
-			// aapt resource value: 0x7f010069
-			public const int imageButtonStyle = 2130772073;
-			
-			// aapt resource value: 0x7f010017
-			public const int indeterminateProgressStyle = 2130771991;
-			
-			// aapt resource value: 0x7f010022
-			public const int initialActivityCount = 2130772002;
-			
-			// aapt resource value: 0x7f0100ff
-			public const int insetForeground = 2130772223;
-			
-			// aapt resource value: 0x7f010007
-			public const int isLightTheme = 2130771975;
-			
-			// aapt resource value: 0x7f0100fc
-			public const int itemBackground = 2130772220;
-			
-			// aapt resource value: 0x7f0100fa
-			public const int itemIconTint = 2130772218;
-			
-			// aapt resource value: 0x7f010019
-			public const int itemPadding = 2130771993;
-			
-			// aapt resource value: 0x7f0100fd
-			public const int itemTextAppearance = 2130772221;
-			
-			// aapt resource value: 0x7f0100fb
-			public const int itemTextColor = 2130772219;
-			
-			// aapt resource value: 0x7f0100ea
-			public const int keylines = 2130772202;
-			
-			// aapt resource value: 0x7f0100ae
-			public const int layout = 2130772142;
-			
-			// aapt resource value: 0x7f010001
-			public const int layoutManager = 2130771969;
-			
-			// aapt resource value: 0x7f0100ed
-			public const int layout_anchor = 2130772205;
-			
-			// aapt resource value: 0x7f0100ef
-			public const int layout_anchorGravity = 2130772207;
-			
-			// aapt resource value: 0x7f0100ec
-			public const int layout_behavior = 2130772204;
-			
-			// aapt resource value: 0x7f0100db
-			public const int layout_collapseMode = 2130772187;
-			
-			// aapt resource value: 0x7f0100dc
-			public const int layout_collapseParallaxMultiplier = 2130772188;
-			
-			// aapt resource value: 0x7f0100ee
-			public const int layout_keyline = 2130772206;
-			
-			// aapt resource value: 0x7f0100d7
-			public const int layout_scrollFlags = 2130772183;
-			
-			// aapt resource value: 0x7f0100d8
-			public const int layout_scrollInterpolator = 2130772184;
-			
-			// aapt resource value: 0x7f01007a
-			public const int listChoiceBackgroundIndicator = 2130772090;
+			public const int actionButtonStyle = 2130772057;
 			
 			// aapt resource value: 0x7f010055
-			public const int listDividerAlertDialog = 2130772053;
-			
-			// aapt resource value: 0x7f010028
-			public const int listItemLayout = 2130772008;
-			
-			// aapt resource value: 0x7f010025
-			public const int listLayout = 2130772005;
-			
-			// aapt resource value: 0x7f010074
-			public const int listPopupWindowStyle = 2130772084;
-			
-			// aapt resource value: 0x7f01006e
-			public const int listPreferredItemHeight = 2130772078;
-			
-			// aapt resource value: 0x7f010070
-			public const int listPreferredItemHeightLarge = 2130772080;
-			
-			// aapt resource value: 0x7f01006f
-			public const int listPreferredItemHeightSmall = 2130772079;
-			
-			// aapt resource value: 0x7f010071
-			public const int listPreferredItemPaddingLeft = 2130772081;
-			
-			// aapt resource value: 0x7f010072
-			public const int listPreferredItemPaddingRight = 2130772082;
-			
-			// aapt resource value: 0x7f01000f
-			public const int logo = 2130771983;
-			
-			// aapt resource value: 0x7f0100ce
-			public const int logoDescription = 2130772174;
-			
-			// aapt resource value: 0x7f010101
-			public const int maxActionInlineWidth = 2130772225;
-			
-			// aapt resource value: 0x7f0100c9
-			public const int maxButtonHeight = 2130772169;
-			
-			// aapt resource value: 0x7f0100a4
-			public const int measureWithLargestChild = 2130772132;
-			
-			// aapt resource value: 0x7f0100f9
-			public const int menu = 2130772217;
-			
-			// aapt resource value: 0x7f010026
-			public const int multiChoiceItemLayout = 2130772006;
-			
-			// aapt resource value: 0x7f0100cd
-			public const int navigationContentDescription = 2130772173;
-			
-			// aapt resource value: 0x7f0100cc
-			public const int navigationIcon = 2130772172;
-			
-			// aapt resource value: 0x7f010009
-			public const int navigationMode = 2130771977;
-			
-			// aapt resource value: 0x7f0100ac
-			public const int overlapAnchor = 2130772140;
-			
-			// aapt resource value: 0x7f0100d2
-			public const int paddingEnd = 2130772178;
-			
-			// aapt resource value: 0x7f0100d1
-			public const int paddingStart = 2130772177;
-			
-			// aapt resource value: 0x7f010077
-			public const int panelBackground = 2130772087;
-			
-			// aapt resource value: 0x7f010079
-			public const int panelMenuListTheme = 2130772089;
-			
-			// aapt resource value: 0x7f010078
-			public const int panelMenuListWidth = 2130772088;
-			
-			// aapt resource value: 0x7f010065
-			public const int popupMenuStyle = 2130772069;
-			
-			// aapt resource value: 0x7f010020
-			public const int popupTheme = 2130772000;
-			
-			// aapt resource value: 0x7f010066
-			public const int popupWindowStyle = 2130772070;
-			
-			// aapt resource value: 0x7f0100ab
-			public const int preserveIconSpacing = 2130772139;
-			
-			// aapt resource value: 0x7f0100f5
-			public const int pressedTranslationZ = 2130772213;
-			
-			// aapt resource value: 0x7f010018
-			public const int progressBarPadding = 2130771992;
-			
-			// aapt resource value: 0x7f010016
-			public const int progressBarStyle = 2130771990;
-			
-			// aapt resource value: 0x7f0100b9
-			public const int queryBackground = 2130772153;
-			
-			// aapt resource value: 0x7f0100b0
-			public const int queryHint = 2130772144;
-			
-			// aapt resource value: 0x7f010092
-			public const int radioButtonStyle = 2130772114;
-			
-			// aapt resource value: 0x7f010093
-			public const int ratingBarStyle = 2130772115;
-			
-			// aapt resource value: 0x7f010094
-			public const int ratingBarStyleIndicator = 2130772116;
-			
-			// aapt resource value: 0x7f010095
-			public const int ratingBarStyleSmall = 2130772117;
-			
-			// aapt resource value: 0x7f010003
-			public const int reverseLayout = 2130771971;
-			
-			// aapt resource value: 0x7f0100f3
-			public const int rippleColor = 2130772211;
-			
-			// aapt resource value: 0x7f0100b5
-			public const int searchHintIcon = 2130772149;
-			
-			// aapt resource value: 0x7f0100b4
-			public const int searchIcon = 2130772148;
-			
-			// aapt resource value: 0x7f01006d
-			public const int searchViewStyle = 2130772077;
-			
-			// aapt resource value: 0x7f010096
-			public const int seekBarStyle = 2130772118;
-			
-			// aapt resource value: 0x7f01005d
-			public const int selectableItemBackground = 2130772061;
-			
-			// aapt resource value: 0x7f01005e
-			public const int selectableItemBackgroundBorderless = 2130772062;
+			public const int actionDropDownStyle = 2130772053;
 			
 			// aapt resource value: 0x7f0100a7
-			public const int showAsAction = 2130772135;
+			public const int actionLayout = 2130772135;
 			
-			// aapt resource value: 0x7f0100a5
-			public const int showDividers = 2130772133;
+			// aapt resource value: 0x7f010041
+			public const int actionMenuTextAppearance = 2130772033;
 			
-			// aapt resource value: 0x7f0100c1
-			public const int showText = 2130772161;
+			// aapt resource value: 0x7f010042
+			public const int actionMenuTextColor = 2130772034;
 			
-			// aapt resource value: 0x7f010027
-			public const int singleChoiceItemLayout = 2130772007;
+			// aapt resource value: 0x7f010045
+			public const int actionModeBackground = 2130772037;
 			
-			// aapt resource value: 0x7f010002
-			public const int spanCount = 2130771970;
+			// aapt resource value: 0x7f010044
+			public const int actionModeCloseButtonStyle = 2130772036;
 			
-			// aapt resource value: 0x7f01009d
-			public const int spinBars = 2130772125;
+			// aapt resource value: 0x7f010047
+			public const int actionModeCloseDrawable = 2130772039;
 			
-			// aapt resource value: 0x7f010058
-			public const int spinnerDropDownItemStyle = 2130772056;
+			// aapt resource value: 0x7f010049
+			public const int actionModeCopyDrawable = 2130772041;
 			
-			// aapt resource value: 0x7f010097
-			public const int spinnerStyle = 2130772119;
+			// aapt resource value: 0x7f010048
+			public const int actionModeCutDrawable = 2130772040;
 			
-			// aapt resource value: 0x7f0100c0
-			public const int splitTrack = 2130772160;
+			// aapt resource value: 0x7f01004d
+			public const int actionModeFindDrawable = 2130772045;
 			
-			// aapt resource value: 0x7f010029
-			public const int srcCompat = 2130772009;
+			// aapt resource value: 0x7f01004a
+			public const int actionModePasteDrawable = 2130772042;
 			
-			// aapt resource value: 0x7f010004
-			public const int stackFromEnd = 2130771972;
+			// aapt resource value: 0x7f01004f
+			public const int actionModePopupWindowStyle = 2130772047;
 			
-			// aapt resource value: 0x7f0100ad
-			public const int state_above_anchor = 2130772141;
+			// aapt resource value: 0x7f01004b
+			public const int actionModeSelectAllDrawable = 2130772043;
 			
-			// aapt resource value: 0x7f0100eb
-			public const int statusBarBackground = 2130772203;
+			// aapt resource value: 0x7f01004c
+			public const int actionModeShareDrawable = 2130772044;
 			
-			// aapt resource value: 0x7f0100e5
-			public const int statusBarScrim = 2130772197;
+			// aapt resource value: 0x7f010046
+			public const int actionModeSplitBackground = 2130772038;
 			
-			// aapt resource value: 0x7f0100ba
-			public const int submitBackground = 2130772154;
+			// aapt resource value: 0x7f010043
+			public const int actionModeStyle = 2130772035;
 			
-			// aapt resource value: 0x7f01000b
-			public const int subtitle = 2130771979;
+			// aapt resource value: 0x7f01004e
+			public const int actionModeWebSearchDrawable = 2130772046;
 			
-			// aapt resource value: 0x7f0100c3
-			public const int subtitleTextAppearance = 2130772163;
+			// aapt resource value: 0x7f010037
+			public const int actionOverflowButtonStyle = 2130772023;
 			
-			// aapt resource value: 0x7f0100d0
-			public const int subtitleTextColor = 2130772176;
+			// aapt resource value: 0x7f010038
+			public const int actionOverflowMenuStyle = 2130772024;
 			
-			// aapt resource value: 0x7f01000d
-			public const int subtitleTextStyle = 2130771981;
+			// aapt resource value: 0x7f0100a9
+			public const int actionProviderClass = 2130772137;
 			
-			// aapt resource value: 0x7f0100b8
-			public const int suggestionRowLayout = 2130772152;
+			// aapt resource value: 0x7f0100a8
+			public const int actionViewClass = 2130772136;
 			
-			// aapt resource value: 0x7f0100be
-			public const int switchMinWidth = 2130772158;
+			// aapt resource value: 0x7f010061
+			public const int activityChooserViewStyle = 2130772065;
 			
-			// aapt resource value: 0x7f0100bf
-			public const int switchPadding = 2130772159;
+			// aapt resource value: 0x7f010084
+			public const int alertDialogButtonGroupStyle = 2130772100;
+			
+			// aapt resource value: 0x7f010085
+			public const int alertDialogCenterButtons = 2130772101;
+			
+			// aapt resource value: 0x7f010083
+			public const int alertDialogStyle = 2130772099;
+			
+			// aapt resource value: 0x7f010086
+			public const int alertDialogTheme = 2130772102;
 			
 			// aapt resource value: 0x7f010098
-			public const int switchStyle = 2130772120;
+			public const int allowStacking = 2130772120;
 			
-			// aapt resource value: 0x7f0100bd
-			public const int switchTextAppearance = 2130772157;
+			// aapt resource value: 0x7f01009f
+			public const int arrowHeadLength = 2130772127;
 			
-			// aapt resource value: 0x7f010105
-			public const int tabBackground = 2130772229;
+			// aapt resource value: 0x7f0100a0
+			public const int arrowShaftLength = 2130772128;
 			
-			// aapt resource value: 0x7f010104
-			public const int tabContentStart = 2130772228;
+			// aapt resource value: 0x7f01008b
+			public const int autoCompleteTextViewStyle = 2130772107;
 			
-			// aapt resource value: 0x7f010107
-			public const int tabGravity = 2130772231;
+			// aapt resource value: 0x7f010010
+			public const int background = 2130771984;
 			
-			// aapt resource value: 0x7f010102
-			public const int tabIndicatorColor = 2130772226;
+			// aapt resource value: 0x7f010012
+			public const int backgroundSplit = 2130771986;
 			
-			// aapt resource value: 0x7f010103
-			public const int tabIndicatorHeight = 2130772227;
+			// aapt resource value: 0x7f010011
+			public const int backgroundStacked = 2130771985;
 			
-			// aapt resource value: 0x7f010109
-			public const int tabMaxWidth = 2130772233;
+			// aapt resource value: 0x7f0100d3
+			public const int backgroundTint = 2130772179;
 			
-			// aapt resource value: 0x7f010108
-			public const int tabMinWidth = 2130772232;
+			// aapt resource value: 0x7f0100d4
+			public const int backgroundTintMode = 2130772180;
 			
-			// aapt resource value: 0x7f010106
-			public const int tabMode = 2130772230;
+			// aapt resource value: 0x7f0100a1
+			public const int barLength = 2130772129;
 			
-			// aapt resource value: 0x7f010111
-			public const int tabPadding = 2130772241;
+			// aapt resource value: 0x7f0100d9
+			public const int behavior_hideable = 2130772185;
 			
-			// aapt resource value: 0x7f010110
-			public const int tabPaddingBottom = 2130772240;
+			// aapt resource value: 0x7f0100ff
+			public const int behavior_overlapTop = 2130772223;
 			
-			// aapt resource value: 0x7f01010f
-			public const int tabPaddingEnd = 2130772239;
+			// aapt resource value: 0x7f0100d8
+			public const int behavior_peekHeight = 2130772184;
 			
-			// aapt resource value: 0x7f01010d
-			public const int tabPaddingStart = 2130772237;
+			// aapt resource value: 0x7f0100f5
+			public const int borderWidth = 2130772213;
 			
-			// aapt resource value: 0x7f01010e
-			public const int tabPaddingTop = 2130772238;
+			// aapt resource value: 0x7f01005e
+			public const int borderlessButtonStyle = 2130772062;
 			
-			// aapt resource value: 0x7f01010c
-			public const int tabSelectedTextColor = 2130772236;
+			// aapt resource value: 0x7f0100ef
+			public const int bottomSheetDialogTheme = 2130772207;
 			
-			// aapt resource value: 0x7f01010a
-			public const int tabTextAppearance = 2130772234;
+			// aapt resource value: 0x7f0100f0
+			public const int bottomSheetStyle = 2130772208;
 			
-			// aapt resource value: 0x7f01010b
-			public const int tabTextColor = 2130772235;
+			// aapt resource value: 0x7f01005b
+			public const int buttonBarButtonStyle = 2130772059;
 			
-			// aapt resource value: 0x7f01002a
-			public const int textAllCaps = 2130772010;
+			// aapt resource value: 0x7f010089
+			public const int buttonBarNegativeButtonStyle = 2130772105;
 			
-			// aapt resource value: 0x7f010051
-			public const int textAppearanceLargePopupMenu = 2130772049;
-			
-			// aapt resource value: 0x7f010075
-			public const int textAppearanceListItem = 2130772085;
-			
-			// aapt resource value: 0x7f010076
-			public const int textAppearanceListItemSmall = 2130772086;
-			
-			// aapt resource value: 0x7f01006b
-			public const int textAppearanceSearchResultSubtitle = 2130772075;
-			
-			// aapt resource value: 0x7f01006a
-			public const int textAppearanceSearchResultTitle = 2130772074;
-			
-			// aapt resource value: 0x7f010052
-			public const int textAppearanceSmallPopupMenu = 2130772050;
+			// aapt resource value: 0x7f01008a
+			public const int buttonBarNeutralButtonStyle = 2130772106;
 			
 			// aapt resource value: 0x7f010088
-			public const int textColorAlertDialogListItem = 2130772104;
+			public const int buttonBarPositiveButtonStyle = 2130772104;
+			
+			// aapt resource value: 0x7f01005a
+			public const int buttonBarStyle = 2130772058;
+			
+			// aapt resource value: 0x7f010023
+			public const int buttonPanelSideLayout = 2130772003;
+			
+			// aapt resource value: 0x7f01008c
+			public const int buttonStyle = 2130772108;
+			
+			// aapt resource value: 0x7f01008d
+			public const int buttonStyleSmall = 2130772109;
+			
+			// aapt resource value: 0x7f010099
+			public const int buttonTint = 2130772121;
+			
+			// aapt resource value: 0x7f01009a
+			public const int buttonTintMode = 2130772122;
+			
+			// aapt resource value: 0x7f01008e
+			public const int checkboxStyle = 2130772110;
+			
+			// aapt resource value: 0x7f01008f
+			public const int checkedTextViewStyle = 2130772111;
+			
+			// aapt resource value: 0x7f0100b1
+			public const int closeIcon = 2130772145;
+			
+			// aapt resource value: 0x7f010020
+			public const int closeItemLayout = 2130772000;
+			
+			// aapt resource value: 0x7f0100ca
+			public const int collapseContentDescription = 2130772170;
+			
+			// aapt resource value: 0x7f0100c9
+			public const int collapseIcon = 2130772169;
+			
+			// aapt resource value: 0x7f0100e6
+			public const int collapsedTitleGravity = 2130772198;
+			
+			// aapt resource value: 0x7f0100e2
+			public const int collapsedTitleTextAppearance = 2130772194;
+			
+			// aapt resource value: 0x7f01009b
+			public const int color = 2130772123;
+			
+			// aapt resource value: 0x7f01007c
+			public const int colorAccent = 2130772092;
+			
+			// aapt resource value: 0x7f010080
+			public const int colorButtonNormal = 2130772096;
+			
+			// aapt resource value: 0x7f01007e
+			public const int colorControlActivated = 2130772094;
+			
+			// aapt resource value: 0x7f01007f
+			public const int colorControlHighlight = 2130772095;
+			
+			// aapt resource value: 0x7f01007d
+			public const int colorControlNormal = 2130772093;
+			
+			// aapt resource value: 0x7f01007a
+			public const int colorPrimary = 2130772090;
+			
+			// aapt resource value: 0x7f01007b
+			public const int colorPrimaryDark = 2130772091;
+			
+			// aapt resource value: 0x7f010081
+			public const int colorSwitchThumbNormal = 2130772097;
+			
+			// aapt resource value: 0x7f0100b6
+			public const int commitIcon = 2130772150;
+			
+			// aapt resource value: 0x7f01001b
+			public const int contentInsetEnd = 2130771995;
+			
+			// aapt resource value: 0x7f01001c
+			public const int contentInsetLeft = 2130771996;
+			
+			// aapt resource value: 0x7f01001d
+			public const int contentInsetRight = 2130771997;
+			
+			// aapt resource value: 0x7f01001a
+			public const int contentInsetStart = 2130771994;
+			
+			// aapt resource value: 0x7f0100e3
+			public const int contentScrim = 2130772195;
+			
+			// aapt resource value: 0x7f010082
+			public const int controlBackground = 2130772098;
+			
+			// aapt resource value: 0x7f010115
+			public const int counterEnabled = 2130772245;
+			
+			// aapt resource value: 0x7f010116
+			public const int counterMaxLength = 2130772246;
+			
+			// aapt resource value: 0x7f010118
+			public const int counterOverflowTextAppearance = 2130772248;
+			
+			// aapt resource value: 0x7f010117
+			public const int counterTextAppearance = 2130772247;
+			
+			// aapt resource value: 0x7f010013
+			public const int customNavigationLayout = 2130771987;
+			
+			// aapt resource value: 0x7f0100b0
+			public const int defaultQueryHint = 2130772144;
+			
+			// aapt resource value: 0x7f010053
+			public const int dialogPreferredPadding = 2130772051;
+			
+			// aapt resource value: 0x7f010052
+			public const int dialogTheme = 2130772050;
+			
+			// aapt resource value: 0x7f010009
+			public const int displayOptions = 2130771977;
+			
+			// aapt resource value: 0x7f01000f
+			public const int divider = 2130771983;
+			
+			// aapt resource value: 0x7f010060
+			public const int dividerHorizontal = 2130772064;
+			
+			// aapt resource value: 0x7f0100a5
+			public const int dividerPadding = 2130772133;
+			
+			// aapt resource value: 0x7f01005f
+			public const int dividerVertical = 2130772063;
+			
+			// aapt resource value: 0x7f01009d
+			public const int drawableSize = 2130772125;
+			
+			// aapt resource value: 0x7f010004
+			public const int drawerArrowStyle = 2130771972;
+			
+			// aapt resource value: 0x7f010072
+			public const int dropDownListViewStyle = 2130772082;
+			
+			// aapt resource value: 0x7f010056
+			public const int dropdownListPreferredItemHeight = 2130772054;
+			
+			// aapt resource value: 0x7f010067
+			public const int editTextBackground = 2130772071;
+			
+			// aapt resource value: 0x7f010066
+			public const int editTextColor = 2130772070;
+			
+			// aapt resource value: 0x7f010090
+			public const int editTextStyle = 2130772112;
+			
+			// aapt resource value: 0x7f01001e
+			public const int elevation = 2130771998;
+			
+			// aapt resource value: 0x7f010113
+			public const int errorEnabled = 2130772243;
+			
+			// aapt resource value: 0x7f010114
+			public const int errorTextAppearance = 2130772244;
+			
+			// aapt resource value: 0x7f010022
+			public const int expandActivityOverflowButtonDrawable = 2130772002;
+			
+			// aapt resource value: 0x7f0100d5
+			public const int expanded = 2130772181;
+			
+			// aapt resource value: 0x7f0100e7
+			public const int expandedTitleGravity = 2130772199;
+			
+			// aapt resource value: 0x7f0100dc
+			public const int expandedTitleMargin = 2130772188;
+			
+			// aapt resource value: 0x7f0100e0
+			public const int expandedTitleMarginBottom = 2130772192;
+			
+			// aapt resource value: 0x7f0100df
+			public const int expandedTitleMarginEnd = 2130772191;
+			
+			// aapt resource value: 0x7f0100dd
+			public const int expandedTitleMarginStart = 2130772189;
+			
+			// aapt resource value: 0x7f0100de
+			public const int expandedTitleMarginTop = 2130772190;
+			
+			// aapt resource value: 0x7f0100e1
+			public const int expandedTitleTextAppearance = 2130772193;
+			
+			// aapt resource value: 0x7f0100f3
+			public const int fabSize = 2130772211;
+			
+			// aapt resource value: 0x7f01011a
+			public const int fontPath = 2130772250;
+			
+			// aapt resource value: 0x7f0100f7
+			public const int foregroundInsidePadding = 2130772215;
+			
+			// aapt resource value: 0x7f01009e
+			public const int gapBetweenBars = 2130772126;
+			
+			// aapt resource value: 0x7f0100b2
+			public const int goIcon = 2130772146;
+			
+			// aapt resource value: 0x7f0100fd
+			public const int headerLayout = 2130772221;
+			
+			// aapt resource value: 0x7f010005
+			public const int height = 2130771973;
+			
+			// aapt resource value: 0x7f010019
+			public const int hideOnContentScroll = 2130771993;
+			
+			// aapt resource value: 0x7f010119
+			public const int hintAnimationEnabled = 2130772249;
+			
+			// aapt resource value: 0x7f010112
+			public const int hintEnabled = 2130772242;
+			
+			// aapt resource value: 0x7f010111
+			public const int hintTextAppearance = 2130772241;
+			
+			// aapt resource value: 0x7f010058
+			public const int homeAsUpIndicator = 2130772056;
+			
+			// aapt resource value: 0x7f010014
+			public const int homeLayout = 2130771988;
+			
+			// aapt resource value: 0x7f01000d
+			public const int icon = 2130771981;
+			
+			// aapt resource value: 0x7f0100ae
+			public const int iconifiedByDefault = 2130772142;
+			
+			// aapt resource value: 0x7f010068
+			public const int imageButtonStyle = 2130772072;
+			
+			// aapt resource value: 0x7f010016
+			public const int indeterminateProgressStyle = 2130771990;
+			
+			// aapt resource value: 0x7f010021
+			public const int initialActivityCount = 2130772001;
+			
+			// aapt resource value: 0x7f0100fe
+			public const int insetForeground = 2130772222;
+			
+			// aapt resource value: 0x7f010006
+			public const int isLightTheme = 2130771974;
+			
+			// aapt resource value: 0x7f0100fb
+			public const int itemBackground = 2130772219;
+			
+			// aapt resource value: 0x7f0100f9
+			public const int itemIconTint = 2130772217;
+			
+			// aapt resource value: 0x7f010018
+			public const int itemPadding = 2130771992;
+			
+			// aapt resource value: 0x7f0100fc
+			public const int itemTextAppearance = 2130772220;
+			
+			// aapt resource value: 0x7f0100fa
+			public const int itemTextColor = 2130772218;
+			
+			// aapt resource value: 0x7f0100e9
+			public const int keylines = 2130772201;
+			
+			// aapt resource value: 0x7f0100ad
+			public const int layout = 2130772141;
+			
+			// aapt resource value: 0x7f010000
+			public const int layoutManager = 2130771968;
+			
+			// aapt resource value: 0x7f0100ec
+			public const int layout_anchor = 2130772204;
+			
+			// aapt resource value: 0x7f0100ee
+			public const int layout_anchorGravity = 2130772206;
+			
+			// aapt resource value: 0x7f0100eb
+			public const int layout_behavior = 2130772203;
+			
+			// aapt resource value: 0x7f0100da
+			public const int layout_collapseMode = 2130772186;
+			
+			// aapt resource value: 0x7f0100db
+			public const int layout_collapseParallaxMultiplier = 2130772187;
+			
+			// aapt resource value: 0x7f0100ed
+			public const int layout_keyline = 2130772205;
+			
+			// aapt resource value: 0x7f0100d6
+			public const int layout_scrollFlags = 2130772182;
+			
+			// aapt resource value: 0x7f0100d7
+			public const int layout_scrollInterpolator = 2130772183;
+			
+			// aapt resource value: 0x7f010079
+			public const int listChoiceBackgroundIndicator = 2130772089;
+			
+			// aapt resource value: 0x7f010054
+			public const int listDividerAlertDialog = 2130772052;
+			
+			// aapt resource value: 0x7f010027
+			public const int listItemLayout = 2130772007;
+			
+			// aapt resource value: 0x7f010024
+			public const int listLayout = 2130772004;
+			
+			// aapt resource value: 0x7f010073
+			public const int listPopupWindowStyle = 2130772083;
+			
+			// aapt resource value: 0x7f01006d
+			public const int listPreferredItemHeight = 2130772077;
+			
+			// aapt resource value: 0x7f01006f
+			public const int listPreferredItemHeightLarge = 2130772079;
+			
+			// aapt resource value: 0x7f01006e
+			public const int listPreferredItemHeightSmall = 2130772078;
+			
+			// aapt resource value: 0x7f010070
+			public const int listPreferredItemPaddingLeft = 2130772080;
+			
+			// aapt resource value: 0x7f010071
+			public const int listPreferredItemPaddingRight = 2130772081;
+			
+			// aapt resource value: 0x7f01000e
+			public const int logo = 2130771982;
+			
+			// aapt resource value: 0x7f0100cd
+			public const int logoDescription = 2130772173;
+			
+			// aapt resource value: 0x7f010100
+			public const int maxActionInlineWidth = 2130772224;
+			
+			// aapt resource value: 0x7f0100c8
+			public const int maxButtonHeight = 2130772168;
+			
+			// aapt resource value: 0x7f0100a3
+			public const int measureWithLargestChild = 2130772131;
+			
+			// aapt resource value: 0x7f0100f8
+			public const int menu = 2130772216;
+			
+			// aapt resource value: 0x7f010025
+			public const int multiChoiceItemLayout = 2130772005;
+			
+			// aapt resource value: 0x7f0100cc
+			public const int navigationContentDescription = 2130772172;
+			
+			// aapt resource value: 0x7f0100cb
+			public const int navigationIcon = 2130772171;
+			
+			// aapt resource value: 0x7f010008
+			public const int navigationMode = 2130771976;
+			
+			// aapt resource value: 0x7f0100ab
+			public const int overlapAnchor = 2130772139;
+			
+			// aapt resource value: 0x7f0100d1
+			public const int paddingEnd = 2130772177;
+			
+			// aapt resource value: 0x7f0100d0
+			public const int paddingStart = 2130772176;
+			
+			// aapt resource value: 0x7f010076
+			public const int panelBackground = 2130772086;
+			
+			// aapt resource value: 0x7f010078
+			public const int panelMenuListTheme = 2130772088;
+			
+			// aapt resource value: 0x7f010077
+			public const int panelMenuListWidth = 2130772087;
+			
+			// aapt resource value: 0x7f010064
+			public const int popupMenuStyle = 2130772068;
+			
+			// aapt resource value: 0x7f01001f
+			public const int popupTheme = 2130771999;
+			
+			// aapt resource value: 0x7f010065
+			public const int popupWindowStyle = 2130772069;
+			
+			// aapt resource value: 0x7f0100aa
+			public const int preserveIconSpacing = 2130772138;
+			
+			// aapt resource value: 0x7f0100f4
+			public const int pressedTranslationZ = 2130772212;
+			
+			// aapt resource value: 0x7f010017
+			public const int progressBarPadding = 2130771991;
+			
+			// aapt resource value: 0x7f010015
+			public const int progressBarStyle = 2130771989;
+			
+			// aapt resource value: 0x7f0100b8
+			public const int queryBackground = 2130772152;
+			
+			// aapt resource value: 0x7f0100af
+			public const int queryHint = 2130772143;
+			
+			// aapt resource value: 0x7f010091
+			public const int radioButtonStyle = 2130772113;
+			
+			// aapt resource value: 0x7f010092
+			public const int ratingBarStyle = 2130772114;
+			
+			// aapt resource value: 0x7f010093
+			public const int ratingBarStyleIndicator = 2130772115;
+			
+			// aapt resource value: 0x7f010094
+			public const int ratingBarStyleSmall = 2130772116;
+			
+			// aapt resource value: 0x7f010002
+			public const int reverseLayout = 2130771970;
 			
 			// aapt resource value: 0x7f0100f2
-			public const int textColorError = 2130772210;
+			public const int rippleColor = 2130772210;
+			
+			// aapt resource value: 0x7f0100b4
+			public const int searchHintIcon = 2130772148;
+			
+			// aapt resource value: 0x7f0100b3
+			public const int searchIcon = 2130772147;
 			
 			// aapt resource value: 0x7f01006c
-			public const int textColorSearchUrl = 2130772076;
+			public const int searchViewStyle = 2130772076;
+			
+			// aapt resource value: 0x7f010095
+			public const int seekBarStyle = 2130772117;
+			
+			// aapt resource value: 0x7f01005c
+			public const int selectableItemBackground = 2130772060;
+			
+			// aapt resource value: 0x7f01005d
+			public const int selectableItemBackgroundBorderless = 2130772061;
+			
+			// aapt resource value: 0x7f0100a6
+			public const int showAsAction = 2130772134;
+			
+			// aapt resource value: 0x7f0100a4
+			public const int showDividers = 2130772132;
+			
+			// aapt resource value: 0x7f0100c0
+			public const int showText = 2130772160;
+			
+			// aapt resource value: 0x7f010026
+			public const int singleChoiceItemLayout = 2130772006;
+			
+			// aapt resource value: 0x7f010001
+			public const int spanCount = 2130771969;
+			
+			// aapt resource value: 0x7f01009c
+			public const int spinBars = 2130772124;
+			
+			// aapt resource value: 0x7f010057
+			public const int spinnerDropDownItemStyle = 2130772055;
+			
+			// aapt resource value: 0x7f010096
+			public const int spinnerStyle = 2130772118;
+			
+			// aapt resource value: 0x7f0100bf
+			public const int splitTrack = 2130772159;
+			
+			// aapt resource value: 0x7f010028
+			public const int srcCompat = 2130772008;
+			
+			// aapt resource value: 0x7f010003
+			public const int stackFromEnd = 2130771971;
+			
+			// aapt resource value: 0x7f0100ac
+			public const int state_above_anchor = 2130772140;
+			
+			// aapt resource value: 0x7f0100ea
+			public const int statusBarBackground = 2130772202;
+			
+			// aapt resource value: 0x7f0100e4
+			public const int statusBarScrim = 2130772196;
+			
+			// aapt resource value: 0x7f0100b9
+			public const int submitBackground = 2130772153;
+			
+			// aapt resource value: 0x7f01000a
+			public const int subtitle = 2130771978;
+			
+			// aapt resource value: 0x7f0100c2
+			public const int subtitleTextAppearance = 2130772162;
+			
+			// aapt resource value: 0x7f0100cf
+			public const int subtitleTextColor = 2130772175;
+			
+			// aapt resource value: 0x7f01000c
+			public const int subtitleTextStyle = 2130771980;
+			
+			// aapt resource value: 0x7f0100b7
+			public const int suggestionRowLayout = 2130772151;
+			
+			// aapt resource value: 0x7f0100bd
+			public const int switchMinWidth = 2130772157;
+			
+			// aapt resource value: 0x7f0100be
+			public const int switchPadding = 2130772158;
+			
+			// aapt resource value: 0x7f010097
+			public const int switchStyle = 2130772119;
+			
+			// aapt resource value: 0x7f0100bc
+			public const int switchTextAppearance = 2130772156;
+			
+			// aapt resource value: 0x7f010104
+			public const int tabBackground = 2130772228;
+			
+			// aapt resource value: 0x7f010103
+			public const int tabContentStart = 2130772227;
+			
+			// aapt resource value: 0x7f010106
+			public const int tabGravity = 2130772230;
+			
+			// aapt resource value: 0x7f010101
+			public const int tabIndicatorColor = 2130772225;
+			
+			// aapt resource value: 0x7f010102
+			public const int tabIndicatorHeight = 2130772226;
+			
+			// aapt resource value: 0x7f010108
+			public const int tabMaxWidth = 2130772232;
+			
+			// aapt resource value: 0x7f010107
+			public const int tabMinWidth = 2130772231;
+			
+			// aapt resource value: 0x7f010105
+			public const int tabMode = 2130772229;
+			
+			// aapt resource value: 0x7f010110
+			public const int tabPadding = 2130772240;
+			
+			// aapt resource value: 0x7f01010f
+			public const int tabPaddingBottom = 2130772239;
+			
+			// aapt resource value: 0x7f01010e
+			public const int tabPaddingEnd = 2130772238;
+			
+			// aapt resource value: 0x7f01010c
+			public const int tabPaddingStart = 2130772236;
+			
+			// aapt resource value: 0x7f01010d
+			public const int tabPaddingTop = 2130772237;
+			
+			// aapt resource value: 0x7f01010b
+			public const int tabSelectedTextColor = 2130772235;
+			
+			// aapt resource value: 0x7f010109
+			public const int tabTextAppearance = 2130772233;
+			
+			// aapt resource value: 0x7f01010a
+			public const int tabTextColor = 2130772234;
+			
+			// aapt resource value: 0x7f010029
+			public const int textAllCaps = 2130772009;
+			
+			// aapt resource value: 0x7f010050
+			public const int textAppearanceLargePopupMenu = 2130772048;
+			
+			// aapt resource value: 0x7f010074
+			public const int textAppearanceListItem = 2130772084;
+			
+			// aapt resource value: 0x7f010075
+			public const int textAppearanceListItemSmall = 2130772085;
+			
+			// aapt resource value: 0x7f01006a
+			public const int textAppearanceSearchResultSubtitle = 2130772074;
+			
+			// aapt resource value: 0x7f010069
+			public const int textAppearanceSearchResultTitle = 2130772073;
+			
+			// aapt resource value: 0x7f010051
+			public const int textAppearanceSmallPopupMenu = 2130772049;
+			
+			// aapt resource value: 0x7f010087
+			public const int textColorAlertDialogListItem = 2130772103;
+			
+			// aapt resource value: 0x7f0100f1
+			public const int textColorError = 2130772209;
+			
+			// aapt resource value: 0x7f01006b
+			public const int textColorSearchUrl = 2130772075;
 			
 			// aapt resource value: 0x7f01011b
 			public const int textFieldStyle = 2130772251;
 			
-			// aapt resource value: 0x7f0100d3
-			public const int theme = 2130772179;
+			// aapt resource value: 0x7f0100d2
+			public const int theme = 2130772178;
 			
-			// aapt resource value: 0x7f0100a3
-			public const int thickness = 2130772131;
-			
-			// aapt resource value: 0x7f0100bc
-			public const int thumbTextPadding = 2130772156;
-			
-			// aapt resource value: 0x7f010008
-			public const int title = 2130771976;
-			
-			// aapt resource value: 0x7f0100e9
-			public const int titleEnabled = 2130772201;
-			
-			// aapt resource value: 0x7f0100c8
-			public const int titleMarginBottom = 2130772168;
-			
-			// aapt resource value: 0x7f0100c6
-			public const int titleMarginEnd = 2130772166;
-			
-			// aapt resource value: 0x7f0100c5
-			public const int titleMarginStart = 2130772165;
-			
-			// aapt resource value: 0x7f0100c7
-			public const int titleMarginTop = 2130772167;
-			
-			// aapt resource value: 0x7f0100c4
-			public const int titleMargins = 2130772164;
-			
-			// aapt resource value: 0x7f0100c2
-			public const int titleTextAppearance = 2130772162;
-			
-			// aapt resource value: 0x7f0100cf
-			public const int titleTextColor = 2130772175;
-			
-			// aapt resource value: 0x7f01000c
-			public const int titleTextStyle = 2130771980;
-			
-			// aapt resource value: 0x7f0100e6
-			public const int toolbarId = 2130772198;
-			
-			// aapt resource value: 0x7f010064
-			public const int toolbarNavigationButtonStyle = 2130772068;
-			
-			// aapt resource value: 0x7f010063
-			public const int toolbarStyle = 2130772067;
+			// aapt resource value: 0x7f0100a2
+			public const int thickness = 2130772130;
 			
 			// aapt resource value: 0x7f0100bb
-			public const int track = 2130772155;
+			public const int thumbTextPadding = 2130772155;
 			
-			// aapt resource value: 0x7f0100f7
-			public const int useCompatPadding = 2130772215;
+			// aapt resource value: 0x7f010007
+			public const int title = 2130771975;
 			
-			// aapt resource value: 0x7f0100b6
-			public const int voiceIcon = 2130772150;
+			// aapt resource value: 0x7f0100e8
+			public const int titleEnabled = 2130772200;
 			
-			// aapt resource value: 0x7f01002b
-			public const int windowActionBar = 2130772011;
+			// aapt resource value: 0x7f0100c7
+			public const int titleMarginBottom = 2130772167;
 			
-			// aapt resource value: 0x7f01002d
-			public const int windowActionBarOverlay = 2130772013;
+			// aapt resource value: 0x7f0100c5
+			public const int titleMarginEnd = 2130772165;
 			
-			// aapt resource value: 0x7f01002e
-			public const int windowActionModeOverlay = 2130772014;
+			// aapt resource value: 0x7f0100c4
+			public const int titleMarginStart = 2130772164;
 			
-			// aapt resource value: 0x7f010032
-			public const int windowFixedHeightMajor = 2130772018;
+			// aapt resource value: 0x7f0100c6
+			public const int titleMarginTop = 2130772166;
 			
-			// aapt resource value: 0x7f010030
-			public const int windowFixedHeightMinor = 2130772016;
+			// aapt resource value: 0x7f0100c3
+			public const int titleMargins = 2130772163;
 			
-			// aapt resource value: 0x7f01002f
-			public const int windowFixedWidthMajor = 2130772015;
+			// aapt resource value: 0x7f0100c1
+			public const int titleTextAppearance = 2130772161;
 			
-			// aapt resource value: 0x7f010031
-			public const int windowFixedWidthMinor = 2130772017;
+			// aapt resource value: 0x7f0100ce
+			public const int titleTextColor = 2130772174;
 			
-			// aapt resource value: 0x7f010033
-			public const int windowMinWidthMajor = 2130772019;
+			// aapt resource value: 0x7f01000b
+			public const int titleTextStyle = 2130771979;
 			
-			// aapt resource value: 0x7f010034
-			public const int windowMinWidthMinor = 2130772020;
+			// aapt resource value: 0x7f0100e5
+			public const int toolbarId = 2130772197;
+			
+			// aapt resource value: 0x7f010063
+			public const int toolbarNavigationButtonStyle = 2130772067;
+			
+			// aapt resource value: 0x7f010062
+			public const int toolbarStyle = 2130772066;
+			
+			// aapt resource value: 0x7f0100ba
+			public const int track = 2130772154;
+			
+			// aapt resource value: 0x7f0100f6
+			public const int useCompatPadding = 2130772214;
+			
+			// aapt resource value: 0x7f0100b5
+			public const int voiceIcon = 2130772149;
+			
+			// aapt resource value: 0x7f01002a
+			public const int windowActionBar = 2130772010;
 			
 			// aapt resource value: 0x7f01002c
-			public const int windowNoTitle = 2130772012;
+			public const int windowActionBarOverlay = 2130772012;
+			
+			// aapt resource value: 0x7f01002d
+			public const int windowActionModeOverlay = 2130772013;
+			
+			// aapt resource value: 0x7f010031
+			public const int windowFixedHeightMajor = 2130772017;
+			
+			// aapt resource value: 0x7f01002f
+			public const int windowFixedHeightMinor = 2130772015;
+			
+			// aapt resource value: 0x7f01002e
+			public const int windowFixedWidthMajor = 2130772014;
+			
+			// aapt resource value: 0x7f010030
+			public const int windowFixedWidthMinor = 2130772016;
+			
+			// aapt resource value: 0x7f010032
+			public const int windowMinWidthMajor = 2130772018;
+			
+			// aapt resource value: 0x7f010033
+			public const int windowMinWidthMinor = 2130772019;
+			
+			// aapt resource value: 0x7f01002b
+			public const int windowNoTitle = 2130772011;
 			
 			static Attribute()
 			{
@@ -4937,7 +3688,8 @@ namespace CalligraphySampleApp
 		{
 			
 			public static int[] ActionBar = new int[] {
-					2130771974,
+					2130771973,
+					2130771975,
 					2130771976,
 					2130771977,
 					2130771978,
@@ -4962,8 +3714,7 @@ namespace CalligraphySampleApp
 					2130771997,
 					2130771998,
 					2130771999,
-					2130772000,
-					2130772057};
+					2130772056};
 			
 			// aapt resource value: 10
 			public const int ActionBar_background = 10;
@@ -5061,12 +3812,12 @@ namespace CalligraphySampleApp
 			public static int[] ActionMenuView;
 			
 			public static int[] ActionMode = new int[] {
-					2130771974,
+					2130771973,
+					2130771979,
 					2130771980,
-					2130771981,
-					2130771985,
-					2130771987,
-					2130772001};
+					2130771984,
+					2130771986,
+					2130772000};
 			
 			// aapt resource value: 3
 			public const int ActionMode_background = 3;
@@ -5087,8 +3838,8 @@ namespace CalligraphySampleApp
 			public const int ActionMode_titleTextStyle = 1;
 			
 			public static int[] ActivityChooserView = new int[] {
-					2130772002,
-					2130772003};
+					2130772001,
+					2130772002};
 			
 			// aapt resource value: 1
 			public const int ActivityChooserView_expandActivityOverflowButtonDrawable = 1;
@@ -5098,11 +3849,11 @@ namespace CalligraphySampleApp
 			
 			public static int[] AlertDialog = new int[] {
 					16842994,
+					2130772003,
 					2130772004,
 					2130772005,
 					2130772006,
-					2130772007,
-					2130772008};
+					2130772007};
 			
 			// aapt resource value: 0
 			public const int AlertDialog_android_layout = 0;
@@ -5124,8 +3875,8 @@ namespace CalligraphySampleApp
 			
 			public static int[] AppBarLayout = new int[] {
 					16842964,
-					2130771999,
-					2130772182};
+					2130771998,
+					2130772181};
 			
 			// aapt resource value: 0
 			public const int AppBarLayout_android_background = 0;
@@ -5137,8 +3888,8 @@ namespace CalligraphySampleApp
 			public const int AppBarLayout_expanded = 2;
 			
 			public static int[] AppBarLayout_LayoutParams = new int[] {
-					2130772183,
-					2130772184};
+					2130772182,
+					2130772183};
 			
 			// aapt resource value: 0
 			public const int AppBarLayout_LayoutParams_layout_scrollFlags = 0;
@@ -5148,7 +3899,7 @@ namespace CalligraphySampleApp
 			
 			public static int[] AppCompatImageView = new int[] {
 					16843033,
-					2130772009};
+					2130772008};
 			
 			// aapt resource value: 0
 			public const int AppCompatImageView_android_src = 0;
@@ -5158,7 +3909,7 @@ namespace CalligraphySampleApp
 			
 			public static int[] AppCompatTextView = new int[] {
 					16842804,
-					2130772010};
+					2130772009};
 			
 			// aapt resource value: 0
 			public const int AppCompatTextView_android_textAppearance = 0;
@@ -5169,6 +3920,7 @@ namespace CalligraphySampleApp
 			public static int[] AppCompatTheme = new int[] {
 					16842839,
 					16842926,
+					2130772010,
 					2130772011,
 					2130772012,
 					2130772013,
@@ -5277,8 +4029,7 @@ namespace CalligraphySampleApp
 					2130772116,
 					2130772117,
 					2130772118,
-					2130772119,
-					2130772120};
+					2130772119};
 			
 			// aapt resource value: 23
 			public const int AppCompatTheme_actionBarDivider = 23;
@@ -5617,8 +4368,8 @@ namespace CalligraphySampleApp
 			public const int AppCompatTheme_windowNoTitle = 3;
 			
 			public static int[] BottomSheetBehavior_Params = new int[] {
-					2130772185,
-					2130772186};
+					2130772184,
+					2130772185};
 			
 			// aapt resource value: 1
 			public const int BottomSheetBehavior_Params_behavior_hideable = 1;
@@ -5627,14 +4378,14 @@ namespace CalligraphySampleApp
 			public const int BottomSheetBehavior_Params_behavior_peekHeight = 0;
 			
 			public static int[] ButtonBarLayout = new int[] {
-					2130772121};
+					2130772120};
 			
 			// aapt resource value: 0
 			public const int ButtonBarLayout_allowStacking = 0;
 			
 			public static int[] CollapsingAppBarLayout_LayoutParams = new int[] {
-					2130772187,
-					2130772188};
+					2130772186,
+					2130772187};
 			
 			// aapt resource value: 0
 			public const int CollapsingAppBarLayout_LayoutParams_layout_collapseMode = 0;
@@ -5643,7 +4394,8 @@ namespace CalligraphySampleApp
 			public const int CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier = 1;
 			
 			public static int[] CollapsingToolbarLayout = new int[] {
-					2130771976,
+					2130771975,
+					2130772188,
 					2130772189,
 					2130772190,
 					2130772191,
@@ -5655,8 +4407,7 @@ namespace CalligraphySampleApp
 					2130772197,
 					2130772198,
 					2130772199,
-					2130772200,
-					2130772201};
+					2130772200};
 			
 			// aapt resource value: 11
 			public const int CollapsingToolbarLayout_collapsedTitleGravity = 11;
@@ -5702,8 +4453,8 @@ namespace CalligraphySampleApp
 			
 			public static int[] CompoundButton = new int[] {
 					16843015,
-					2130772122,
-					2130772123};
+					2130772121,
+					2130772122};
 			
 			// aapt resource value: 0
 			public const int CompoundButton_android_button = 0;
@@ -5715,8 +4466,8 @@ namespace CalligraphySampleApp
 			public const int CompoundButton_buttonTintMode = 2;
 			
 			public static int[] CoordinatorLayout = new int[] {
-					2130772202,
-					2130772203};
+					2130772201,
+					2130772202};
 			
 			// aapt resource value: 0
 			public const int CoordinatorLayout_keylines = 0;
@@ -5726,10 +4477,10 @@ namespace CalligraphySampleApp
 			
 			public static int[] CoordinatorLayout_LayoutParams = new int[] {
 					16842931,
+					2130772203,
 					2130772204,
 					2130772205,
-					2130772206,
-					2130772207};
+					2130772206};
 			
 			// aapt resource value: 0
 			public const int CoordinatorLayout_LayoutParams_android_layout_gravity = 0;
@@ -5747,9 +4498,9 @@ namespace CalligraphySampleApp
 			public const int CoordinatorLayout_LayoutParams_layout_keyline = 3;
 			
 			public static int[] DesignTheme = new int[] {
+					2130772207,
 					2130772208,
-					2130772209,
-					2130772210};
+					2130772209};
 			
 			// aapt resource value: 0
 			public const int DesignTheme_bottomSheetDialogTheme = 0;
@@ -5761,14 +4512,14 @@ namespace CalligraphySampleApp
 			public const int DesignTheme_textColorError = 2;
 			
 			public static int[] DrawerArrowToggle = new int[] {
+					2130772123,
 					2130772124,
 					2130772125,
 					2130772126,
 					2130772127,
 					2130772128,
 					2130772129,
-					2130772130,
-					2130772131};
+					2130772130};
 			
 			// aapt resource value: 4
 			public const int DrawerArrowToggle_arrowHeadLength = 4;
@@ -5795,14 +4546,14 @@ namespace CalligraphySampleApp
 			public const int DrawerArrowToggle_thickness = 7;
 			
 			public static int[] FloatingActionButton = new int[] {
-					2130771999,
+					2130771998,
+					2130772179,
 					2130772180,
-					2130772181,
+					2130772210,
 					2130772211,
 					2130772212,
 					2130772213,
-					2130772214,
-					2130772215};
+					2130772214};
 			
 			// aapt resource value: 1
 			public const int FloatingActionButton_backgroundTint = 1;
@@ -5831,7 +4582,7 @@ namespace CalligraphySampleApp
 			public static int[] ForegroundLinearLayout = new int[] {
 					16843017,
 					16843264,
-					2130772216};
+					2130772215};
 			
 			// aapt resource value: 0
 			public const int ForegroundLinearLayout_android_foreground = 0;
@@ -5848,10 +4599,10 @@ namespace CalligraphySampleApp
 					16843046,
 					16843047,
 					16843048,
-					2130771984,
+					2130771983,
+					2130772131,
 					2130772132,
-					2130772133,
-					2130772134};
+					2130772133};
 			
 			// aapt resource value: 2
 			public const int LinearLayoutCompat_android_baselineAligned = 2;
@@ -5948,10 +4699,10 @@ namespace CalligraphySampleApp
 					16843236,
 					16843237,
 					16843375,
+					2130772134,
 					2130772135,
 					2130772136,
-					2130772137,
-					2130772138};
+					2130772137};
 			
 			// aapt resource value: 14
 			public const int MenuItem_actionLayout = 14;
@@ -6012,7 +4763,7 @@ namespace CalligraphySampleApp
 					16843055,
 					16843056,
 					16843057,
-					2130772139};
+					2130772138};
 			
 			// aapt resource value: 4
 			public const int MenuView_android_headerBackground = 4;
@@ -6042,13 +4793,13 @@ namespace CalligraphySampleApp
 					16842964,
 					16842973,
 					16843039,
-					2130771999,
+					2130771998,
+					2130772216,
 					2130772217,
 					2130772218,
 					2130772219,
 					2130772220,
-					2130772221,
-					2130772222};
+					2130772221};
 			
 			// aapt resource value: 0
 			public const int NavigationView_android_background = 0;
@@ -6082,7 +4833,7 @@ namespace CalligraphySampleApp
 			
 			public static int[] PopupWindow = new int[] {
 					16843126,
-					2130772140};
+					2130772139};
 			
 			// aapt resource value: 0
 			public const int PopupWindow_android_popupBackground = 0;
@@ -6091,17 +4842,17 @@ namespace CalligraphySampleApp
 			public const int PopupWindow_overlapAnchor = 1;
 			
 			public static int[] PopupWindowBackgroundState = new int[] {
-					2130772141};
+					2130772140};
 			
 			// aapt resource value: 0
 			public const int PopupWindowBackgroundState_state_above_anchor = 0;
 			
 			public static int[] RecyclerView = new int[] {
 					16842948,
+					2130771968,
 					2130771969,
 					2130771970,
-					2130771971,
-					2130771972};
+					2130771971};
 			
 			// aapt resource value: 0
 			public const int RecyclerView_android_orientation = 0;
@@ -6119,13 +4870,13 @@ namespace CalligraphySampleApp
 			public const int RecyclerView_stackFromEnd = 4;
 			
 			public static int[] ScrimInsetsFrameLayout = new int[] {
-					2130772223};
+					2130772222};
 			
 			// aapt resource value: 0
 			public const int ScrimInsetsFrameLayout_insetForeground = 0;
 			
 			public static int[] ScrollingViewBehavior_Params = new int[] {
-					2130772224};
+					2130772223};
 			
 			// aapt resource value: 0
 			public const int ScrollingViewBehavior_Params_behavior_overlapTop = 0;
@@ -6135,6 +4886,7 @@ namespace CalligraphySampleApp
 					16843039,
 					16843296,
 					16843364,
+					2130772141,
 					2130772142,
 					2130772143,
 					2130772144,
@@ -6146,8 +4898,7 @@ namespace CalligraphySampleApp
 					2130772150,
 					2130772151,
 					2130772152,
-					2130772153,
-					2130772154};
+					2130772153};
 			
 			// aapt resource value: 0
 			public const int SearchView_android_focusable = 0;
@@ -6202,8 +4953,8 @@ namespace CalligraphySampleApp
 			
 			public static int[] SnackbarLayout = new int[] {
 					16843039,
-					2130771999,
-					2130772225};
+					2130771998,
+					2130772224};
 			
 			// aapt resource value: 0
 			public const int SnackbarLayout_android_maxWidth = 0;
@@ -6219,7 +4970,7 @@ namespace CalligraphySampleApp
 					16843126,
 					16843131,
 					16843362,
-					2130772000};
+					2130771999};
 			
 			// aapt resource value: 3
 			public const int Spinner_android_dropDownWidth = 3;
@@ -6240,13 +4991,13 @@ namespace CalligraphySampleApp
 					16843044,
 					16843045,
 					16843074,
+					2130772154,
 					2130772155,
 					2130772156,
 					2130772157,
 					2130772158,
 					2130772159,
-					2130772160,
-					2130772161};
+					2130772160};
 			
 			// aapt resource value: 1
 			public const int SwitchCompat_android_textOff = 1;
@@ -6293,6 +5044,7 @@ namespace CalligraphySampleApp
 			public const int TabItem_android_text = 2;
 			
 			public static int[] TabLayout = new int[] {
+					2130772225,
 					2130772226,
 					2130772227,
 					2130772228,
@@ -6307,8 +5059,7 @@ namespace CalligraphySampleApp
 					2130772237,
 					2130772238,
 					2130772239,
-					2130772240,
-					2130772241};
+					2130772240};
 			
 			// aapt resource value: 3
 			public const int TabLayout_tabBackground = 3;
@@ -6367,7 +5118,7 @@ namespace CalligraphySampleApp
 					16843106,
 					16843107,
 					16843108,
-					2130772010};
+					2130772009};
 			
 			// aapt resource value: 4
 			public const int TextAppearance_android_shadowColor = 4;
@@ -6399,6 +5150,7 @@ namespace CalligraphySampleApp
 			public static int[] TextInputLayout = new int[] {
 					16842906,
 					16843088,
+					2130772241,
 					2130772242,
 					2130772243,
 					2130772244,
@@ -6406,8 +5158,7 @@ namespace CalligraphySampleApp
 					2130772246,
 					2130772247,
 					2130772248,
-					2130772249,
-					2130772250};
+					2130772249};
 			
 			// aapt resource value: 1
 			public const int TextInputLayout_android_hint = 1;
@@ -6445,14 +5196,15 @@ namespace CalligraphySampleApp
 			public static int[] Toolbar = new int[] {
 					16842927,
 					16843072,
-					2130771976,
-					2130771979,
-					2130771983,
+					2130771975,
+					2130771978,
+					2130771982,
+					2130771994,
 					2130771995,
 					2130771996,
 					2130771997,
-					2130771998,
-					2130772000,
+					2130771999,
+					2130772161,
 					2130772162,
 					2130772163,
 					2130772164,
@@ -6466,8 +5218,7 @@ namespace CalligraphySampleApp
 					2130772172,
 					2130772173,
 					2130772174,
-					2130772175,
-					2130772176};
+					2130772175};
 			
 			// aapt resource value: 0
 			public const int Toolbar_android_gravity = 0;
@@ -6547,9 +5298,9 @@ namespace CalligraphySampleApp
 			public static int[] View = new int[] {
 					16842752,
 					16842970,
+					2130772176,
 					2130772177,
-					2130772178,
-					2130772179};
+					2130772178};
 			
 			// aapt resource value: 1
 			public const int View_android_focusable = 1;
@@ -6568,8 +5319,8 @@ namespace CalligraphySampleApp
 			
 			public static int[] ViewBackgroundHelper = new int[] {
 					16842964,
-					2130772180,
-					2130772181};
+					2130772179,
+					2130772180};
 			
 			// aapt resource value: 0
 			public const int ViewBackgroundHelper_android_background = 0;
