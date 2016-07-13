@@ -7,7 +7,7 @@
         android:id="@+id/MyButton"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/Hello" />
+        android:text="Hello" />
     <TextView
         android:text="Cantarell-Regular"
         android:textAppearance="?android:attr/textAppearanceLarge"

@@ -20,7 +20,14 @@ namespace CalligraphySampleApp
         public override void OnCreate()
         {
             base.OnCreate();
-            CalligraphyConfig.InitDefault("fonts/gtw.ttf", Calligraphy.Resource.Attribute.fontPath);
+            CalligraphyConfig.InitDefault(new CalligraphyConfig.Builder()
+               
+               .SetDefaultFontPath("fonts/gtw.ttf")
+               .SetFontAttrId(Resource.Attribute.fontPath)
+               .AddCustomViewWithSetTypeface(Java.Lang.Class.FromType(typeof(CustomViewWithTypefaceSupport)))
+                .AddCustomStyle(Java.Lang.Class.FromType(typeof(TextField)), Resource.Attribute.textFieldStyle)
+                .Build()
+        );
         }
     }
 }

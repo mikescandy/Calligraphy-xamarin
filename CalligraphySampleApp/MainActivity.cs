@@ -1,36 +1,102 @@
 ﻿using Android.App;
 using Android.Content;
-using Android.Widget;
 using Android.OS;
-
+using Android.Support.V7.App;
 using Calligraphy;
+using Java.Lang;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace CalligraphySampleApp
 {
-    [Activity(Label = "CalligraphySampleApp", MainLauncher = true, Icon = "@drawable/icon")]
-    public class MainActivity : Activity
+    [Activity(Label = "CalligraphySampleApp", MainLauncher = true, Icon = "@drawable/icon", Theme="@style/AppTheme")]
+    public class MainActivity : AppCompatActivity
     {
-        int count = 1;
 
-        /// <inheritdoc />
-        protected override void OnCreate(Bundle bundle)
+
+        protected override void OnCreate(Bundle savedInstanceState)
         {
-            base.OnCreate(bundle);
+            base.OnCreate(savedInstanceState);
+            SetContentView(Resource.Layout.activity_main);
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
 
-            // Set our view from the "main" layout resource
-            SetContentView(Resource.Layout.Main);
+            // Inject pragmatically
+            SupportFragmentManager
+                .BeginTransaction()
+                .Replace(Resource.Id.container, PlaceholderFragment.GetInstance())
+                .Commit();
 
-            // Get our button from the layout resource,
-            // and attach an event to it
-            Button button = FindViewById<Button>(Resource.Id.MyButton);
 
-            button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
+            var handler = new Handler(Looper.MainLooper);
+
+            handler.PostDelayed(new MyRunnable(toolbar), 1000);
+            handler.PostDelayed(new AnotherRunnable(toolbar), 2000);
+            handler.PostDelayed(new MoreRunnable(toolbar), 3000);
         }
 
-        /// <inheritdoc />
-        protected override void AttachBaseContext(Context context)
+        /*
+        Uncomment if you disable PrivateFactory injection. See CalligraphyConfig#disablePrivateFactoryInjection()
+     */
+        //    @Override
+        //    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
+        //    public View onCreateView(View parent, String name, @NonNull Context context, @NonNull AttributeSet attrs) {
+        //        return CalligraphyContextWrapper.onActivityCreateView(this, parent, super.onCreateView(parent, name, context, attrs), name, context, attrs);
+        //    }
+
+
+        protected override void AttachBaseContext(Context newBase)
         {
-            base.AttachBaseContext(new CalligraphyContextWrapper(context));
+            base.AttachBaseContext(CalligraphyContextWrapper.Wrap(newBase));
+        }
+
+
+
+        public class MyRunnable : Object, IRunnable
+        {
+            private readonly Toolbar _toolbar;
+
+            public MyRunnable(Toolbar toolbar)
+            {
+                _toolbar = toolbar;
+            }
+
+            public void Run()
+            {
+                _toolbar.Subtitle = "Added subtitle";
+            }
+        }
+
+        public class AnotherRunnable : Object, IRunnable
+        {
+            private readonly Toolbar _toolbar;
+
+            public AnotherRunnable(Toolbar toolbar)
+            {
+                _toolbar = toolbar;
+            }
+
+            public void Run()
+
+            {
+                _toolbar.Title = null;
+                _toolbar.Subtitle = "Added subtitle";
+            }
+        }
+
+        public class MoreRunnable : Object, IRunnable
+        {
+            private readonly Toolbar _toolbar;
+
+            public MoreRunnable(Toolbar toolbar)
+            {
+                _toolbar = toolbar;
+            }
+
+            public void Run()
+            {
+                _toolbar.Title = "Calligraphy added back";
+                _toolbar.Subtitle = "Added subtitle";
+            }
         }
     }
 }
