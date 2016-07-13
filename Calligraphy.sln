@@ -1,13 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalligraphySampleApp", "CalligraphySampleApp\CalligraphySampleApp.csproj", "{7E57BF7A-8969-4CAD-8E03-7C85A2359B92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Calligraphy", "Xamarin.Calligraphy\Xamarin.Calligraphy.csproj", "{437A83B4-E4B3-4E45-B22E-9992E84699D3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalligraphyBinding", "CalligraphyBinding\CalligraphyBinding.csproj", "{F7EA24A8-C3C1-4594-A439-72A9F94D46B2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calligraphy", "CalligraphyBinding\Calligraphy.csproj", "{F7EA24A8-C3C1-4594-A439-72A9F94D46B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +19,6 @@ Global
 		{7E57BF7A-8969-4CAD-8E03-7C85A2359B92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E57BF7A-8969-4CAD-8E03-7C85A2359B92}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7E57BF7A-8969-4CAD-8E03-7C85A2359B92}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{437A83B4-E4B3-4E45-B22E-9992E84699D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{437A83B4-E4B3-4E45-B22E-9992E84699D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{437A83B4-E4B3-4E45-B22E-9992E84699D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{437A83B4-E4B3-4E45-B22E-9992E84699D3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F7EA24A8-C3C1-4594-A439-72A9F94D46B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F7EA24A8-C3C1-4594-A439-72A9F94D46B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7EA24A8-C3C1-4594-A439-72A9F94D46B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
