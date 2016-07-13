@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>CallygraphyXamarin</id>
-        <version>2.2.0</version>
+        <version>1.0.0</version>
         <title>Calligraphy</title>
         <authors>Michele Scandura</authors>
         <projectUrl>https://github.com/mikescandy/Calligraphy-xamarin</projectUrl>
@@ -10,10 +10,9 @@
         <description>A Xamarin binding the Android Calligraphy library.</description>
         <summary>A Xamarin binding of the Android Calligraphy library.</summary>
         <releaseNotes>Based on Calligraphy 2.2.0</releaseNotes>
-        <tags>xamarin, android, library</tags>
-        <serviceable>false</serviceable>
+        <tags>xamarin, android</tags>
     </metadata>
     <files>
-        <file src="CalligraphyBinding\bin\Release\Calligraphy.dll" target="lib\MonoAndroid\Calligraphy.dll" />
+        <file src="bin\Release\Calligraphy.dll" target="lib\MonoAndroid\Calligraphy.dll" />
     </files>
 </package>
