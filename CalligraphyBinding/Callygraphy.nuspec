@@ -11,7 +11,6 @@
         <summary>A Xamarin binding of the Android Calligraphy library.</summary>
         <releaseNotes>Based on Calligraphy 2.2.0</releaseNotes>
         <tags>xamarin, android</tags>
-        <serviceable>false</serviceable>
     </metadata>
     <files>
         <file src="bin\Release\Calligraphy.dll" target="lib\MonoAndroid\Calligraphy.dll" />
