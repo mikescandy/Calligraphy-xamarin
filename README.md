@@ -131,11 +131,6 @@ The `CalligraphyFactory` looks for the font in a pretty specific order, for the 
 
 - [@chrisjenx](https://github.com/chrisjenx)
 
-#Note
-
-I could have used a Jar binding project, but I decided to migrate the code instead. Plus you get a NuGet package. And the custom attribute is free out of the box
-
-
 #Licence
 
     Copyright 2014 Michele Scandura
