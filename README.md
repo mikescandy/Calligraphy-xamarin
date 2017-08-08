@@ -3,7 +3,7 @@ Calligraphy for Xamarin
 
 A Xamarin binding of the Android Calligraphy library from [Christopher Jenkins](https://github.com/chrisjenx/Calligraphy).
 
-##Getting started
+## Getting started
 
 ### Install
 
