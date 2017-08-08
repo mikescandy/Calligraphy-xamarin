@@ -1,26 +1,10 @@
-﻿<Properties StartupItem="CalligraphySampleApp\CalligraphySampleApp.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 4 (Jelly Bean)" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Xamarin.Calligraphy\CalligraphyConfig.cs">
-    <Files>
-      <File FileName="Xamarin.Calligraphy\CalligraphyFactory.cs" Line="39" Column="30" />
-      <File FileName="Xamarin.Calligraphy\ICalligraphyActivityFactory.cs" Line="26" Column="99" />
-      <File FileName="Xamarin.Calligraphy\CalligraphyConfig.cs" Line="26" Column="22" />
-    </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="Calligraphy" expanded="True">
-            <Node name="CalligraphySampleApp" expanded="True" />
-            <Node name="Xamarin.Calligraphy" expanded="True">
-              <Node name="CalligraphyConfig.cs" selected="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
-  </MonoDevelop.Ide.Workbench>
+﻿<Properties StartupConfiguration="{7E57BF7A-8969-4CAD-8E03-7C85A2359B92}|Default">
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.CalligraphySampleApp PreferredExecutionTarget="Android.025eb12685c2aab4" />
 </Properties>
