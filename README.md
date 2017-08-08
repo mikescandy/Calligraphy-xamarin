@@ -1,13 +1,9 @@
 Calligraphy for Xamarin
 ===========
 
-A Xamarin port of the Android Calligraphy library from [Christopher Jenkins](https://github.com/chrisjenx/Calligraphy).
+A Xamarin binding of the Android Calligraphy library from [Christopher Jenkins](https://github.com/chrisjenx/Calligraphy).
 
-## Known Issue
-
-No support for Android 5 / appcompat21 yet (i.e. no custom font in toolbar)
-
-##Getting started
+## Getting started
 
 ### Install
 
@@ -19,7 +15,9 @@ Install-Package CallygraphyXamarin
 
 ### Fonts
 
-Add your custom fonts to `assets/fonts/` all font definitions are relative to this path. 
+Add your custom fonts to `assets/fonts/` all font definitions are relative to this path.
+
+_Note: Be sure to set the build action to AndroidAsset; otherwise Android will default to the theme font.
 
 ### Configuration
 
@@ -31,7 +29,15 @@ needs to be defined before that.
 public override void OnCreate()
         {
             base.OnCreate();
-            CalligraphyConfig.InitDefault("fonts/GothamHTF-Light.ttf", Calligraphy.Resource.Attribute.fontPath);
+            CalligraphyConfig.InitDefault(new CalligraphyConfig.Builder()
+                    .SetDefaultFontPath("fonts/gtw.ttf")
+                    .SetFontAttrId(Resource.Attribute.fontPath)
+                // Adding a custom view that support adding a typeFace
+                    // .AddCustomViewWithSetTypeface(Java.Lang.Class.FromType(typeof(CustomViewWithTypefaceSupport)))
+                // Adding a custom style
+                    // .AddCustomStyle(Java.Lang.Class.FromType(typeof(TextField)), Resource.Attribute.textFieldStyle)
+                .Build()
+            );
         }
 }
 ```
@@ -43,13 +49,13 @@ no default font. I recommend defining at least a default font or attribute._
 Wrap the Activity Context:
 
 ```csharp
- protected override void AttachBaseContext(Context context)
+        protected override void AttachBaseContext(Context context)
         {
-            base.AttachBaseContext(new CalligraphyContextWrapper(context));
+            base.AttachBaseContext(CalligraphyContextWrapper.Wrap(context));
         }
 ```
 
-_You're good to go!_
+_You're ready to go!_
 
 
 ## Usage
@@ -124,11 +130,6 @@ The `CalligraphyFactory` looks for the font in a pretty specific order, for the 
 #Credits
 
 - [@chrisjenx](https://github.com/chrisjenx)
-
-#Note
-
-I could have used a Jar binding project, but I decided to migrate the code instead. Plus you get a NuGet package. And the custom attribute is free out of the bo.x
-
 
 #Licence
 
